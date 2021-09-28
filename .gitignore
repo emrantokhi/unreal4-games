@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/BullCowGame/Binaries/Win64
+/BullCowGame/Intermediate
+/BullCowGame/Saved
