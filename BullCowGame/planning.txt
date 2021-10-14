@@ -9,3 +9,12 @@ Lose a life if you get it wrong.
 Display how many bulls and cows.
 If the correct word is guessed then the game is won.
 If the lives run out, the game is over.
+
+
+Introduce game
+Grab a word from a list of words
+	Display output in terminal and ask for guess
+	Player makes guess
+	If guess is correct, win and exit loop
+	Else if guess is incorrect, repeat loop
+Display win/loss status
