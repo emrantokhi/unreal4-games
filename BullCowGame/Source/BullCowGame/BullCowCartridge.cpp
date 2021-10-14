@@ -1,18 +1,25 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 #include "BullCowCartridge.h"
 
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
+    
+    IntroduceGame();
+    SetupGame();
+}
 
+void UBullCowCartridge::IntroduceGame() {
     //Introducing the game
     PrintLine(TEXT("Welcome to Bull Cows!"));
     PrintLine(TEXT("Guess the 5 letter word!\n")); //Hard coded number, Remove it
     PrintLine(TEXT("Type in a guess!"));
     PrintLine(TEXT("Press enter to continue!"));
 
-    HiddenWord = TEXT("muted"); //Setting the hidden word
-    Lives = 5; //setting amount of lives
+}
+
+void UBullCowCartridge::SetupGame() {
+    HiddenWord = TEXT("muted"); 
+    Lives = 5; 
 }
 
 void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
@@ -25,9 +32,14 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
         //exit loop
     }
     else {
-        PrintLine(Input + TEXT(" is not the hidden word. Try again!"));
+        PrintLine(Input + TEXT(" is not the hidden word."));
+        if (Input.Len() == HiddenWord.Len()) {
+            PrintLine(Input + TEXT(" has the correct number of letters!"));
+        }
+        else {
+            PrintLine(TEXT("The hidden word is 5 letters long, try again.")); //Hard coded number
+        }
     }
-
     // Check if not isogram or Check if not right number of characters
         // remove life if they are not
     // Check if keyword Quit (will not be in list of isograms)
