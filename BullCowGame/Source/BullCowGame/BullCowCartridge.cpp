@@ -4,13 +4,13 @@
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
-    PrintLine("Welcome to Bull Cows!");
-    PrintLine("Input any character(s) and press enter!");
+    PrintLine(TEXT("Welcome to Bull Cows!"));
+    PrintLine(TEXT("Input any character(s) and press enter!"));
 
 }
 
 void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
 {
     ClearScreen();
-    FString HiddenWord = "muted";
+    FString HiddenWord = TEXT("muted");
 }
