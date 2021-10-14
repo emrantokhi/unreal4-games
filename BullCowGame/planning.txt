@@ -13,8 +13,19 @@ If the lives run out, the game is over.
 
 Introduce game
 Grab a word from a list of words
+Set amount of lives
 	Display output in terminal and ask for guess
 	Player makes guess
-	If guess is correct, win and exit loop
-	Else if guess is incorrect, repeat loop
-Display win/loss status
+	If guess is quit
+		exit loop
+	If guess is correct
+		exit loop
+	Else if guess is incorrect
+		reduce life
+	if amount of lives < 1
+		exit loop 
+Display win/loss status based off of lives
+Ask if play again
+Player input
+if play again, restart
+else quit game
