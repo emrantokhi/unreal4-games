@@ -30,13 +30,13 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
 {
     ClearScreen();
     
-    // if game is over, clearscreen and setupgame
-    // else continue
+    //If the current game is over
     if (bGameOver) {
         ClearScreen();
         SetupGame();
     }
-    else { // Continue playing current game
+    //Continue playing the current game if it is not over
+    else { 
         ProcessGuess(Input);
     }
 }
@@ -68,19 +68,18 @@ void UBullCowCartridge::ProcessGuess(const FString& Input) {
 
         PrintLine(TEXT("\nYou have lost a life!\nLives: %i\n"), --Lives);
 
+        //If there are no more lives left
         if (Lives < 1) {
             EndGame();
         }
-        else { //If there are still remaining lives
+        //Else if there are lives left, print out the ability to guess again
+        else {
             PrintLine(TEXT("Type in a new guess and press Enter!\n"));
         }
-    }
-    // Check if not isogram or Check if not right number of characters
+
+        // Check if not isogram or Check if not right number of characters
         // remove life if they are not
-    // Check if keyword Quit (will not be in list of isograms)
-    // Are the lives greater than 0
-        // if not, show loss message and ask if play again
-        // else quit the game
+    }
 }
 
 void UBullCowCartridge::EndGame() {
