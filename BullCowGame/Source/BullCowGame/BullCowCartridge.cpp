@@ -5,11 +5,6 @@ void UBullCowCartridge::BeginPlay() // When the game starts
     Super::BeginPlay();
     
     SetupGame();
-
-    PrintLine(TEXT("The hidden word is %s."), *HiddenWord); //Debug line
-    PrintLine(TEXT("The hidden word has %i characters."), HiddenWord.Len()); //Debug line
-
-    IntroduceGame();
 }
 
 void UBullCowCartridge::IntroduceGame() {
@@ -17,30 +12,67 @@ void UBullCowCartridge::IntroduceGame() {
     PrintLine(TEXT("Welcome to Bull Cows!"));
     PrintLine(TEXT("Guess the %i letter word!\n"), HiddenWord.Len()); 
     PrintLine(TEXT("Type in a guess!"));
-    PrintLine(TEXT("Press enter to continue!"));
+    PrintLine(TEXT("Press enter to continue!\n\nEnter in 'quit' to quit!"));
+    PrintLine(TEXT("\nLives: %i\n"), Lives);
 }
 
 void UBullCowCartridge::SetupGame() {
     HiddenWord = TEXT("muted"); 
-    Lives = 5; 
+    bGameOver = false;
+    Lives = HiddenWord.Len(); 
+
+    //PrintLine(TEXT("The hidden word is %s."), *HiddenWord); //Debug line
+    //PrintLine(TEXT("The hidden word has %i characters."), HiddenWord.Len()); //Debug line
+    IntroduceGame();
 }
 
 void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
 {
-    // Check if play again (this is a loop)
     ClearScreen();
-    // Display lives
-    if (Input == HiddenWord) { // == is case insensitive, .Equals is case sensitive
-        PrintLine(TEXT("%s is the hidden word!"), *Input);
-        //exit loop
+    
+    // if game is over, clearscreen and setupgame
+    // else continue
+    if (bGameOver) {
+        ClearScreen();
+        SetupGame();
     }
+    else { // Continue playing current game
+        ProcessGuess(Input);
+    }
+}
+
+void UBullCowCartridge::ProcessGuess(const FString& Input) {
+    //If the input is correct
+    if (Input == HiddenWord) { // == is case insensitive, .Equals is case sensitive
+        PrintLine(TEXT("%s is the hidden word!\n\nCongrats on winning!\n\n"), *HiddenWord);
+        EndGame();
+    }
+
+    //If the input is quit, quit the game
+    else if (Input.ToLower() == "quit") {
+        PrintLine(TEXT("You quit the game!\n\n"));
+        EndGame();
+    }
+
+    //If the Input is incorrect
     else {
         PrintLine(TEXT("%s is not the hidden word."), *Input);
+
+        //Check for similar length
         if (Input.Len() == HiddenWord.Len()) {
             PrintLine(TEXT("%s has the correct number of letters!"), *Input);
         }
         else {
-            PrintLine(TEXT("The hidden word is %i letters long, try again."), HiddenWord.Len()); //Hard coded number
+            PrintLine(TEXT("The hidden word has %i letters, try again."), HiddenWord.Len());
+        }
+
+        PrintLine(TEXT("\nYou have lost a life!\nLives: %i\n"), --Lives);
+
+        if (Lives < 1) {
+            EndGame();
+        }
+        else { //If there are still remaining lives
+            PrintLine(TEXT("Type in a new guess and press Enter!\n"));
         }
     }
     // Check if not isogram or Check if not right number of characters
@@ -49,4 +81,9 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     // Are the lives greater than 0
         // if not, show loss message and ask if play again
         // else quit the game
+}
+
+void UBullCowCartridge::EndGame() {
+    bGameOver = true;
+    PrintLine("Game over! Press enter to play again...");
 }
