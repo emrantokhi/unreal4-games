@@ -4,17 +4,20 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
     
-    IntroduceGame();
     SetupGame();
+
+    PrintLine(TEXT("The hidden word is %s."), *HiddenWord); //Debug line
+    PrintLine(TEXT("The hidden word has %i characters."), HiddenWord.Len()); //Debug line
+
+    IntroduceGame();
 }
 
 void UBullCowCartridge::IntroduceGame() {
     //Introducing the game
     PrintLine(TEXT("Welcome to Bull Cows!"));
-    PrintLine(TEXT("Guess the 5 letter word!\n")); //Hard coded number, Remove it
+    PrintLine(TEXT("Guess the %i letter word!\n"), HiddenWord.Len()); 
     PrintLine(TEXT("Type in a guess!"));
     PrintLine(TEXT("Press enter to continue!"));
-
 }
 
 void UBullCowCartridge::SetupGame() {
@@ -28,16 +31,16 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     ClearScreen();
     // Display lives
     if (Input == HiddenWord) { // == is case insensitive, .Equals is case sensitive
-        PrintLine(Input + TEXT(" is the hidden word!"));
+        PrintLine(TEXT("%s is the hidden word!"), *Input);
         //exit loop
     }
     else {
-        PrintLine(Input + TEXT(" is not the hidden word."));
+        PrintLine(TEXT("%s is not the hidden word."), *Input);
         if (Input.Len() == HiddenWord.Len()) {
-            PrintLine(Input + TEXT(" has the correct number of letters!"));
+            PrintLine(TEXT("%s has the correct number of letters!"), *Input);
         }
         else {
-            PrintLine(TEXT("The hidden word is 5 letters long, try again.")); //Hard coded number
+            PrintLine(TEXT("The hidden word is %i letters long, try again."), HiddenWord.Len()); //Hard coded number
         }
     }
     // Check if not isogram or Check if not right number of characters
@@ -46,5 +49,4 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     // Are the lives greater than 0
         // if not, show loss message and ask if play again
         // else quit the game
- 
 }
