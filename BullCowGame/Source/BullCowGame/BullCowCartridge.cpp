@@ -42,31 +42,26 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
 }
 
 void UBullCowCartridge::ProcessGuess(const FString& Input) {
-    //If the input is correct
-    if (Input == HiddenWord) { // == is case insensitive, .Equals is case sensitive
-        PrintLine(TEXT("%s is the hidden word!\n\nCongrats on winning!\n\n"), *HiddenWord);
-        EndGame();
-    }
 
     //If the input is quit, quit the game
-    else if (Input.ToLower() == "quit") {
+    if (Input.ToLower() == "quit") {
         PrintLine(TEXT("You quit the game!\n\n"));
         EndGame();
+        return;
+    }
+    
+    //If the input is correct
+    else if (Input == HiddenWord) { // == is case insensitive, .Equals is case sensitive
+        PrintLine(TEXT("%s is the hidden word!\n\nCongrats on winning!\n\n"), *HiddenWord);
+        EndGame();
+        return;
     }
 
     //If the Input is incorrect
     else {
         PrintLine(TEXT("%s is not the hidden word."), *Input);
 
-        //Check for similar length
-        if (Input.Len() == HiddenWord.Len()) {
-            PrintLine(TEXT("%s has the correct number of letters!"), *Input);
-        }
-        else {
-            PrintLine(TEXT("The hidden word has %i letters, try again."), HiddenWord.Len());
-        }
-
-        PrintLine(TEXT("\nYou have lost a life!\nLives: %i\n"), --Lives);
+        LoseOrKeepLife(Input);
 
         //If there are no more lives left
         if (Lives < 1) {
@@ -77,9 +72,32 @@ void UBullCowCartridge::ProcessGuess(const FString& Input) {
             PrintLine(TEXT("Type in a new guess and press Enter!\n"));
         }
 
-        // Check if not isogram or Check if not right number of characters
-        // remove life if they are not
+        return;
     }
+}
+
+void UBullCowCartridge::LoseOrKeepLife(const FString& Input) {
+    bool SameLength;
+    bool Isogram = IsIsogram(Input);
+
+    //Check for similar length
+    if (Input.Len() == HiddenWord.Len()) {
+        PrintLine(TEXT("%s has the correct number of letters!"), *Input);
+        SameLength = true;
+    }
+    else {
+        PrintLine(TEXT("The hidden word has %i letters, try again."), HiddenWord.Len());
+        SameLength = false;
+    }
+
+    //If the guessed word has the same length and is an isogram but is incorrect, lose a life
+    if (SameLength && Isogram) {
+        PrintLine(TEXT("\nYou have lost a life!\nLives: %i\n"), --Lives);
+    }
+}
+
+bool UBullCowCartridge::IsIsogram(const FString& Input) {
+
 }
 
 void UBullCowCartridge::EndGame() {
