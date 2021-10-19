@@ -92,15 +92,32 @@ void UBullCowCartridge::LoseOrKeepLife(const FString& Input) {
 
     //If the guessed word has the same length and is an isogram but is incorrect, lose a life
     if (SameLength && Isogram) {
-        PrintLine(TEXT("\nYou have lost a life!\nLives: %i\n"), --Lives);
+        PrintLine(TEXT("\nYou have lost a life!"));
+        --Lives;
     }
+
+    PrintLine(TEXT("\nLives: %i\n"), Lives);
 }
 
 bool UBullCowCartridge::IsIsogram(const FString& Input) {
-
+    //Loop, take first letter, check it with other letters
+    //If there is the same, return false, otherwise keep going
+    //at the end return true
+    for (int i = 0; i < Input.Len(); i++) {
+        for (int j = 0; j < Input.Len(); j++) {
+            if (i == j) {
+                continue;
+            }
+            else if (Input[i] == Input[j]) {
+                PrintLine(TEXT("%s is not an isogram!\n"), *Input);
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 void UBullCowCartridge::EndGame() {
     bGameOver = true;
-    PrintLine("Game over! Press enter to play again...");
+    PrintLine(TEXT("Game over! Press enter to play again..."));
 }
