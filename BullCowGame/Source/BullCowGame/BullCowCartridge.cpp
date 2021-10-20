@@ -1,11 +1,24 @@
 #include "BullCowCartridge.h"
-#include "HiddenWordList.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
 
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
+
+    PopulateList();
     
     SetupGame();
+}
+
+void UBullCowCartridge::PopulateList() {
+    //stores the path of the list
+    //FPaths::ProjectContentDir returns absolute path to Content directory
+    //The / in the middle concantenates (it's overloaded) 
+    const FString WordListPath = FPaths::ProjectContentDir() / TEXT("HiddenWordList.txt");
+
+    //Allows list to be created at runtime instead of bloating up compile time
+    FFileHelper::LoadFileToStringArray(WordList, *WordListPath);
 }
 
 void UBullCowCartridge::IntroduceGame() const {

@@ -20,9 +20,11 @@ class BULLCOWGAME_API UBullCowCartridge : public UCartridge
     void LoseOrKeepLife(const FString& Input);
 	bool IsIsogram(const FString& Input) const;
 	void EndGame();
+	void PopulateList();
 
 	// Your declarations go below!
 	private:
+	TArray<FString> WordList;
 	FString HiddenWord;
 	bool bGameOver;
 	int32 Lives;
