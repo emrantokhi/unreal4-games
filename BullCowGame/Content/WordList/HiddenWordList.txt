@@ -1945,7 +1945,6 @@ flame
 tanks
 emily
 sudan
-hints
 wired
 elvis
 argue
@@ -2975,7 +2974,6 @@ dice
 quad
 dock
 mods
-hint
 msie
 buys
 pork

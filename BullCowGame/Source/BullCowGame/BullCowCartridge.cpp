@@ -5,7 +5,7 @@
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
-    
+
     //Fill up the WordList array from a file
     PopulateList();
 
@@ -27,8 +27,8 @@ void UBullCowCartridge::IntroduceGame() const {
     PrintLine(TEXT("Welcome to Bull Cows!"));
     PrintLine(TEXT("Guess the %i letter word!\n"), HiddenWord.Len()); 
     PrintLine(TEXT("Type in a guess!"));
-    PrintLine(TEXT("Press enter to continue!\n\nEnter in 'quit' to quit!"));
-    PrintLine(TEXT("\nLives: %i\n"), Lives);
+    PrintLine(TEXT("Press enter to continue!\n\nEnter in: 'Quit' to quit!"));
+    PrintLine(TEXT("'Hint' for a hint (Pay 5 lives once)!\nLives: %i\n"), Lives);
 }
 
 void UBullCowCartridge::SetupGame() {
@@ -36,6 +36,7 @@ void UBullCowCartridge::SetupGame() {
     //The argument is WordList.Num() which is the length of the array
     HiddenWord = WordList[FMath::RandRange(0, WordList.Num() - 1)]; 
     bGameOver = false;
+    bHintGiven = false;
     Lives = HiddenWord.Len() * 3; 
 
     //PrintLine(TEXT("The hidden word was %s.\n"), *HiddenWord); //Debug line
@@ -66,6 +67,10 @@ void UBullCowCartridge::ProcessGuess(const FString& Input) {
         EndGame();
         return;
     }
+
+    else if (Input.ToLower() == "hint") {
+        GiveHint();
+    }
     
     //If the input is correct
     else if (Input == HiddenWord) { // == is case insensitive, .Equals is case sensitive
@@ -82,7 +87,8 @@ void UBullCowCartridge::ProcessGuess(const FString& Input) {
 
         //If there are no more lives left
         if (Lives < 1) {
-            PrintLine(TEXT("The hidden word was %s.\n"), *HiddenWord); 
+            ClearScreen();
+            PrintLine(TEXT("You guessed wrong too many times!\n\nThe hidden word was %s.\n"), *HiddenWord); 
             EndGame();
         }
         //Else if there are lives left, print out the ability to guess again
@@ -94,9 +100,24 @@ void UBullCowCartridge::ProcessGuess(const FString& Input) {
     }
 }
 
+void UBullCowCartridge::GiveHint() {
+    if (!bHintGiven && Lives <= 5) {
+        PrintLine(TEXT("You do not have enough lives\n   to sacrfice for a hint!"));
+        PrintLine(TEXT("\nEnter in another guess!\n\nLives: %i\n"), Lives);
+        return;
+    }
+    else if (!bHintGiven) {
+        Lives -= 5;
+        bHintGiven = true;
+    }
+    PrintLine(TEXT("The hint is:\n\nThe first letter of the word is '%c'.\n\nThe last letter of the word is '%c'.\n\nLives: %i\n"), 
+        HiddenWord[0], HiddenWord[HiddenWord.Len() - 1], Lives);
+}
+
 void UBullCowCartridge::LoseOrKeepLife(const FString& Input) {
     bool SameLength;
     bool Isogram = IsIsogram(Input);
+    FBullCowCount Count;
 
     //Check for similar length
     if (Input.Len() == HiddenWord.Len()) {
@@ -114,11 +135,10 @@ void UBullCowCartridge::LoseOrKeepLife(const FString& Input) {
         --Lives;
     }
     
-    //Print out bulls and cows
-    int32 Bulls, Cows;
-    GetBullCows(Input, Bulls, Cows);
+    
+    Count = GetBullCows(Input);
 
-    PrintLine(TEXT("\n%i Bulls! (Letters in the right spot)\n%i Cows! (Letters in the incorrect spot)\nLives: %i\n"), Bulls, Cows, Lives);
+    PrintLine(TEXT("\n%i Bulls! (Letters in the right spot)\n%i Cows! (Letters in the incorrect spot)\nLives: %i\n"), Count.Bulls, Count.Cows, Lives);
 }
 
 bool UBullCowCartridge::IsIsogram(const FString& Input) const {
@@ -136,27 +156,26 @@ bool UBullCowCartridge::IsIsogram(const FString& Input) const {
 }
 
 
-void UBullCowCartridge::GetBullCows(const FString& Input, int32& Bulls, int32& Cows) const {
-    Bulls = 0;
-    Cows = 0;
-
-    //for every index of guess is same as index of Hidden, Bulls++
-    //if not a bull, is it a cow, if yes cows++
+FBullCowCount UBullCowCartridge::GetBullCows(const FString& Input) const {
+    
+    FBullCowCount Count;
     for (int32 Index = 0; Index < Input.Len(); Index++) {
         //If there is a bull, continue
         if ((Index < HiddenWord.Len()) && (Input[Index] == HiddenWord[Index])) {
-            Bulls++;
+            Count.Bulls++;
             continue;
         }
         //If not a bull, then check if there are cows
         for (int32 HiddenIndex = 0; HiddenIndex < HiddenWord.Len(); HiddenIndex++) {
             if (Input[Index] == HiddenWord[HiddenIndex]) {
-                Cows++;
+                Count.Cows++;
                 break;
             }
         }
         
     }
+    
+    return Count;
 }
 
 void UBullCowCartridge::EndGame() {
