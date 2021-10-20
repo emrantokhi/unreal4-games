@@ -21,8 +21,9 @@ class BULLCOWGAME_API UBullCowCartridge : public UCartridge
 	bool IsIsogram(const FString& Input) const;
 	void EndGame();
 	void PopulateList();
+	//BullCount and Cowcount are out parameters, as they references
+	void GetBullCows(const FString& Input, int32& Bulls, int32& Cows) const;
 
-	// Your declarations go below!
 	private:
 	TArray<FString> WordList;
 	FString HiddenWord;
