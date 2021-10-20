@@ -152,6 +152,7 @@ void UBullCowCartridge::GetBullCows(const FString& Input, int32& Bulls, int32& C
         for (int32 HiddenIndex = 0; HiddenIndex < HiddenWord.Len(); HiddenIndex++) {
             if (Input[Index] == HiddenWord[HiddenIndex]) {
                 Cows++;
+                break;
             }
         }
         
