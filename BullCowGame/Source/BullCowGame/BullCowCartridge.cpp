@@ -5,9 +5,10 @@
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
-
-    PopulateList();
     
+    //Fill up the WordList array from a file
+    PopulateList();
+
     SetupGame();
 }
 
@@ -15,7 +16,7 @@ void UBullCowCartridge::PopulateList() {
     //stores the path of the list
     //FPaths::ProjectContentDir returns absolute path to Content directory
     //The / in the middle concantenates (it's overloaded) 
-    const FString WordListPath = FPaths::ProjectContentDir() / TEXT("HiddenWordList.txt");
+    const FString WordListPath = FPaths::ProjectContentDir() / TEXT("WordList/HiddenWordList.txt");
 
     //Allows list to be created at runtime instead of bloating up compile time
     FFileHelper::LoadFileToStringArray(WordList, *WordListPath);
@@ -38,6 +39,7 @@ void UBullCowCartridge::SetupGame() {
     //PrintLine(TEXT("The hidden word is %s."), *HiddenWord); //Debug line
     //PrintLine(TEXT("The hidden word has %i characters."), HiddenWord.Len()); //Debug line
     IntroduceGame();
+    PrintLine(TEXT("Number of Possible words: %i"), WordList.Num());
 }
 
 void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
@@ -115,7 +117,9 @@ void UBullCowCartridge::LoseOrKeepLife(const FString& Input) {
 
 bool UBullCowCartridge::IsIsogram(const FString& Input) const {
     for (int32 i = 0; i < Input.Len(); i++) {
+
         for (int32 j = i + 1; j < Input.Len(); j++) {
+
             if ((Input[i] == Input[j])) {
                 PrintLine(TEXT("%s is not an isogram!\n"), *Input);
                 return false;
