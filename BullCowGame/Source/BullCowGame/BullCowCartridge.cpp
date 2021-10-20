@@ -7,7 +7,7 @@ void UBullCowCartridge::BeginPlay() // When the game starts
     SetupGame();
 }
 
-void UBullCowCartridge::IntroduceGame() {
+void UBullCowCartridge::IntroduceGame() const {
     //Introducing the game
     PrintLine(TEXT("Welcome to Bull Cows!"));
     PrintLine(TEXT("Guess the %i letter word!\n"), HiddenWord.Len()); 
@@ -59,9 +59,9 @@ void UBullCowCartridge::ProcessGuess(const FString& Input) {
 
     //If the Input is incorrect
     else {
-        PrintLine(TEXT("%s is not the hidden word."), *Input);
+        PrintLine(TEXT("%s is not the hidden word."), *Input.ToLower());
 
-        LoseOrKeepLife(Input);
+        LoseOrKeepLife(Input.ToLower());
 
         //If there are no more lives left
         if (Lives < 1) {
@@ -99,16 +99,10 @@ void UBullCowCartridge::LoseOrKeepLife(const FString& Input) {
     PrintLine(TEXT("\nLives: %i\n"), Lives);
 }
 
-bool UBullCowCartridge::IsIsogram(const FString& Input) {
-    //Loop, take first letter, check it with other letters
-    //If there is the same, return false, otherwise keep going
-    //at the end return true
-    for (int i = 0; i < Input.Len(); i++) {
-        for (int j = 0; j < Input.Len(); j++) {
-            if (i == j) {
-                continue;
-            }
-            else if (Input[i] == Input[j]) {
+bool UBullCowCartridge::IsIsogram(const FString& Input) const {
+    for (int32 i = 0; i < Input.Len(); i++) {
+        for (int32 j = i + 1; j < Input.Len(); j++) {
+            if ((Input[i] == Input[j])) {
                 PrintLine(TEXT("%s is not an isogram!\n"), *Input);
                 return false;
             }
