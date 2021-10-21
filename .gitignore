@@ -107,3 +107,8 @@ VSCode Files
 /.vscode/*
 BuildingEscape.code-workspace
 
+/EscapeGame/Binaries/Win64
+/EscapeGame/Content/StarterContent
+/EscapeGame/Intermediate/Build/Win64/EscapeGameEditor/Development
+/EscapeGame/Intermediate
+/EscapeGame/Saved
