@@ -25,7 +25,7 @@ void UBullCowCartridge::PopulateList() {
 void UBullCowCartridge::IntroduceGame() const {
     //Introducing the game
     PrintLine(TEXT("Welcome to Bull Cows!"));
-    PrintLine(TEXT("Guess the %i letter word!\n"), HiddenWord.Len()); 
+    PrintLine(TEXT("Guess the %i letter word!\nPress TAB to type in the terminal!"), HiddenWord.Len()); 
     PrintLine(TEXT("Type in a guess!"));
     PrintLine(TEXT("Press enter to continue!\n\nEnter in: 'Quit' to quit!"));
     PrintLine(TEXT("'Hint' for a hint (Pay 5 lives once)!\nLives: %i\n"), Lives);
