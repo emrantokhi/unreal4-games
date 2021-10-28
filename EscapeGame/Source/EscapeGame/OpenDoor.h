@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "WorldPosition.generated.h"
+#include "OpenDoor.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class ESCAPEGAME_API UWorldPosition : public UActorComponent
+class ESCAPEGAME_API UOpenDoor : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UWorldPosition();
+	UOpenDoor();
 
 protected:
 	// Called when the game starts
@@ -23,5 +23,10 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+private:
+	float InitialYaw;
+	float CurrentYaw;
+	UPROPERTY(EditAnywhere);
+	float TargetYaw = 100.0f;
 		
 };
