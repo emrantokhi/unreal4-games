@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "GameFramework/Actor.h"
 #include "RatSpin.generated.h"
 
 
@@ -23,6 +24,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
+	void RotateMouse(float DeltaTime);
 		
+private:
+	UPROPERTY(EditAnywhere);
+	float RotateSpeed = 10.f;
 };

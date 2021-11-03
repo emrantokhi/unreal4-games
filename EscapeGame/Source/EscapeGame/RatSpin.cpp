@@ -19,8 +19,11 @@ void URatSpin::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	//Setting the actor's Yaw to 0, since it'll be spinning anyways
+	//So initial rotation spot most likely wont matter
+	FRotator CurrentMouseRotation = GetOwner()->GetActorRotation();
+	CurrentMouseRotation.Yaw = 0.f;
+	GetOwner()->SetActorRotation(CurrentMouseRotation);
 }
 
 
@@ -28,7 +31,18 @@ void URatSpin::BeginPlay()
 void URatSpin::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+	
+	RotateMouse(DeltaTime);
 }
 
+void URatSpin::RotateMouse(float DeltaTime) {
+	FRotator CurrentMouseRotation = GetOwner()->GetActorRotation();
+	
+	if (CurrentMouseRotation.Yaw + RotateSpeed > 359.f) {
+		CurrentMouseRotation.Yaw = CurrentMouseRotation.Yaw + RotateSpeed - 359.f;
+	}
+
+	CurrentMouseRotation.Yaw = FMath::FInterpTo(CurrentMouseRotation.Yaw, CurrentMouseRotation.Yaw + RotateSpeed, DeltaTime, RotateSpeed);
+	
+	GetOwner()->SetActorRotation(CurrentMouseRotation);
+}
