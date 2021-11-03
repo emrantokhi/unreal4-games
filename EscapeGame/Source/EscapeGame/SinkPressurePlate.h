@@ -46,4 +46,7 @@ private:
 
 	UPROPERTY(EditAnywhere);
 	float TimeBeforeRising = 2.0f;
+
+	UPROPERTY(EditAnywhere);
+	AActor* ActorThatSinks;
 };

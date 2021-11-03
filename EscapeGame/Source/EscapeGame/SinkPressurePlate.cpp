@@ -26,6 +26,10 @@ void USinkPressurePlate::BeginPlay()
 	if (!PressurePlate) {
 		UE_LOG(LogTemp, Warning, TEXT("%s has door component, but no pressure plate set."), *GetOwner()->GetName());
 	}
+	//If actor is not set, set it to pawn
+	if (!ActorThatSinks) {
+		ActorThatSinks = GetWorld()->GetFirstPlayerController()->GetPawn();
+	}
 }
 
 
@@ -34,13 +38,11 @@ void USinkPressurePlate::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if (PressurePlate && PressurePlate->IsOverlappingActor(GetWorld()->GetFirstPlayerController()->GetPawn())) {
+	if (PressurePlate && PressurePlate->IsOverlappingActor(ActorThatSinks)) {
 		SinkPlate(DeltaTime);
-		UE_LOG(LogTemp, Warning, TEXT("IM HERE"));
-
 		TimeSteppedOn = GetWorld()->GetTimeSeconds();
 	}
-	else if (PressurePlate && !PressurePlate->IsOverlappingActor(GetWorld()->GetFirstPlayerController()->GetPawn()) && (GetWorld()->GetTimeSeconds() - TimeSteppedOn >= TimeBeforeRising)) {
+	else if (PressurePlate && !PressurePlate->IsOverlappingActor(ActorThatSinks) && (GetWorld()->GetTimeSeconds() - TimeSteppedOn >= TimeBeforeRising)) {
 		LiftPlate(DeltaTime);
 	}
 }

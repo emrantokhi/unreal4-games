@@ -24,9 +24,10 @@ void UOpenDoor::BeginPlay()
 	if (!PressurePlate) {
 		UE_LOG(LogTemp, Warning, TEXT("%s has door component, but no pressure plate set."), *GetOwner()->GetName());
 	}
-
-	//Set the player's pawn as the actor
-	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
+	//If actor is not set, set it to pawn
+	if (!ActorThatOpens) {
+		ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
+	}
 }
 
 
