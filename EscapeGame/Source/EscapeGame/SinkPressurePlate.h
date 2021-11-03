@@ -4,52 +4,46 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "GameFramework/Actor.h"
+#include "Engine/World.h"
 #include "Engine/TriggerVolume.h"
 #include "GameFramework/PlayerController.h"
-#include "Engine/World.h"
-#include "OpenDoor.generated.h"
+#include "SinkPressurePlate.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class ESCAPEGAME_API UOpenDoor : public UActorComponent
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
+class ESCAPEGAME_API USinkPressurePlate : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	// Sets default values for this component's properties
-	UOpenDoor();
+	USinkPressurePlate();
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-	void OpenDoor(float DeltaTime);
-	void CloseDoor(float DeltaTime);
+	void SinkPlate(float DeltaTime);
+	void LiftPlate(float DeltaTime);
 
 private:
-	float InitialYaw;
-	float CurrentYaw;
-	float DoorLastOpenedTime = 0.f;
+	float InitialHeight;
+	float SinkTarget;
 
-	UPROPERTY(EditAnywhere);
-	float TargetYaw = 100.0f; 
-
-	UPROPERTY(EditAnywhere);
-	float OpenSpeed = 1.5f;
-	
-	UPROPERTY(EditAnywhere);
-	float CloseSpeed = 1.5f;
-
-	UPROPERTY(EditAnywhere);
-	float TimeLeftOpen = 2.f;
+	float TimeSteppedOn = 0.f;
 
 	UPROPERTY(EditAnywhere);
 	ATriggerVolume* PressurePlate;
-	
+
 	UPROPERTY(EditAnywhere);
-	AActor* ActorThatOpens;
+	float SinkAmount = 10.f;
+
+	UPROPERTY(EditAnywhere);
+	float SinkSpeed = 2.0f;
+
+	UPROPERTY(EditAnywhere);
+	float TimeBeforeRising = 2.0f;
 };
