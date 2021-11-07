@@ -38,7 +38,7 @@ void USinkPressurePlate::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if (PressurePlate && PressurePlate->IsOverlappingActor(ActorThatSinks)) {
+	if (PressurePlate && ActorThatSinks && PressurePlate->IsOverlappingActor(ActorThatSinks)) {
 		SinkPlate(DeltaTime);
 		TimeSteppedOn = GetWorld()->GetTimeSeconds();
 	}
