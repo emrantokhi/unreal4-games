@@ -11,8 +11,6 @@
 
 #include "Grabber.generated.h"
 
-#define OUT
-
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ESCAPEGAME_API UGrabber : public UActorComponent
 {
@@ -34,14 +32,17 @@ protected:
 private:
 	void FindPhysicsHandle();
 	void SetupInputs();
-	FVector* UGrabber::CalculateLineTraceEnd(FVector& OUT PlayerViewPointLocation, FRotator& OUT PlayerViewPointRotation);
-
-	//Returns an actor that has a physics body
+	//Updates the value for LineTraceEnd, PVPL, and PVPR
+	void RecalculateLineTraceEnd();
+	//Returns an actor that has a physics body thru ray casting
 	FHitResult FindFirstActorInReach();
 
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
-
 	UInputComponent* InputHandle = nullptr;
+
+	FVector LineTraceEnd;
+	FVector PlayerViewPointLocation;
+	FRotator PlayerViewPointRotation;
 
 	UPROPERTY(EditAnywhere);
 	float ReachLength = 200.f;
