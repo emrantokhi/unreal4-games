@@ -24,7 +24,7 @@ void UGrabber::BeginPlay()
 void UGrabber::FindPhysicsHandle() {
 	//Check for Physics handle component
 	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
-	if (PhysicsHandle == nullptr) {
+	if (!PhysicsHandle) {
 		UE_LOG(LogTemp, Error, TEXT("%s does not include a physics handle!"), *GetOwner()->GetName());
 	}
 }
@@ -70,12 +70,11 @@ void UGrabber::Grab() {
 	RecalculateLineTraceEnd();
 	//Only raycast when key is pressed
 	FHitResult ActorInReach = FindFirstActorInReach();
-
 	UPrimitiveComponent* ComponentToGrab = ActorInReach.GetComponent();
+	AActor* ActorHit = ActorInReach.GetActor();
 
-	//If ActorInReach is not empty, then grab the item
-	if (ActorInReach.GetActor()) {
-		//If we hit something, then attach physics handle
+	if (ActorHit) {
+		if (!PhysicsHandle) { return; }
 		PhysicsHandle->GrabComponentAtLocation(
 			ComponentToGrab,
 			NAME_None,
@@ -96,6 +95,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	if (!PhysicsHandle) { return; }
 	if (PhysicsHandle->GrabbedComponent) {
 		RecalculateLineTraceEnd();
 		PhysicsHandle->SetTargetLocation(LineTraceEnd);

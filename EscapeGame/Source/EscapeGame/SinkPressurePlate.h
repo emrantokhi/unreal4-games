@@ -28,6 +28,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void SinkPlate(float DeltaTime);
 	void LiftPlate(float DeltaTime);
+	float TotalMassOfActiveActors() const;
 
 private:
 	float InitialHeight;
@@ -36,7 +37,7 @@ private:
 	float TimeSteppedOn = 0.f;
 
 	UPROPERTY(EditAnywhere);
-	ATriggerVolume* PressurePlate;
+	ATriggerVolume* PressurePlate = nullptr;
 
 	UPROPERTY(EditAnywhere);
 	float SinkAmount = 10.f;
@@ -48,5 +49,5 @@ private:
 	float TimeBeforeRising = 2.0f;
 
 	UPROPERTY(EditAnywhere);
-	AActor* ActorThatSinks;
+	float TotalMassToSink = 50.f;
 };

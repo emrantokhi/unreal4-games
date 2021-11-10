@@ -28,5 +28,5 @@ public:
 		
 private:
 	UPROPERTY(EditAnywhere);
-	float RotateSpeed = 10.f;
+	float RotateSpeed = 0.f;
 };

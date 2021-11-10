@@ -11,6 +11,8 @@
 
 #include "Grabber.generated.h"
 
+#define OUT
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ESCAPEGAME_API UGrabber : public UActorComponent
 {
@@ -37,7 +39,9 @@ private:
 	//Returns an actor that has a physics body thru ray casting
 	FHitResult FindFirstActorInReach();
 
+	UPROPERTY();
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
+	UPROPERTY();
 	UInputComponent* InputHandle = nullptr;
 
 	FVector LineTraceEnd;
