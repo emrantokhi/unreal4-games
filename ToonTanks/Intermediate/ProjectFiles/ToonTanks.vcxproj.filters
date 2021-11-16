@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ToonTanks.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{DC958894-94F3-4C64-A93E-2789FA6448F7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ToonTanks.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ToonTanksEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{EE64F031-3A97-4540-9D21-875FF010729B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ToonTanks">
+      <UniqueIdentifier>{4A23C24D-9A3C-4036-869B-F13BA49729CD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ToonTanks\BasePawn.cpp">
+      <Filter>Source\ToonTanks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\BasePawn.h">
+      <Filter>Source\ToonTanks</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\ToonTanks\ToonTanks.Build.cs">
+      <Filter>Source\ToonTanks</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ToonTanks\ToonTanks.cpp">
+      <Filter>Source\ToonTanks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\ToonTanks.h">
+      <Filter>Source\ToonTanks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

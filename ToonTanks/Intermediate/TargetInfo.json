@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ToonTanks",
+			"Path": "C:\\Users\\emrantokhi\\Documents\\School\\Self Learning\\unreal\\unreal-games\\ToonTanks\\Source\\ToonTanks.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ToonTanksEditor",
+			"Path": "C:\\Users\\emrantokhi\\Documents\\School\\Self Learning\\unreal\\unreal-games\\ToonTanks\\Source\\ToonTanksEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
