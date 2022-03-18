@@ -34,5 +34,5 @@ private:
 	FTimerHandle FireRateTimerHandle;
 
 	void CheckFireCondition();
-	float GetDistToTank();
+	bool InRange();
 };
