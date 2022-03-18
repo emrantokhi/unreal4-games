@@ -13,36 +13,28 @@ ABasePawn::ABasePawn()
 	SetupComponents();
 }
 
-// Called when the game starts or when spawned
-void ABasePawn::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
 void ABasePawn::SetupComponents() {
 	CapsuleComp = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Capsule Collider"));
 	BaseMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Base Mesh"));
 	TurretMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Turret Mesh"));
 	ProjectileSpawn = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn"));
 
+	//Set the capsule component as the root
 	RootComponent = CapsuleComp;
 	BaseMesh->SetupAttachment(CapsuleComp);
 	TurretMesh->SetupAttachment(BaseMesh);
 	ProjectileSpawn->SetupAttachment(TurretMesh);
 }
 
-// Called every frame
-void ABasePawn::Tick(float DeltaTime)
+void ABasePawn::RotateTurret(FVector LookAtTarget)
 {
-	Super::Tick(DeltaTime);
+	//Need to find Vector line between destination (LookAtTarget) and start point (this's location)
+	FVector ToTarget = LookAtTarget - TurretMesh->GetComponentLocation();
+
+	//Get the rotation of the vector
+	FRotator TargetRotation = FRotator(0.f, ToTarget.Rotation().Yaw, 0.f);
+
+	//Set TurretMesh's rotation to the YAW only of the TargetRotation so it doesnt aim up or down
+	TurretMesh->SetWorldRotation(TargetRotation);
 
 }
-
-// Called to bind functionality to input
-void ABasePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-}
-
