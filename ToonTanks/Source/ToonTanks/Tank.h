@@ -33,9 +33,9 @@ private:
 	void Turn(float Value);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
-	float TankSpeed = 2.f;
+	float TankSpeed = 1000.f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
-	float TankRotateSpeed = 2.f;
+	float TankRotateSpeed = 100.f;
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	class USpringArmComponent* SpringArm = nullptr;
 	UPROPERTY(VisibleAnywhere, Category = "Components")
