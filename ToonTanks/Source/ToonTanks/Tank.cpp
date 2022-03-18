@@ -31,6 +31,8 @@ void ATank::Tick(float DeltaTime)
 			HitResult
 		);
 
+		DrawDebugCircle();
+
 		if (HitResult.Actor != this)
 		{
 			RotateTurret(HitResult.ImpactPoint);
