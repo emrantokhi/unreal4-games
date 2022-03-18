@@ -16,31 +16,26 @@ public:
 	ABasePawn();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:
-
-	void SetupComponents();
-
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void RotateTurret(FVector LookAtTarget);
 
 private:
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed", meta = (AllowPrivateAccess = "true"))
-	float boost = 100.f;
+	void SetupComponents();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Firing Speed", meta = (AllowPrivateAccess = "true"))
+	float FiringSpeed = 5.f;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combined Components", meta = (AllowPrivateAccess = "true"))
-	class UCapsuleComponent* CapsuleComp;
+	//Forward declaration, need the include in the cpp file to reduce header file size by preprocessor
+	class UCapsuleComponent* CapsuleComp = nullptr;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combined Components", meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* BaseMesh;
+	UStaticMeshComponent* BaseMesh = nullptr;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combined Components", meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* TurretMesh;
+	UStaticMeshComponent* TurretMesh = nullptr;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combined Components", meta = (AllowPrivateAccess = "true"))
-	USceneComponent* ProjectileSpawn;
+	USceneComponent* ProjectileSpawn = nullptr;
 
 };
