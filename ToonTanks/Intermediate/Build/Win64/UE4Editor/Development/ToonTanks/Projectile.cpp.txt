@@ -1,3 +1,7 @@
 C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\Definitions.ToonTanks.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
 C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Source\ToonTanks\Projectile.h
 C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Inc\ToonTanks\Projectile.generated.h

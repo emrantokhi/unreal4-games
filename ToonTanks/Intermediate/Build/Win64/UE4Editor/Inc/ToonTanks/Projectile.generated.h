@@ -8,14 +8,26 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FVector;
+struct FHitResult;
 #ifdef TOONTANKS_Projectile_generated_h
 #error "Projectile.generated.h already included, missing '#pragma once' in Projectile.h"
 #endif
 #define TOONTANKS_Projectile_generated_h
 
 #define ToonTanks_Source_ToonTanks_Projectile_h_12_SPARSE_DATA
-#define ToonTanks_Source_ToonTanks_Projectile_h_12_RPC_WRAPPERS
-#define ToonTanks_Source_ToonTanks_Projectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define ToonTanks_Source_ToonTanks_Projectile_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnHit);
+
+
+#define ToonTanks_Source_ToonTanks_Projectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnHit);
+
+
 #define ToonTanks_Source_ToonTanks_Projectile_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProjectile(); \
@@ -59,7 +71,8 @@ public: \
 
 
 #define ToonTanks_Source_ToonTanks_Projectile_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ProjectileMesh() { return STRUCT_OFFSET(AProjectile, ProjectileMesh); }
+	FORCEINLINE static uint32 __PPO__ProjectileMesh() { return STRUCT_OFFSET(AProjectile, ProjectileMesh); } \
+	FORCEINLINE static uint32 __PPO__MovementComponent() { return STRUCT_OFFSET(AProjectile, MovementComponent); }
 
 
 #define ToonTanks_Source_ToonTanks_Projectile_h_9_PROLOG
