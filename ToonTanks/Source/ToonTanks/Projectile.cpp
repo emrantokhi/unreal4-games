@@ -1,6 +1,8 @@
 // Copyright Emran Tokhi 2022
 
+#include "GameFramework/DamageType.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Kismet/GameplayStatics.h" 
 #include "Projectile.h"
 
 // Sets default values
@@ -41,6 +43,18 @@ void AProjectile::SetupComponents()
 //Call back function to be binded with multicast delegate
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	ProjectileMesh->DestroyComponent();
-	MovementComponent->DestroyComponent();
+	auto MyOwner = GetOwner();
+	if (MyOwner == nullptr) return;
+
+	auto MyOwnerInstigator = MyOwner->GetInstigatorController();
+	//Returns a UClass* to use in DamageTaken for health component
+	auto DamageTypeClass = UDamageType::StaticClass();
+
+	//Checks if OtherActor is not itself or its owner, then apply damage
+	if (OtherActor && OtherActor != this && OtherActor != MyOwner) 
+	{
+		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, MyOwner, DamageTypeClass);
+	}
+
+	Destroy();
 }

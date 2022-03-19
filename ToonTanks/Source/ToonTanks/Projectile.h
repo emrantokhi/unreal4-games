@@ -36,4 +36,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BluePrintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* MovementComponent = nullptr;
+
+	UPROPERTY(EditAnywhere, Category = "Damage")
+	float Damage = 20.f;
 };

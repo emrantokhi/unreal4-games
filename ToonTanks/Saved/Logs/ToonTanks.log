@@ -995,3 +995,743 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.03.19-01.39.52:470][813]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2022.03.19-01.39.52:472][813]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
 [2022.03.19-01.39.52:524][818]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2022.03.19-01.40.35:036][239]LogRenderer: Reallocating scene render targets to support 1484x608 Format 10 NumSamples 1 (Frame:931).
+[2022.03.19-01.40.35:095][241]LogRenderer: Reallocating scene render targets to support 1484x616 Format 10 NumSamples 1 (Frame:935).
+[2022.03.19-01.40.35:125][242]LogRenderer: Reallocating scene render targets to support 1484x640 Format 10 NumSamples 1 (Frame:937).
+[2022.03.19-01.40.35:166][243]LogRenderer: Reallocating scene render targets to support 1484x676 Format 10 NumSamples 1 (Frame:939).
+[2022.03.19-01.40.35:199][244]LogRenderer: Reallocating scene render targets to support 1484x728 Format 10 NumSamples 1 (Frame:941).
+[2022.03.19-01.40.35:233][245]LogRenderer: Reallocating scene render targets to support 1484x764 Format 10 NumSamples 1 (Frame:943).
+[2022.03.19-01.40.35:269][246]LogRenderer: Reallocating scene render targets to support 1484x800 Format 10 NumSamples 1 (Frame:945).
+[2022.03.19-01.40.35:303][247]LogRenderer: Reallocating scene render targets to support 1484x844 Format 10 NumSamples 1 (Frame:947).
+[2022.03.19-01.40.35:337][248]LogRenderer: Reallocating scene render targets to support 1484x864 Format 10 NumSamples 1 (Frame:949).
+[2022.03.19-01.41.20:401][152]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.19-01.41.20:406][152]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.19-01.41.20:406][152]PIE: New page: PIE session: Main (Mar 18, 2022, 11:41:20 AM)
+[2022.03.19-01.41.20:406][152]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2022.03.19-01.41.20:409][152]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002418s)
+[2022.03.19-01.41.20:409][152]LogAIModule: Creating AISystem for world Main
+[2022.03.19-01.41.20:410][152]LogPlayLevel: PIE: World Init took: (0.000744s)
+[2022.03.19-01.41.20:410][152]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.003242s)
+[2022.03.19-01.41.20:413][152]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2022.03.19-01.41.20:414][152]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.19-01.41.20:414][152]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.19-01.41.20:414][152]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.19-01.41.20:414][152]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.19-01.41.20:414][152]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.19-01.41.20:414][152]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.19-01.41.20:421][152]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.19-01.41.20:421][152]LogAudioMixer: Display: 1: FrontRight
+[2022.03.19-01.41.20:421][152]LogAudioMixer: Display: 2: FrontCenter
+[2022.03.19-01.41.20:421][152]LogAudioMixer: Display: 3: LowFrequency
+[2022.03.19-01.41.20:421][152]LogAudioMixer: Display: 4: BackLeft
+[2022.03.19-01.41.20:421][152]LogAudioMixer: Display: 5: BackRight
+[2022.03.19-01.41.20:431][152]LogAudioMixer: Display: Using Audio Device Speakers (2- Sound Blaster Audigy Fx)
+[2022.03.19-01.41.20:431][152]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.19-01.41.20:431][152]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.19-01.41.20:431][152]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.19-01.41.20:431][152]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.19-01.41.20:431][152]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.19-01.41.20:431][152]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=6, Samples=6144
+[2022.03.19-01.41.20:432][152]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.19-01.41.20:432][152]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.19-01.41.20:432][152]LogInit: FAudioDevice initialized.
+[2022.03.19-01.41.20:432][152]LogAudio: Display: Audio Device (ID: 3) registered with world 'Main'.
+[2022.03.19-01.41.20:438][152]LogLoad: Game class is 'GameModeBase'
+[2022.03.19-01.41.20:439][152]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2022.03.18-18.41.20
+[2022.03.19-01.41.20:439][152]LogWorld: Bringing up level for play took: 0.001012
+[2022.03.19-01.41.20:439][152]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2022.03.19-01.41.20:440][152]PIE: Server logged in
+[2022.03.19-01.41.20:441][152]PIE: Play in editor total start time 0.035 seconds.
+[2022.03.19-01.43.12:350][724]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-01.43.12:350][724]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2022.03.19-01.43.12:350][724]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-01.43.12:350][724]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-01.43.12:361][724]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.19-01.43.12:364][724]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-01.43.12:368][724]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-01.43.12:369][724]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-01.43.12:371][724]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-01.43.12:378][724]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2022.03.19-01.43.12:431][728]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2022.03.19-01.45.47:069][472]LogSlate: Took 0.000126 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.19-01.45.47:097][472]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2022.03.19-01.45.47:136][472]LogSlate: Took 0.000159 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.03.19-01.46.21:841][382]Running C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" -game -rocket -progress
+[2022.03.19-01.46.22:146][382]Discovering modules, targets and source code for project...
+[2022.03.19-01.46.24:259][382]Binding IntelliSense data...
+[2022.03.19-01.46.29:114][382]Binding IntelliSense data... 100%
+[2022.03.19-01.46.29:114][382]Writing project files...
+[2022.03.19-01.46.32:043][382]Writing project files... 100%
+[2022.03.19-01.46.32:153][382]Candidate modules for hot reload:
+[2022.03.19-01.46.32:153][382]  ToonTanks
+[2022.03.19-01.46.32:153][382]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ToonTanks,2050 ToonTanksEditor Win64 Development -Project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" "C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject"  -IgnoreJunk]
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: New page: Compilation - Mar 18, 2022, 11:46:37 AM
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Creating makefile for ToonTanksEditor (no existing makefile)
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Parsing headers for ToonTanksEditor
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\ToonTanks.uproject" "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\ToonTanksEditor\Development\ToonTanksEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Reflection code generated for ToonTanksEditor in 2.7814442 seconds
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Error: C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Source\ToonTanks\Projectile.cpp(1) : error: Expected Projectile.h to be first header included.
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Error: C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Source\ToonTanks\Tower.cpp(1) : error: Expected Tower.h to be first header included.
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Building ToonTanksEditor...
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Building 6 actions with 32 processes...
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:   [1/6] ToonTanks.init.gen.cpp
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:   [2/6] HealthComponent.cpp
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:   [3/6] HealthComponent.gen.cpp
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:   [4/6] UE4Editor-ToonTanks-2050.lib
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2050.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2050.exp
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:   [5/6] UE4Editor-ToonTanks-2050.dll
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2050.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2050.suppressed.exp
+[2022.03.19-01.46.37:661][382]CompilerResultsLog:   [6/6] ToonTanksEditor.target
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Total time in Parallel executor: 1.07 seconds
+[2022.03.19-01.46.37:661][382]CompilerResultsLog: Total execution time: 5.40 seconds
+[2022.03.19-01.46.37:661][382]LogMainFrame: MainFrame: Module compiling took 5.512 seconds
+[2022.03.19-01.46.37:678][382]LogClass: Could not find existing class HealthComponent in package /Script/ToonTanks for HotReload, assuming new class
+[2022.03.19-01.46.37:683][382]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'ToonTanks' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2022.03.19-01.46.37:685][382]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.19-01.46.37:713][382]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0075 seconds. Added 3806 classes and 912 folders.
+[2022.03.19-01.46.37:713][382]Display: HotReload took  5.6s.
+[2022.03.19-01.46.37:715][382]Warning: HotReload operation took  5.6s.
+[2022.03.19-01.46.38:666][382]LogSlate: Window 'Add C++ Class' being destroyed
+[2022.03.19-01.46.38:677][382]LogHotReload: New module detected: UE4Editor-ToonTanks-2050.dll
+[2022.03.19-01.46.38:727][383]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.19-01.46.38:794][383]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'ToonTanks' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2022.03.19-01.46.38:795][383]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.03.19-01.46.38:804][383]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0077 seconds. Added 3806 classes and 912 folders.
+[2022.03.19-01.46.38:822][383]Display: HotReload took  0.1s.
+[2022.03.19-01.51.51:944][395]Candidate modules for hot reload:
+[2022.03.19-01.51.51:944][395]  ToonTanks
+[2022.03.19-01.51.51:944][395]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ToonTanks,0245 ToonTanksEditor Win64 Development -Project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" "C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject"  -IgnoreJunk]
+[2022.03.19-01.51.51:946][395]Warning: Starting HotReload took  0.1s.
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: New page: Compilation - Mar 18, 2022, 11:51:57 AM
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Parsing headers for ToonTanksEditor
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\ToonTanks.uproject" "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\ToonTanksEditor\Development\ToonTanksEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Reflection code generated for ToonTanksEditor in 3.1262947 seconds
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Building ToonTanksEditor...
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Building 6 actions with 32 processes...
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:   [1/6] HealthComponent.cpp
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:   [2/6] ToonTanks.init.gen.cpp
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:   [3/6] HealthComponent.gen.cpp
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:   [4/6] UE4Editor-ToonTanks-0245.lib
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-0245.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-0245.exp
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:   [5/6] UE4Editor-ToonTanks-0245.dll
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-0245.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-0245.suppressed.exp
+[2022.03.19-01.51.57:069][967]CompilerResultsLog:   [6/6] ToonTanksEditor.target
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Total time in Parallel executor: 1.16 seconds
+[2022.03.19-01.51.57:069][967]CompilerResultsLog: Total execution time: 4.99 seconds
+[2022.03.19-01.51.57:069][967]LogMainFrame: MainFrame: Module compiling took 5.128 seconds
+[2022.03.19-01.51.57:086][967]LogClass: Could not find existing class HealthComponent in package /Script/ToonTanks for HotReload, assuming new class
+[2022.03.19-01.51.57:089][967]LogHotReload: Re-instancing HealthComponent after hot-reload.
+[2022.03.19-01.51.57:094][967]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'ToonTanks' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2022.03.19-01.51.57:096][967]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.19-01.51.57:127][967]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0077 seconds. Added 3806 classes and 912 folders.
+[2022.03.19-01.51.57:127][967]Display: HotReload took  5.2s.
+[2022.03.19-01.52.08:742][321]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Pawns/BP_PawnTank.BP_PawnTank
+[2022.03.19-01.52.08:832][321]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 126 classes and 0 folders.
+[2022.03.19-01.52.11:095][505]LogSlate: Window 'BP_PawnTank' being destroyed
+[2022.03.19-01.52.11:104][505]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-01.52.11:104][505]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-01.52.11:150][505]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Pawns/BP_PawnTank.BP_PawnTank
+[2022.03.19-01.52.11:823][544]LogSlate: Took 0.000174 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.03.19-01.53.05:150][242]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2022.03.19-01.53.05:151][242]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Main' took 0.020
+[2022.03.19-01.53.05:152][242]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Blueprints/Pawns/BP_PawnTank] ([2] browsable assets)...
+[2022.03.19-01.53.05:161][242]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Pawns/BP_PawnTank.BP_PawnTank]
+[2022.03.19-01.53.05:181][242]OBJ SavePackage:     Rendered thumbnail for [BlueprintGeneratedClass /Game/Blueprints/Pawns/BP_PawnTank.BP_PawnTank_C]
+[2022.03.19-01.53.05:181][242]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Pawns/BP_PawnTank]
+[2022.03.19-01.53.05:190][242]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/BP_PawnTank_Auto105B24850415419AE7E02FA9F01571B71.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/Autosaves/Game/Blueprints/Pawns/BP_PawnTank_Auto1.uasset'
+[2022.03.19-01.53.05:191][242]LogFileHelpers: Auto-saving content packages took 0.040
+[2022.03.19-01.53.25:913][378]BlueprintLog: New page: Compile BP_PawnTank
+[2022.03.19-01.53.25:937][378]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2022.03.19-01.53.35:085][450]BlueprintLog: New page: Compile BP_PawnTank
+[2022.03.19-01.53.35:110][450]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2022.03.19-01.53.35:603][500]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/BP_PawnTankCDF4777A42817D8245FACA946C074CAD.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Blueprints/Pawns/BP_PawnTank.uasset'
+[2022.03.19-01.53.35:614][500]AssetCheck: New page: Asset Save: BP_PawnTank
+[2022.03.19-01.53.35:614][500]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Pawns/BP_PawnTank.BP_PawnTank
+[2022.03.19-01.53.36:971][643]LogSlate: Window 'BP_PawnTank' being destroyed
+[2022.03.19-01.53.36:977][643]LogSlate: Window 'BP_PawnTank' being destroyed
+[2022.03.19-01.53.36:980][643]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-01.53.36:980][643]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-01.53.39:101][881]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Pawns/BP_PawnTurret.BP_PawnTurret
+[2022.03.19-01.53.40:471][  0]LogSlate: Window 'BP_PawnTurret' being destroyed
+[2022.03.19-01.53.40:479][  0]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-01.53.40:479][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-01.53.40:524][  0]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Pawns/BP_PawnTurret.BP_PawnTurret
+[2022.03.19-01.53.46:530][646]BlueprintLog: New page: Compile BP_PawnTurret
+[2022.03.19-01.53.46:555][646]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2022.03.19-01.53.47:184][711]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/BP_PawnTurretC4579B3144E740C6ABBAE8B103CEA4F8.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Blueprints/Pawns/BP_PawnTurret.uasset'
+[2022.03.19-01.53.47:198][711]AssetCheck: New page: Asset Save: BP_PawnTurret
+[2022.03.19-01.53.47:198][711]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Pawns/BP_PawnTurret.BP_PawnTurret
+[2022.03.19-01.53.56:942][859]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/BP_PawnTurretA54351AB414FF893F0130B867B383ABA.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Blueprints/Pawns/BP_PawnTurret.uasset'
+[2022.03.19-01.53.56:955][859]AssetCheck: New page: Asset Save: BP_PawnTurret
+[2022.03.19-01.53.56:955][859]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Pawns/BP_PawnTurret.BP_PawnTurret
+[2022.03.19-01.53.57:544][924]BlueprintLog: New page: Compile BP_PawnTurret
+[2022.03.19-01.53.57:569][924]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2022.03.19-01.53.58:548][ 30]LogSlate: Window 'BP_PawnTurret' being destroyed
+[2022.03.19-01.53.58:554][ 30]LogSlate: Window 'BP_PawnTurret' being destroyed
+[2022.03.19-01.53.58:557][ 30]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-01.53.58:557][ 30]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-01.53.59:658][154]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2022.03.19-01.53.59:669][154]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/MainF51F3BC5433F12C2548F8A8C36D21958.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main.umap'
+[2022.03.19-01.53.59:689][154]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/Main_BuiltData95FA82F845925204FCE0A2A64FA15503.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main_BuiltData.uasset'
+[2022.03.19-01.53.59:702][154]AssetCheck: New page: Asset Save: multiple assets
+[2022.03.19-01.53.59:703][154]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Main_BuiltData.Main_BuiltData
+[2022.03.19-01.53.59:703][154]LogContentValidation: Display: Validating World /Game/Maps/Main.Main
+[2022.03.19-02.41.34:134][790]Candidate modules for hot reload:
+[2022.03.19-02.41.34:134][790]  ToonTanks
+[2022.03.19-02.41.34:134][790]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ToonTanks,1308 ToonTanksEditor Win64 Development -Project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" "C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject"  -IgnoreJunk]
+[2022.03.19-02.41.34:136][790]Warning: Starting HotReload took  0.0s.
+[2022.03.19-02.41.39:845][425]CompilerResultsLog: New page: Compilation - Mar 18, 2022, 12:41:39 PM
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Parsing headers for ToonTanksEditor
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\ToonTanks.uproject" "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\ToonTanksEditor\Development\ToonTanksEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Reflection code generated for ToonTanksEditor in 3.2958975 seconds
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Building ToonTanksEditor...
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Building 9 actions with 32 processes...
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [1/9] BasePawn.cpp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [2/9] HealthComponent.cpp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [3/9] ToonTanks.init.gen.cpp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [4/9] HealthComponent.gen.cpp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [5/9] Projectile.gen.cpp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [6/9] Projectile.cpp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [7/9] UE4Editor-ToonTanks-1308.lib
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1308.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1308.exp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [8/9] UE4Editor-ToonTanks-1308.dll
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1308.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1308.suppressed.exp
+[2022.03.19-02.41.39:846][425]CompilerResultsLog:   [9/9] ToonTanksEditor.target
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Total time in Parallel executor: 1.61 seconds
+[2022.03.19-02.41.39:846][425]CompilerResultsLog: Total execution time: 5.57 seconds
+[2022.03.19-02.41.39:847][425]LogMainFrame: MainFrame: Module compiling took 5.720 seconds
+[2022.03.19-02.41.39:961][425]LogClass: Could not find existing class HealthComponent in package /Script/ToonTanks for HotReload, assuming new class
+[2022.03.19-02.41.39:961][425]LogClass: Function DamageTaken is new.
+[2022.03.19-02.41.39:961][425]LogClass: Could not find existing class Projectile in package /Script/ToonTanks for HotReload, assuming new class
+[2022.03.19-02.41.39:961][425]LogClass: Function OnHit is new.
+[2022.03.19-02.41.39:973][425]LogHotReload: Re-instancing HealthComponent after hot-reload.
+[2022.03.19-02.41.39:998][425]LogHotReload: Re-instancing Projectile after hot-reload.
+[2022.03.19-02.41.40:020][425]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'ToonTanks' in 0.0012 seconds. Added 5 classes and 2 folders.
+[2022.03.19-02.41.40:027][425]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.03.19-02.41.40:106][425]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0108 seconds. Added 3806 classes and 912 folders.
+[2022.03.19-02.41.40:106][425]Display: HotReload took  6.0s.
+[2022.03.19-02.41.40:948][493]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.19-02.41.40:955][493]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.19-02.41.40:956][493]PIE: New page: PIE session: Main (Mar 18, 2022, 12:41:40 PM)
+[2022.03.19-02.41.40:956][493]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2022.03.19-02.41.40:963][493]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007135s)
+[2022.03.19-02.41.40:965][493]LogAIModule: Creating AISystem for world Main
+[2022.03.19-02.41.40:965][493]LogPlayLevel: PIE: World Init took: (0.002211s)
+[2022.03.19-02.41.40:965][493]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.009650s)
+[2022.03.19-02.41.41:045][493]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
+[2022.03.19-02.41.41:055][493]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.19-02.41.41:055][493]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.19-02.41.41:055][493]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.19-02.41.41:055][493]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.19-02.41.41:055][493]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.19-02.41.41:055][493]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.19-02.41.41:062][493]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.19-02.41.41:062][493]LogAudioMixer: Display: 1: FrontRight
+[2022.03.19-02.41.41:062][493]LogAudioMixer: Display: 2: FrontCenter
+[2022.03.19-02.41.41:062][493]LogAudioMixer: Display: 3: LowFrequency
+[2022.03.19-02.41.41:062][493]LogAudioMixer: Display: 4: BackLeft
+[2022.03.19-02.41.41:062][493]LogAudioMixer: Display: 5: BackRight
+[2022.03.19-02.41.41:071][493]LogAudioMixer: Display: Using Audio Device Speakers (2- Sound Blaster Audigy Fx)
+[2022.03.19-02.41.41:071][493]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.19-02.41.41:071][493]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.19-02.41.41:071][493]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.19-02.41.41:075][493]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.19-02.41.41:075][493]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.19-02.41.41:075][493]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=6, Samples=6144
+[2022.03.19-02.41.41:076][493]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.19-02.41.41:076][493]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.19-02.41.41:076][493]LogInit: FAudioDevice initialized.
+[2022.03.19-02.41.41:076][493]LogAudio: Display: Audio Device (ID: 4) registered with world 'Main'.
+[2022.03.19-02.41.41:088][493]LogLoad: Game class is 'GameModeBase'
+[2022.03.19-02.41.41:090][493]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2022.03.18-19.41.41
+[2022.03.19-02.41.41:090][493]LogWorld: Bringing up level for play took: 0.001337
+[2022.03.19-02.41.41:091][493]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2022.03.19-02.41.41:093][493]PIE: Server logged in
+[2022.03.19-02.41.41:094][493]PIE: Play in editor total start time 0.139 seconds.
+[2022.03.19-02.41.47:864][290]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.50:037][551]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.51:005][667]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.51:013][668]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.51:254][697]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.51:429][718]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.51:596][738]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.51:754][757]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.51:921][777]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.52:104][799]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.52:246][816]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.52:429][838]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.52:571][855]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.52:729][874]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.52:887][893]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.53:004][907]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.53:012][908]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.55:003][147]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.55:012][148]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.56:979][384]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.41.59:020][629]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.42.00:996][866]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.42.01:012][868]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.42.08:120][715]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.42.15:704][625]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.42.18:154][919]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.42.27:907][ 88]Cmd: asdfd
+[2022.03.19-02.42.40:848][641]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.42.43:381][945]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.05:897][591]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.07:623][798]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.09:139][980]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.22:214][549]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.24:206][788]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.28:156][262]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.30:393][490]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.32:399][496]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.34:407][502]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.36:412][508]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.38:413][514]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.40:417][520]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.42:421][526]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.44:420][532]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.46:420][538]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.48:419][544]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.50:428][550]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.52:427][556]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.54:433][562]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.56:452][568]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.43.58:132][573]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.00:143][579]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.02:144][585]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.04:149][591]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.06:156][597]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.08:161][603]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.10:186][609]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.12:187][615]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.14:199][621]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.16:213][627]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.18:222][633]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.20:226][639]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.22:233][645]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.24:240][651]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.26:255][657]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.28:276][663]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.30:292][669]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.32:317][675]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.34:326][681]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.36:331][687]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.38:342][693]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.40:357][699]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.42:360][705]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.44:373][711]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.46:392][717]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.48:405][723]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.50:420][729]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.52:143][741]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.54:278][872]LogTemp: Warning: The DamageTaken function called
+[2022.03.19-02.44.54:637][873]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-02.44.54:637][873]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2022.03.19-02.44.54:638][873]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-02.44.54:638][873]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-02.44.54:658][873]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.19-02.44.54:661][873]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-02.44.54:671][873]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-02.44.54:671][873]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-02.44.54:672][873]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-02.44.54:680][873]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2022.03.19-02.44.54:705][875]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2022.03.19-02.44.55:014][911]Candidate modules for hot reload:
+[2022.03.19-02.44.55:014][911]  ToonTanks
+[2022.03.19-02.44.55:014][911]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ToonTanks,4308 ToonTanksEditor Win64 Development -Project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" "C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject"  -IgnoreJunk]
+[2022.03.19-02.44.55:016][911]Warning: Starting HotReload took  0.0s.
+[2022.03.19-02.44.55:952][989]CompilerResultsLog: New page: Compilation - Mar 18, 2022, 12:44:55 PM
+[2022.03.19-02.44.55:952][989]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+[2022.03.19-02.44.55:952][989]CompilerResultsLog: Building ToonTanksEditor...
+[2022.03.19-02.44.55:952][989]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.19-02.44.55:952][989]CompilerResultsLog: Building 4 actions with 32 processes...
+[2022.03.19-02.44.55:952][989]CompilerResultsLog:   [1/4] HealthComponent.cpp
+[2022.03.19-02.44.55:952][989]CompilerResultsLog:    C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Source\ToonTanks\HealthComponent.cpp(42) : error C2065: 'Health': undeclared identifier
+[2022.03.19-02.44.55:952][989]CompilerResultsLog:    C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Source\ToonTanks\HealthComponent.cpp(43) : error C2065: 'Health': undeclared identifier
+[2022.03.19-02.44.55:952][989]LogMainFrame: MainFrame: Module compiling took 0.941 seconds
+[2022.03.19-02.44.55:954][989]Warning: HotReload failed, recompile failed
+[2022.03.19-02.44.59:932][460]LogSlate: Window 'Message Log' being destroyed
+[2022.03.19-02.44.59:939][460]LogSlate: Window 'Message Log' being destroyed
+[2022.03.19-02.45.15:318][723]Candidate modules for hot reload:
+[2022.03.19-02.45.15:318][723]  ToonTanks
+[2022.03.19-02.45.15:318][723]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ToonTanks,0905 ToonTanksEditor Win64 Development -Project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" "C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject"  -IgnoreJunk]
+[2022.03.19-02.45.15:320][723]Warning: Starting HotReload took  0.0s.
+[2022.03.19-02.45.16:222][800]CompilerResultsLog: New page: Compilation - Mar 18, 2022, 12:45:16 PM
+[2022.03.19-02.45.16:222][800]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+[2022.03.19-02.45.16:222][800]CompilerResultsLog: Building ToonTanksEditor...
+[2022.03.19-02.45.16:222][800]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.19-02.45.16:222][800]CompilerResultsLog: Building 4 actions with 32 processes...
+[2022.03.19-02.45.16:222][800]CompilerResultsLog:   [1/4] HealthComponent.cpp
+[2022.03.19-02.45.16:222][800]CompilerResultsLog:    C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Source\ToonTanks\HealthComponent.cpp(43) : error C2065: 'Health': undeclared identifier
+[2022.03.19-02.45.16:222][800]LogMainFrame: MainFrame: Module compiling took 0.907 seconds
+[2022.03.19-02.45.16:222][800]Warning: HotReload failed, recompile failed
+[2022.03.19-02.45.19:557][188]LogSlate: Window 'Message Log' being destroyed
+[2022.03.19-02.45.19:565][188]LogSlate: Window 'Message Log' being destroyed
+[2022.03.19-02.45.25:966][362]Candidate modules for hot reload:
+[2022.03.19-02.45.25:966][362]  ToonTanks
+[2022.03.19-02.45.25:966][362]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ToonTanks,2453 ToonTanksEditor Win64 Development -Project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" "C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject"  -IgnoreJunk]
+[2022.03.19-02.45.25:968][362]Warning: Starting HotReload took  0.0s.
+[2022.03.19-02.45.27:710][535]CompilerResultsLog: New page: Compilation - Mar 18, 2022, 12:45:27 PM
+[2022.03.19-02.45.27:710][535]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+[2022.03.19-02.45.27:710][535]CompilerResultsLog: Building ToonTanksEditor...
+[2022.03.19-02.45.27:710][535]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.19-02.45.27:710][535]CompilerResultsLog: Building 4 actions with 32 processes...
+[2022.03.19-02.45.27:710][535]CompilerResultsLog:   [1/4] HealthComponent.cpp
+[2022.03.19-02.45.27:710][535]CompilerResultsLog:   [2/4] UE4Editor-ToonTanks-2453.lib
+[2022.03.19-02.45.27:710][535]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2453.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2453.exp
+[2022.03.19-02.45.27:710][535]CompilerResultsLog:   [3/4] UE4Editor-ToonTanks-2453.dll
+[2022.03.19-02.45.27:710][535]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2453.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-2453.suppressed.exp
+[2022.03.19-02.45.27:710][535]CompilerResultsLog:   [4/4] ToonTanksEditor.target
+[2022.03.19-02.45.27:711][535]CompilerResultsLog: Total time in Parallel executor: 1.07 seconds
+[2022.03.19-02.45.27:711][535]CompilerResultsLog: Total execution time: 1.63 seconds
+[2022.03.19-02.45.27:711][535]LogMainFrame: MainFrame: Module compiling took 1.749 seconds
+[2022.03.19-02.45.27:740][535]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'ToonTanks' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2022.03.19-02.45.27:743][535]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2022.03.19-02.45.27:787][535]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0085 seconds. Added 3806 classes and 912 folders.
+[2022.03.19-02.45.27:787][535]Display: HotReload took  1.8s.
+[2022.03.19-02.45.29:393][701]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.19-02.45.29:397][701]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.19-02.45.29:397][701]PIE: New page: PIE session: Main (Mar 18, 2022, 12:45:29 PM)
+[2022.03.19-02.45.29:397][701]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2022.03.19-02.45.29:400][701]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002311s)
+[2022.03.19-02.45.29:400][701]LogAIModule: Creating AISystem for world Main
+[2022.03.19-02.45.29:400][701]LogPlayLevel: PIE: World Init took: (0.000815s)
+[2022.03.19-02.45.29:401][701]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.003202s)
+[2022.03.19-02.45.29:451][701]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2022.03.19-02.45.29:453][701]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.19-02.45.29:453][701]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.19-02.45.29:453][701]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.19-02.45.29:453][701]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.19-02.45.29:453][701]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.19-02.45.29:453][701]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.19-02.45.29:459][701]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.19-02.45.29:459][701]LogAudioMixer: Display: 1: FrontRight
+[2022.03.19-02.45.29:459][701]LogAudioMixer: Display: 2: FrontCenter
+[2022.03.19-02.45.29:459][701]LogAudioMixer: Display: 3: LowFrequency
+[2022.03.19-02.45.29:459][701]LogAudioMixer: Display: 4: BackLeft
+[2022.03.19-02.45.29:459][701]LogAudioMixer: Display: 5: BackRight
+[2022.03.19-02.45.29:468][701]LogAudioMixer: Display: Using Audio Device Speakers (2- Sound Blaster Audigy Fx)
+[2022.03.19-02.45.29:468][701]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.19-02.45.29:468][701]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.19-02.45.29:468][701]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.19-02.45.29:469][701]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.19-02.45.29:469][701]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.19-02.45.29:469][701]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=6, Samples=6144
+[2022.03.19-02.45.29:469][701]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.19-02.45.29:469][701]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.19-02.45.29:469][701]LogInit: FAudioDevice initialized.
+[2022.03.19-02.45.29:469][701]LogAudio: Display: Audio Device (ID: 5) registered with world 'Main'.
+[2022.03.19-02.45.29:476][701]LogLoad: Game class is 'GameModeBase'
+[2022.03.19-02.45.29:477][701]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2022.03.18-19.45.29
+[2022.03.19-02.45.29:477][701]LogWorld: Bringing up level for play took: 0.001053
+[2022.03.19-02.45.29:477][701]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2022.03.19-02.45.29:478][701]PIE: Server logged in
+[2022.03.19-02.45.29:479][701]PIE: Play in editor total start time 0.083 seconds.
+[2022.03.19-02.45.36:185][351]LogTemp: Warning: 80.000000
+[2022.03.19-02.45.39:103][701]LogTemp: Warning: 60.000000
+[2022.03.19-02.45.39:585][759]LogTemp: Warning: 40.000000
+[2022.03.19-02.45.39:952][803]LogTemp: Warning: 20.000000
+[2022.03.19-02.45.40:410][858]LogTemp: Warning: 0.000000
+[2022.03.19-02.45.40:886][915]LogTemp: Warning: -20.000000
+[2022.03.19-02.45.41:485][987]LogTemp: Warning: -40.000000
+[2022.03.19-02.45.41:643][  6]LogTemp: Warning: -60.000000
+[2022.03.19-02.45.41:832][ 24]LogTemp: Warning: -80.000000
+[2022.03.19-02.45.41:927][ 36]LogTemp: Warning: -100.000000
+[2022.03.19-02.45.42:102][ 57]LogTemp: Warning: -120.000000
+[2022.03.19-02.45.42:270][ 77]LogTemp: Warning: -140.000000
+[2022.03.19-02.45.42:427][ 96]LogTemp: Warning: -160.000000
+[2022.03.19-02.45.42:595][116]LogTemp: Warning: -180.000000
+[2022.03.19-02.45.42:737][133]LogTemp: Warning: -200.000000
+[2022.03.19-02.45.43:845][266]LogTemp: Warning: 80.000000
+[2022.03.19-02.45.43:845][266]LogTemp: Warning: 60.000000
+[2022.03.19-02.45.45:845][506]LogTemp: Warning: 40.000000
+[2022.03.19-02.45.47:854][747]LogTemp: Warning: 20.000000
+[2022.03.19-02.45.49:836][985]LogTemp: Warning: 0.000000
+[2022.03.19-02.45.49:845][986]LogTemp: Warning: -20.000000
+[2022.03.19-02.45.51:245][154]LogTemp: Warning: 80.000000
+[2022.03.19-02.45.51:803][221]LogTemp: Warning: -220.000000
+[2022.03.19-02.45.51:853][227]LogTemp: Warning: -40.000000
+[2022.03.19-02.45.51:870][229]LogTemp: Warning: -60.000000
+[2022.03.19-02.45.53:894][472]LogTemp: Warning: -80.000000
+[2022.03.19-02.45.54:629][560]LogTemp: Warning: 80.000000
+[2022.03.19-02.45.54:770][577]LogTemp: Warning: 60.000000
+[2022.03.19-02.45.54:929][596]LogTemp: Warning: 40.000000
+[2022.03.19-02.45.55:079][614]LogTemp: Warning: 20.000000
+[2022.03.19-02.45.55:237][633]LogTemp: Warning: 0.000000
+[2022.03.19-02.45.55:379][650]LogTemp: Warning: -20.000000
+[2022.03.19-02.45.55:545][670]LogTemp: Warning: -40.000000
+[2022.03.19-02.45.55:712][690]LogTemp: Warning: -60.000000
+[2022.03.19-02.45.56:044][730]LogTemp: Warning: -80.000000
+[2022.03.19-02.45.56:203][749]LogTemp: Warning: -100.000000
+[2022.03.19-02.45.56:361][768]LogTemp: Warning: -120.000000
+[2022.03.19-02.45.56:554][791]LogTemp: Warning: -140.000000
+[2022.03.19-02.45.56:720][811]LogTemp: Warning: -160.000000
+[2022.03.19-02.45.56:870][829]LogTemp: Warning: -180.000000
+[2022.03.19-02.45.57:020][847]LogTemp: Warning: -200.000000
+[2022.03.19-02.45.57:162][864]LogTemp: Warning: -220.000000
+[2022.03.19-02.45.57:837][945]LogTemp: Warning: -100.000000
+[2022.03.19-02.45.58:737][ 53]LogTemp: Warning: 80.000000
+[2022.03.19-02.45.58:887][ 71]LogTemp: Warning: 60.000000
+[2022.03.19-02.45.59:746][174]LogTemp: Warning: 60.000000
+[2022.03.19-02.45.59:853][187]LogTemp: Warning: -120.000000
+[2022.03.19-02.45.59:854][187]LogTemp: Warning: -140.000000
+[2022.03.19-02.45.59:928][196]LogTemp: Warning: 40.000000
+[2022.03.19-02.46.01:154][343]LogTemp: Warning: -240.000000
+[2022.03.19-02.46.01:495][384]LogTemp: Warning: -240.000000
+[2022.03.19-02.46.01:829][424]LogTemp: Warning: -160.000000
+[2022.03.19-02.46.01:829][424]LogTemp: Warning: -180.000000
+[2022.03.19-02.46.02:079][454]LogTemp: Warning: 40.000000
+[2022.03.19-02.46.02:679][526]LogTemp: Warning: 20.000000
+[2022.03.19-02.46.03:844][666]LogTemp: Warning: -200.000000
+[2022.03.19-02.46.04:704][769]LogTemp: Warning: -260.000000
+[2022.03.19-02.46.05:237][833]LogTemp: Warning: -260.000000
+[2022.03.19-02.46.06:394][972]LogTemp: Warning: 0.000000
+[2022.03.19-02.46.06:620][999]LogTemp: Warning: -20.000000
+[2022.03.19-02.46.07:845][146]LogTemp: Warning: -220.000000
+[2022.03.19-02.46.08:145][182]LogTemp: Warning: -280.000000
+[2022.03.19-02.46.08:313][202]LogTemp: Warning: -300.000000
+[2022.03.19-02.46.08:861][268]LogTemp: Warning: -280.000000
+[2022.03.19-02.46.09:411][334]LogTemp: Warning: 20.000000
+[2022.03.19-02.46.09:786][379]LogTemp: Warning: -40.000000
+[2022.03.19-02.46.09:828][384]LogTemp: Warning: -240.000000
+[2022.03.19-02.46.09:836][385]LogTemp: Warning: -260.000000
+[2022.03.19-02.46.10:570][473]LogTemp: Warning: -320.000000
+[2022.03.19-02.46.10:745][494]LogTemp: Warning: -340.000000
+[2022.03.19-02.46.10:929][516]LogTemp: Warning: -360.000000
+[2022.03.19-02.46.11:104][537]LogTemp: Warning: -380.000000
+[2022.03.19-02.46.11:287][559]LogTemp: Warning: -400.000000
+[2022.03.19-02.46.11:837][625]LogTemp: Warning: -280.000000
+[2022.03.19-02.46.11:845][626]LogTemp: Warning: -300.000000
+[2022.03.19-02.46.12:229][672]LogTemp: Warning: -300.000000
+[2022.03.19-02.46.12:412][694]LogTemp: Warning: -320.000000
+[2022.03.19-02.46.12:987][763]LogTemp: Warning: 0.000000
+[2022.03.19-02.46.13:737][853]LogTemp: Warning: -60.000000
+[2022.03.19-02.46.13:837][865]LogTemp: Warning: -320.000000
+[2022.03.19-02.47.42:794][799]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-02.47.42:794][799]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2022.03.19-02.47.42:794][799]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-02.47.42:794][799]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-02.47.42:812][799]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.19-02.47.42:815][799]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-02.47.42:825][799]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.19-02.47.42:825][799]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-02.47.42:826][799]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-02.47.42:829][799]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-02.47.42:832][799]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2022.03.19-02.47.42:860][801]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2022.03.19-02.47.43:401][860]Candidate modules for hot reload:
+[2022.03.19-02.47.43:401][860]  ToonTanks
+[2022.03.19-02.47.43:401][860]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ToonTanks,1363 ToonTanksEditor Win64 Development -Project="C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject" "C:/Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/ToonTanks.uproject"  -IgnoreJunk]
+[2022.03.19-02.47.43:403][860]Warning: Starting HotReload took  0.0s.
+[2022.03.19-02.47.46:143][154]CompilerResultsLog: New page: Compilation - Mar 18, 2022, 12:47:46 PM
+[2022.03.19-02.47.46:143][154]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+[2022.03.19-02.47.46:143][154]CompilerResultsLog: Building ToonTanksEditor...
+[2022.03.19-02.47.46:143][154]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.19-02.47.46:143][154]CompilerResultsLog: Building 4 actions with 32 processes...
+[2022.03.19-02.47.46:143][154]CompilerResultsLog:   [1/4] Projectile.cpp
+[2022.03.19-02.47.46:143][154]CompilerResultsLog:   [2/4] UE4Editor-ToonTanks-1363.lib
+[2022.03.19-02.47.46:143][154]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1363.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1363.exp
+[2022.03.19-02.47.46:143][154]CompilerResultsLog:   [3/4] UE4Editor-ToonTanks-1363.dll
+[2022.03.19-02.47.46:143][154]CompilerResultsLog:      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1363.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\ToonTanks\Intermediate\Build\Win64\UE4Editor\Development\ToonTanks\UE4Editor-ToonTanks-1363.suppressed.exp
+[2022.03.19-02.47.46:143][154]CompilerResultsLog:   [4/4] ToonTanksEditor.target
+[2022.03.19-02.47.46:143][154]CompilerResultsLog: Total time in Parallel executor: 2.03 seconds
+[2022.03.19-02.47.46:143][154]CompilerResultsLog: Total execution time: 2.61 seconds
+[2022.03.19-02.47.46:143][154]LogMainFrame: MainFrame: Module compiling took 2.746 seconds
+[2022.03.19-02.47.46:174][154]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'ToonTanks' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2022.03.19-02.47.46:178][154]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2022.03.19-02.47.46:223][154]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0085 seconds. Added 3806 classes and 912 folders.
+[2022.03.19-02.47.46:223][154]Display: HotReload took  2.8s.
+[2022.03.19-02.47.48:624][411]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.19-02.47.48:628][411]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.19-02.47.48:628][411]PIE: New page: PIE session: Main (Mar 18, 2022, 12:47:48 PM)
+[2022.03.19-02.47.48:628][411]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Main
+[2022.03.19-02.47.48:631][411]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002339s)
+[2022.03.19-02.47.48:631][411]LogAIModule: Creating AISystem for world Main
+[2022.03.19-02.47.48:632][411]LogPlayLevel: PIE: World Init took: (0.000750s)
+[2022.03.19-02.47.48:632][411]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Main.Main to /Game/Maps/UEDPIE_0_Main.Main (0.003168s)
+[2022.03.19-02.47.48:682][411]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
+[2022.03.19-02.47.48:682][411]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.03.19-02.47.48:682][411]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.19-02.47.48:682][411]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.19-02.47.48:682][411]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.19-02.47.48:682][411]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.19-02.47.48:682][411]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.19-02.47.48:682][411]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.19-02.47.48:682][411]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.19-02.47.48:682][411]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.19-02.47.48:682][411]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.19-02.47.48:683][411]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.19-02.47.48:683][411]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.19-02.47.48:683][411]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.19-02.47.48:689][411]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.19-02.47.48:689][411]LogAudioMixer: Display: 1: FrontRight
+[2022.03.19-02.47.48:689][411]LogAudioMixer: Display: 2: FrontCenter
+[2022.03.19-02.47.48:689][411]LogAudioMixer: Display: 3: LowFrequency
+[2022.03.19-02.47.48:689][411]LogAudioMixer: Display: 4: BackLeft
+[2022.03.19-02.47.48:689][411]LogAudioMixer: Display: 5: BackRight
+[2022.03.19-02.47.48:697][411]LogAudioMixer: Display: Using Audio Device Speakers (2- Sound Blaster Audigy Fx)
+[2022.03.19-02.47.48:698][411]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.19-02.47.48:698][411]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.19-02.47.48:698][411]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.19-02.47.48:698][411]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.19-02.47.48:698][411]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.19-02.47.48:698][411]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=6, Samples=6144
+[2022.03.19-02.47.48:699][411]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.19-02.47.48:699][411]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.19-02.47.48:699][411]LogInit: FAudioDevice initialized.
+[2022.03.19-02.47.48:699][411]LogAudio: Display: Audio Device (ID: 6) registered with world 'Main'.
+[2022.03.19-02.47.48:710][411]LogLoad: Game class is 'GameModeBase'
+[2022.03.19-02.47.48:712][411]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2022.03.18-19.47.48
+[2022.03.19-02.47.48:712][411]LogWorld: Bringing up level for play took: 0.001030
+[2022.03.19-02.47.48:712][411]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2022.03.19-02.47.48:713][411]PIE: Server logged in
+[2022.03.19-02.47.48:714][411]PIE: Play in editor total start time 0.086 seconds.
+[2022.03.19-02.47.52:676][868]LogTemp: Warning: 80.000000
+[2022.03.19-02.47.52:685][869]LogTemp: Warning: 60.000000
+[2022.03.19-02.47.53:961][ 22]LogTemp: Warning: 80.000000
+[2022.03.19-02.47.54:110][ 40]LogTemp: Warning: 60.000000
+[2022.03.19-02.47.54:286][ 61]LogTemp: Warning: 40.000000
+[2022.03.19-02.47.54:410][ 76]LogTemp: Warning: 20.000000
+[2022.03.19-02.47.54:561][ 94]LogTemp: Warning: 0.000000
+[2022.03.19-02.47.54:686][109]LogTemp: Warning: 40.000000
+[2022.03.19-02.47.54:853][129]LogTemp: Warning: -20.000000
+[2022.03.19-02.47.55:010][148]LogTemp: Warning: -40.000000
+[2022.03.19-02.47.55:160][166]LogTemp: Warning: -60.000000
+[2022.03.19-02.47.55:327][186]LogTemp: Warning: -80.000000
+[2022.03.19-02.47.55:493][206]LogTemp: Warning: -100.000000
+[2022.03.19-02.47.55:677][228]LogTemp: Warning: -120.000000
+[2022.03.19-02.47.55:835][247]LogTemp: Warning: -140.000000
+[2022.03.19-02.47.55:993][266]LogTemp: Warning: -160.000000
+[2022.03.19-02.47.56:160][286]LogTemp: Warning: -180.000000
+[2022.03.19-02.47.56:336][307]LogTemp: Warning: -200.000000
+[2022.03.19-02.47.56:511][328]LogTemp: Warning: -220.000000
+[2022.03.19-02.47.56:685][349]LogTemp: Warning: 20.000000
+[2022.03.19-02.47.57:194][410]LogTemp: Warning: 80.000000
+[2022.03.19-02.47.57:335][427]LogTemp: Warning: 60.000000
+[2022.03.19-02.47.58:410][556]LogTemp: Warning: 40.000000
+[2022.03.19-02.47.58:568][575]LogTemp: Warning: 20.000000
+[2022.03.19-02.47.58:677][588]LogTemp: Warning: 0.000000
+[2022.03.19-02.47.58:901][615]LogTemp: Warning: 0.000000
+[2022.03.19-02.47.59:068][635]LogTemp: Warning: -20.000000
+[2022.03.19-02.47.59:235][655]LogTemp: Warning: -40.000000
+[2022.03.19-02.48.00:676][828]LogTemp: Warning: -20.000000
+[2022.03.19-02.48.00:686][829]LogTemp: Warning: -40.000000
+[2022.03.19-02.48.02:660][ 66]LogTemp: Warning: -60.000000
+[2022.03.19-02.48.02:669][ 67]LogTemp: Warning: -80.000000
+[2022.03.19-02.48.05:670][427]LogTemp: Warning: 80.000000
+[2022.03.19-02.48.06:703][551]LogTemp: Warning: -100.000000
+[2022.03.19-02.48.06:710][552]LogTemp: Warning: -120.000000
+[2022.03.19-02.48.07:335][627]LogTemp: Warning: 60.000000
+[2022.03.19-02.48.07:510][648]LogTemp: Warning: 40.000000
+[2022.03.19-02.48.07:668][667]LogTemp: Warning: 20.000000
+[2022.03.19-02.48.07:835][687]LogTemp: Warning: 0.000000
+[2022.03.19-02.48.08:002][707]LogTemp: Warning: -20.000000
+[2022.03.19-02.48.08:177][728]LogTemp: Warning: -40.000000
+[2022.03.19-02.48.08:351][749]LogTemp: Warning: -60.000000
+[2022.03.19-02.48.08:518][769]LogTemp: Warning: -80.000000
+[2022.03.19-02.48.08:677][788]LogTemp: Warning: -140.000000
+[2022.03.19-02.48.08:685][789]LogTemp: Warning: -160.000000
+[2022.03.19-02.48.10:069][955]LogTemp: Warning: 80.000000
+[2022.03.19-02.48.10:677][ 28]LogTemp: Warning: -180.000000
+[2022.03.19-02.48.11:161][ 86]LogTemp: Warning: 60.000000
+[2022.03.19-02.48.12:052][193]LogTemp: Warning: 40.000000
+[2022.03.19-02.48.12:244][216]LogTemp: Warning: 20.000000
+[2022.03.19-02.48.12:427][238]LogTemp: Warning: 0.000000
+[2022.03.19-02.48.12:678][268]LogTemp: Warning: -200.000000
+[2022.03.19-02.48.13:794][402]LogTemp: Warning: -20.000000
+[2022.03.19-02.48.13:944][420]LogTemp: Warning: -40.000000
+[2022.03.19-02.48.14:094][438]LogTemp: Warning: -60.000000
+[2022.03.19-02.48.14:268][459]LogTemp: Warning: -80.000000
+[2022.03.19-02.48.14:427][478]LogTemp: Warning: -100.000000
+[2022.03.19-02.48.14:678][508]LogTemp: Warning: -220.000000
+[2022.03.19-02.48.15:435][599]LogTemp: Warning: -240.000000
+[2022.03.19-02.48.15:619][621]LogTemp: Warning: -260.000000
+[2022.03.19-02.48.15:778][640]LogTemp: Warning: -280.000000
+[2022.03.19-02.48.15:952][661]LogTemp: Warning: -300.000000
+[2022.03.19-02.48.16:569][735]LogTemp: Warning: -320.000000
+[2022.03.19-02.48.16:645][744]LogTemp: Warning: -240.000000
+[2022.03.19-02.48.17:244][816]LogTemp: Warning: -60.000000
+[2022.03.19-02.48.17:769][879]LogTemp: Warning: -80.000000
+[2022.03.19-02.48.17:960][902]LogTemp: Warning: -100.000000
+[2022.03.19-02.48.18:127][922]LogTemp: Warning: -120.000000
+[2022.03.19-02.48.18:644][984]LogTemp: Warning: -260.000000
+[2022.03.19-02.48.19:644][104]LogTemp: Warning: -100.000000
+[2022.03.19-02.48.19:827][126]LogTemp: Warning: -120.000000
+[2022.03.19-02.48.20:494][206]LogTemp: Warning: -120.000000
+[2022.03.19-02.48.20:636][223]LogTemp: Warning: -280.000000
+[2022.03.19-02.48.21:911][376]LogTemp: Warning: -340.000000
+[2022.03.19-02.48.22:086][397]LogTemp: Warning: -360.000000
+[2022.03.19-02.48.22:503][447]LogTemp: Warning: -140.000000
+[2022.03.19-02.48.22:661][466]LogTemp: Warning: -300.000000
+[2022.03.19-02.48.24:602][699]LogTemp: Warning: -140.000000
+[2022.03.19-02.48.24:652][705]LogTemp: Warning: -320.000000
+[2022.03.19-02.48.24:661][706]LogTemp: Warning: -340.000000
+[2022.03.19-02.48.25:203][771]LogTemp: Warning: -140.000000
+[2022.03.19-02.48.26:694][950]LogTemp: Warning: -360.000000
+[2022.03.19-02.48.33:760][798]LogTemp: Warning: -160.000000
+[2022.03.19-02.48.34:685][909]LogTemp: Warning: -380.000000
+[2022.03.19-02.48.35:019][949]LogTemp: Warning: -180.000000
+[2022.03.19-02.48.35:185][969]LogTemp: Warning: -200.000000
+[2022.03.19-02.48.35:361][990]LogTemp: Warning: -220.000000
+[2022.03.19-02.48.35:545][ 12]LogTemp: Warning: -240.000000
+[2022.03.19-02.48.36:711][152]LogTemp: Warning: -400.000000
+[2022.03.19-02.48.37:859][286]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2022.03.19-02.48.37:871][286]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/MainD1D62C7E43A82FECB22BF1AE0A74FB5F.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main.umap'
+[2022.03.19-02.48.37:890][286]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/Main_BuiltData585001BB487A30E0F3D0BC9D8D855C14.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main_BuiltData.uasset'
+[2022.03.19-02.48.37:906][286]AssetCheck: New page: Asset Save: multiple assets
+[2022.03.19-02.48.37:906][286]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Main_BuiltData.Main_BuiltData
+[2022.03.19-02.48.37:906][286]LogContentValidation: Display: Validating World /Game/Maps/Main.Main
+[2022.03.19-02.48.39:039][378]LogTemp: Warning: -420.000000
+[2022.03.19-02.48.41:048][384]LogTemp: Warning: -440.000000
+[2022.03.19-02.48.42:736][389]LogTemp: Warning: -460.000000
+[2022.03.19-02.48.44:751][395]LogTemp: Warning: -480.000000
+[2022.03.19-02.48.46:758][401]LogTemp: Warning: -500.000000
+[2022.03.19-02.48.47:457][403]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-02.48.47:457][403]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Main
+[2022.03.19-02.48.47:457][403]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2022.03.19-02.48.47:457][403]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-02.48.47:464][403]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.19-02.48.47:466][403]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.19-02.48.47:474][403]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.19-02.48.47:475][403]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-02.48.47:476][403]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.19-02.48.47:478][403]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.19-02.48.47:480][403]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2022.03.19-02.48.47:526][408]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2022.03.19-02.48.48:540][525]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2022.03.19-02.48.48:550][525]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/Main1A99640F40A712C26701A6B7F6BDC1C2.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main.umap'
+[2022.03.19-02.48.48:566][525]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/Main_BuiltData689C6F5B4E635C84FBC348B13A02817C.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main_BuiltData.uasset'
+[2022.03.19-02.48.48:582][525]AssetCheck: New page: Asset Save: multiple assets
+[2022.03.19-02.48.48:582][525]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Main_BuiltData.Main_BuiltData
+[2022.03.19-02.48.48:582][525]LogContentValidation: Display: Validating World /Game/Maps/Main.Main
