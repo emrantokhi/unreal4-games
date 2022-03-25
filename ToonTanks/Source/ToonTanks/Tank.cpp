@@ -40,6 +40,20 @@ void ATank::Tick(float DeltaTime)
 	}
 }
 
+void ATank::HandleDestruction()
+{
+	Super::HandleDestruction();
+	//Hiding the tank from view
+	SetActorHiddenInGame(true);
+	SetActorTickEnabled(false);
+}
+
+
+APlayerController* ATank::GetTankPlayerController() const
+{
+	return PlayerControllerPtr;
+}
+
 // Called when the game starts or when spawned
 void ATank::BeginPlay()
 {

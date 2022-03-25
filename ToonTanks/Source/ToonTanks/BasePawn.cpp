@@ -15,7 +15,14 @@ ABasePawn::ABasePawn()
 	SetupComponents();
 }
 
-void ABasePawn::SetupComponents() {
+void ABasePawn::HandleDestruction() 
+{
+	// TODO: Handle all visual and sound effects here when pawn dies
+
+}
+
+void ABasePawn::SetupComponents() 
+{
 	CapsuleComp = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Capsule Collider"));
 	BaseMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Base Mesh"));
 	TurretMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Turret Mesh"));

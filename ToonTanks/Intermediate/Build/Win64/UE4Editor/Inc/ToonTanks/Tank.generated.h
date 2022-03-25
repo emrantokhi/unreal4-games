@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TOONTANKS_Tank_generated_h
 
-#define ToonTanks_Source_ToonTanks_Tank_h_15_SPARSE_DATA
-#define ToonTanks_Source_ToonTanks_Tank_h_15_RPC_WRAPPERS
-#define ToonTanks_Source_ToonTanks_Tank_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define ToonTanks_Source_ToonTanks_Tank_h_15_INCLASS_NO_PURE_DECLS \
+#define ToonTanks_Source_ToonTanks_Tank_h_12_SPARSE_DATA
+#define ToonTanks_Source_ToonTanks_Tank_h_12_RPC_WRAPPERS
+#define ToonTanks_Source_ToonTanks_Tank_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define ToonTanks_Source_ToonTanks_Tank_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATank(); \
 	friend struct Z_Construct_UClass_ATank_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ATank)
 
 
-#define ToonTanks_Source_ToonTanks_Tank_h_15_INCLASS \
+#define ToonTanks_Source_ToonTanks_Tank_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesATank(); \
 	friend struct Z_Construct_UClass_ATank_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ATank)
 
 
-#define ToonTanks_Source_ToonTanks_Tank_h_15_STANDARD_CONSTRUCTORS \
+#define ToonTanks_Source_ToonTanks_Tank_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATank(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATank) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define ToonTanks_Source_ToonTanks_Tank_h_15_ENHANCED_CONSTRUCTORS \
+#define ToonTanks_Source_ToonTanks_Tank_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATank(ATank&&); \
@@ -58,7 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATank)
 
 
-#define ToonTanks_Source_ToonTanks_Tank_h_15_PRIVATE_PROPERTY_OFFSET \
+#define ToonTanks_Source_ToonTanks_Tank_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__TankSpeed() { return STRUCT_OFFSET(ATank, TankSpeed); } \
 	FORCEINLINE static uint32 __PPO__TankRotateSpeed() { return STRUCT_OFFSET(ATank, TankRotateSpeed); } \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(ATank, SpringArm); } \
@@ -66,27 +66,27 @@ public: \
 	FORCEINLINE static uint32 __PPO__PlayerControllerPtr() { return STRUCT_OFFSET(ATank, PlayerControllerPtr); }
 
 
-#define ToonTanks_Source_ToonTanks_Tank_h_12_PROLOG
-#define ToonTanks_Source_ToonTanks_Tank_h_15_GENERATED_BODY_LEGACY \
+#define ToonTanks_Source_ToonTanks_Tank_h_9_PROLOG
+#define ToonTanks_Source_ToonTanks_Tank_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ToonTanks_Source_ToonTanks_Tank_h_15_PRIVATE_PROPERTY_OFFSET \
-	ToonTanks_Source_ToonTanks_Tank_h_15_SPARSE_DATA \
-	ToonTanks_Source_ToonTanks_Tank_h_15_RPC_WRAPPERS \
-	ToonTanks_Source_ToonTanks_Tank_h_15_INCLASS \
-	ToonTanks_Source_ToonTanks_Tank_h_15_STANDARD_CONSTRUCTORS \
+	ToonTanks_Source_ToonTanks_Tank_h_12_PRIVATE_PROPERTY_OFFSET \
+	ToonTanks_Source_ToonTanks_Tank_h_12_SPARSE_DATA \
+	ToonTanks_Source_ToonTanks_Tank_h_12_RPC_WRAPPERS \
+	ToonTanks_Source_ToonTanks_Tank_h_12_INCLASS \
+	ToonTanks_Source_ToonTanks_Tank_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ToonTanks_Source_ToonTanks_Tank_h_15_GENERATED_BODY \
+#define ToonTanks_Source_ToonTanks_Tank_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ToonTanks_Source_ToonTanks_Tank_h_15_PRIVATE_PROPERTY_OFFSET \
-	ToonTanks_Source_ToonTanks_Tank_h_15_SPARSE_DATA \
-	ToonTanks_Source_ToonTanks_Tank_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	ToonTanks_Source_ToonTanks_Tank_h_15_INCLASS_NO_PURE_DECLS \
-	ToonTanks_Source_ToonTanks_Tank_h_15_ENHANCED_CONSTRUCTORS \
+	ToonTanks_Source_ToonTanks_Tank_h_12_PRIVATE_PROPERTY_OFFSET \
+	ToonTanks_Source_ToonTanks_Tank_h_12_SPARSE_DATA \
+	ToonTanks_Source_ToonTanks_Tank_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	ToonTanks_Source_ToonTanks_Tank_h_12_INCLASS_NO_PURE_DECLS \
+	ToonTanks_Source_ToonTanks_Tank_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
