@@ -31,7 +31,7 @@ void ATank::Tick(float DeltaTime)
 			HitResult
 		);
 		
-		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 6.f, 18, FColor::Red, false, -1.f, (uint8)0U, 1.f);
+		//DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 6.f, 18, FColor::Red, false, -1.f, (uint8)0U, 1.f);
 
 		if (HitResult.Actor != this)
 		{
