@@ -4,6 +4,8 @@
 #include "BasePawn.h"
 #include "Components/CapsuleComponent.h"
 #include "DrawDebugHelpers.h"
+#include "Kismet/GameplayStatics.h" 
+#include "Particles/ParticleSystem.h"
 #include "Projectile.h"
 
 // Sets default values
@@ -18,7 +20,10 @@ ABasePawn::ABasePawn()
 void ABasePawn::HandleDestruction() 
 {
 	// TODO: Handle all visual and sound effects here when pawn dies
-
+	if (DeathParticles) 
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(this, DeathParticles, GetActorLocation(), GetActorRotation());
+	}
 }
 
 void ABasePawn::SetupComponents() 
