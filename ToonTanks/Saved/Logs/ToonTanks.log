@@ -3576,3 +3576,9 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.03.30-05.21.03:429][176]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2022.03.30-05.21.03:464][176]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
 [2022.03.30-05.21.03:495][177]LogPlayLevel: Display: Destroying online subsystem :Context_68
+[2022.03.30-05.26.24:797][892]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2022.03.30-05.26.24:815][892]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/MainD835D0954C65541ED40C61AB55AAA279.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main.umap'
+[2022.03.30-05.26.24:863][892]LogSavePackage: Moving '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Saved/Main_BuiltData8CD645894EB4A0DEAD61DBB5AA4C17B2.tmp' to '../../../../../../Users/emrantokhi/Documents/School/Self Learning/unreal/unreal-games/ToonTanks/Content/Maps/Main_BuiltData.uasset'
+[2022.03.30-05.26.24:878][892]AssetCheck: New page: Asset Save: multiple assets
+[2022.03.30-05.26.24:878][892]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Main_BuiltData.Main_BuiltData
+[2022.03.30-05.26.24:878][892]LogContentValidation: Display: Validating World /Game/Maps/Main.Main
