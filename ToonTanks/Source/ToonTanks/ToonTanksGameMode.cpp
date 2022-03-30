@@ -20,6 +20,11 @@ void AToonTanksGameMode::ActorDied(AActor* DeadActor)
 	else if (ATower* DestroyedTower = Cast<ATower>(DeadActor))
 	{
 		DestroyedTower->HandleDestruction();
+		TargetTowers--;
+		if (TargetTowers == 0) 
+		{
+			GameOver(true);
+		}
 	}
 }
 

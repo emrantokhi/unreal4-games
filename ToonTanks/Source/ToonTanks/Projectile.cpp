@@ -3,6 +3,8 @@
 #include "GameFramework/DamageType.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h" 
+#include "Particles/ParticleSystemComponent.h"
+#include "Particles/ParticleSystem.h"
 #include "Projectile.h"
 
 // Sets default values
@@ -36,25 +38,35 @@ void AProjectile::SetupComponents()
 {
 	ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Projectile Mesh"));
 	MovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Movement Component"));
+	SmokeTrail = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Smoke Trail"));
 
 	RootComponent = ProjectileMesh;
+	SmokeTrail->SetupAttachment(ProjectileMesh);
 }
 
 //Call back function to be binded with multicast delegate
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	auto MyOwner = GetOwner();
-	if (MyOwner == nullptr) return;
+	if (MyOwner == nullptr)
+	{
+		Destroy();
+		return;
+	}
 
 	auto MyOwnerInstigator = MyOwner->GetInstigatorController();
 	//Returns a UClass* to use in DamageTaken for health component
 	auto DamageTypeClass = UDamageType::StaticClass();
 
 	//Checks if OtherActor is not itself or its owner, then apply damage
-	if (OtherActor && OtherActor != this && OtherActor != MyOwner) 
+	if (OtherActor && OtherActor != this && OtherActor != MyOwner)
 	{
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, MyOwner, DamageTypeClass);
+		if (HitParticles)
+		{
+			//Spawn the particles
+			UGameplayStatics::SpawnEmitterAtLocation(this, HitParticles, GetActorLocation(), GetActorRotation());
+		}
 	}
-
 	Destroy();
 }
