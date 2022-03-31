@@ -92,5 +92,5 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 bool ATank::IsAlive()
 {
-	return Alive;
+	return bAlive;
 }
