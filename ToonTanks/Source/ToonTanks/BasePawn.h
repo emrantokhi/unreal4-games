@@ -6,6 +6,11 @@
 #include "GameFramework/Pawn.h"
 #include "BasePawn.generated.h"
 
+class USoundBase;
+class UParticleSystem;
+class UCapsuleComponent;
+class AProjectile;
+
 UCLASS()
 class TOONTANKS_API ABasePawn : public APawn
 {
@@ -29,7 +34,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combined Components", meta = (AllowPrivateAccess = "true"))
 	//Forward declaration, need the include in the cpp file to reduce header file size by preprocessor
-	class UCapsuleComponent* CapsuleComp = nullptr;
+	UCapsuleComponent* CapsuleComp = nullptr;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combined Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* BaseMesh = nullptr;
@@ -41,8 +46,11 @@ private:
 	USceneComponent* ProjectileSpawn = nullptr;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
-	TSubclassOf<class AProjectile> ProjectileBPClass;
+	TSubclassOf<AProjectile> ProjectileBPClass;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
-	class UParticleSystem* DeathParticles = nullptr;
+	UParticleSystem* DeathParticles = nullptr;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	USoundBase* DeathSound = nullptr;
 };
