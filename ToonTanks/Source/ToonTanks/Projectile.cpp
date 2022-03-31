@@ -1,11 +1,13 @@
 // Copyright Emran Tokhi 2022
 
+#include "Camera/CameraShakeBase.h"
 #include "GameFramework/DamageType.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h" 
 #include "Particles/ParticleSystemComponent.h"
 #include "Particles/ParticleSystem.h"
 #include "Projectile.h"
+#include "Sound/SoundBase.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -52,16 +54,16 @@ void AProjectile::SetupComponents()
 //Call back function to be binded with multicast delegate
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	auto MyOwner = GetOwner();
+	AActor* MyOwner = GetOwner();
 	if (MyOwner == nullptr)
 	{
 		Destroy();
 		return;
 	}
 
-	auto MyOwnerInstigator = MyOwner->GetInstigatorController();
+	AController* MyOwnerInstigator = MyOwner->GetInstigatorController();
 	//Returns a UClass* to use in DamageTaken for health component
-	auto DamageTypeClass = UDamageType::StaticClass();
+	UClass* DamageTypeClass = UDamageType::StaticClass();
 
 	//Checks if OtherActor is not itself or its owner, then apply damage
 	if (OtherActor && OtherActor != this && OtherActor != MyOwner)
@@ -75,6 +77,11 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 		if (HitSound)
 		{
 			UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation(), GetActorRotation());
+		}
+
+		if (HitCameraShakeClass) 
+		{
+			GetWorld()->GetFirstPlayerController()->ClientPlayCameraShake(HitCameraShakeClass);
 		}
 	}
 	Destroy();

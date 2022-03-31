@@ -46,6 +46,7 @@ void ATank::HandleDestruction()
 	//Hiding the tank from view
 	SetActorHiddenInGame(true);
 	SetActorTickEnabled(false);
+	bAlive = false;
 }
 
 
@@ -87,4 +88,9 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATank::Turn);
 
 	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Released, this, &ATank::Fire);
+}
+
+bool ATank::IsAlive()
+{
+	return Alive;
 }

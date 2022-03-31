@@ -39,7 +39,7 @@ void ATower::CheckFireCondition()
 //Check to see if the tank is in range
 bool ATower::InRange() 
 {
-	if (Tank) {
+	if (Tank && Tank->IsAlive()) {
 		float Distance = FVector::Dist(GetActorLocation(), Tank->GetActorLocation());
 		if (Distance <= ActivationDistance)
 		{

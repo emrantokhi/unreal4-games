@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Projectile.generated.h"
 
+class UCameraShakeBase;
 class USoundBase;
 class UProjectileMovementComponent;
 class UParticleSystemComponent;
@@ -51,7 +52,9 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Damage")
 	float Damage = 20.f;
 
-public:
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	TSubclassOf<UCameraShakeBase> HitCameraShakeClass;
+
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	USoundBase* LaunchSound = nullptr;
 
