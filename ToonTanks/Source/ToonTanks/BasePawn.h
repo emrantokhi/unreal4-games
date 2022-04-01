@@ -22,11 +22,15 @@ public:
 	ABasePawn();
 	void HandleDestruction();
 
+	void IsFiring(bool bFire);
+
 protected:
 	void RotateTurret(FVector LookAtTarget);
 	void Fire();
 
 private:
+
+	bool bFiring = false;
 
 	void SetupComponents();
 
@@ -57,4 +61,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	TSubclassOf<UCameraShakeBase> DeathCameraShakeClass;
+
+	//Set this so that in fire, the Towers are not limited to a firing rate
+	UPROPERTY(EditDefaultsOnly, Category = "Pawn Type")
+	bool bIsTank = false;
 };

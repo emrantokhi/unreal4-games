@@ -52,6 +52,11 @@ void ABasePawn::SetupComponents()
 	ProjectileSpawn->SetupAttachment(TurretMesh);
 }
 
+void ABasePawn::IsFiring(bool bFire)
+{
+	bFiring = bFire;
+}
+
 void ABasePawn::RotateTurret(FVector LookAtTarget)
 {
 	//Need to find Vector line between destination (LookAtTarget) and start point (this's location)
@@ -67,13 +72,18 @@ void ABasePawn::RotateTurret(FVector LookAtTarget)
 
 void ABasePawn::Fire()
 {
-	if (ProjectileBPClass) {
+	//Check if the last bullet is still firing
+	if (ProjectileBPClass && !bFiring) {
 		AProjectile* Projectile = GetWorld()->SpawnActor<AProjectile>(
 			ProjectileBPClass,
 			ProjectileSpawn->GetComponentLocation(),
 			ProjectileSpawn->GetComponentRotation()
 			);
-		
+
 		Projectile->SetOwner(this);
+		if (bIsTank)
+		{
+			bFiring = true;
+		}
 	}
 }

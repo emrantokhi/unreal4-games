@@ -122,3 +122,16 @@ BuildingEscape.code-workspace
 /ToonTanks/Intermediate/Build/BuildRules
 /ToonTanks/Intermediate/Build/Win64/ToonTanksEditor/Development/Engine
 /ToonTanks/Intermediate/Build/Win64/ToonTanksEditor/Development
+/ToonTanks/Content/Polar
+/ToonTanks/Content/Maps/NewSky_PolarFacilityMap.umap
+/ToonTanks/Content/Maps/PolarFacilityMap.umap
+/ToonTanks/Content/Maps/SkyDayMap.umap
+/ToonTanks/Content/Maps/SkyNightMap.umap
+/ToonTanks/Content/Maps/SkySunsetMap.umap
+/ToonTanks/Saved/Cooked/WindowsNoEditor
+/ToonTanks/Saved/Temp/Win64
+/ToonTanks/PolarFacility.png
+/ToonTanks/Build/WindowsNoEditor/FileOpenOrder
+/ToonTanks/Saved/MaterialStats
+/ToonTanks/Saved/MaterialStatsDebug
+/ToonTanks/Saved/Shaders/PCD3D_SM5

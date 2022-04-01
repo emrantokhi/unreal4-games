@@ -8,6 +8,7 @@
 #include "Particles/ParticleSystem.h"
 #include "Projectile.h"
 #include "Sound/SoundBase.h"
+#include "Tank.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -82,6 +83,12 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 		if (HitCameraShakeClass) 
 		{
 			GetWorld()->GetFirstPlayerController()->ClientPlayCameraShake(HitCameraShakeClass);
+		}
+
+		if (ATank* Pawn = Cast<ATank>(MyOwner))
+		{
+			//Limits firing to only when the last bullet is shot
+			Pawn->IsFiring(false);
 		}
 	}
 	Destroy();

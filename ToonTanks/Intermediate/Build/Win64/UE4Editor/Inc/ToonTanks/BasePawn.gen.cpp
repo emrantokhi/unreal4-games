@@ -75,6 +75,11 @@ void EmptyLinkFunctionForGeneratedCodeBasePawn() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeathCameraShakeClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DeathCameraShakeClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsTank_MetaData[];
+#endif
+		static void NewProp_bIsTank_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsTank;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -164,6 +169,17 @@ void EmptyLinkFunctionForGeneratedCodeBasePawn() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABasePawn_Statics::NewProp_DeathCameraShakeClass = { "DeathCameraShakeClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABasePawn, DeathCameraShakeClass), Z_Construct_UClass_UCameraShakeBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ABasePawn_Statics::NewProp_DeathCameraShakeClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABasePawn_Statics::NewProp_DeathCameraShakeClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank_MetaData[] = {
+		{ "Category", "Pawn Type" },
+		{ "ModuleRelativePath", "BasePawn.h" },
+	};
+#endif
+	void Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank_SetBit(void* Obj)
+	{
+		((ABasePawn*)Obj)->bIsTank = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank = { "bIsTank", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ABasePawn), &Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABasePawn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePawn_Statics::NewProp_FiringSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePawn_Statics::NewProp_CapsuleComp,
@@ -174,6 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePawn() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePawn_Statics::NewProp_DeathParticles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePawn_Statics::NewProp_DeathSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePawn_Statics::NewProp_DeathCameraShakeClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABasePawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABasePawn>::IsAbstract,
@@ -202,7 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABasePawn, 3491872496);
+	IMPLEMENT_CLASS(ABasePawn, 2481229442);
 	template<> TOONTANKS_API UClass* StaticClass<ABasePawn>()
 	{
 		return ABasePawn::StaticClass();
