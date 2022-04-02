@@ -23,10 +23,14 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	
+	float GetCurrentHealth() const;
+	float GetMaxHealth() const;
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Health")
 	float MaxHealth = 100.f;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Health", meta = (AllowPrivateAccess = "true"))
 	float CurrentHealth = 0.f;
 
 	class AToonTanksGameMode* ToonTanksGameMode = nullptr;

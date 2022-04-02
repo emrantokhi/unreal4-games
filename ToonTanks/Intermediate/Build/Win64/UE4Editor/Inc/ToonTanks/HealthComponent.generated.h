@@ -70,7 +70,8 @@ public: \
 
 
 #define ToonTanks_Source_ToonTanks_HealthComponent_h_13_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(UHealthComponent, MaxHealth); }
+	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(UHealthComponent, MaxHealth); } \
+	FORCEINLINE static uint32 __PPO__CurrentHealth() { return STRUCT_OFFSET(UHealthComponent, CurrentHealth); }
 
 
 #define ToonTanks_Source_ToonTanks_HealthComponent_h_10_PROLOG

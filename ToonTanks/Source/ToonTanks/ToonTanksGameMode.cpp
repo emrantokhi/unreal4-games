@@ -1,10 +1,16 @@
 // Copyright Emran Tokhi 2022
 
+#include "HealthComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Tank.h"
 #include "ToonTanksGameMode.h"
 #include "ToonTanksPlayerController.h"
 #include "Tower.h"
+
+AToonTanksGameMode::AToonTanksGameMode()
+{
+	PrimaryActorTick.bCanEverTick = true;
+}
 
 void AToonTanksGameMode::ActorDied(AActor* DeadActor)
 {
@@ -35,6 +41,19 @@ void AToonTanksGameMode::BeginPlay()
 	HandleGameStart();
 }
 
+
+void AToonTanksGameMode::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+	
+	//UActorComponent* TankHealthComponent = Tank->GetComponentByClass(HealthComponentClass);
+	if (TankHealthComponent)
+	{
+		DisplayHUD(TankHealthComponent->GetCurrentHealth(), TankHealthComponent->GetMaxHealth(), TargetTowers);
+	}
+}
+
+
 int32 AToonTanksGameMode::GetTargetTowerCount() 
 {
 	TArray<AActor*> Towers;
@@ -42,6 +61,7 @@ int32 AToonTanksGameMode::GetTargetTowerCount()
 	UGameplayStatics::GetAllActorsOfClass(this, ATower::StaticClass(), Towers);
 
 	return Towers.Num();
+
 }
 
 
@@ -51,6 +71,16 @@ void AToonTanksGameMode::HandleGameStart()
 	Tank = Cast<ATank>(UGameplayStatics::GetPlayerPawn(this, 0)); //Player index 0
 	ToonTanksPlayerController = Cast<AToonTanksPlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 
+	//Find and set the health component
+	TArray<UActorComponent*> Components = Tank->GetComponents().Array();
+	for (int i = 0; i < Components.Num(); i++) 
+	{
+		if (Components[i]->GetName() == TEXT("Health"))
+		{
+			TankHealthComponent = Cast<UHealthComponent>(Components[i]);
+		}
+	}
+	
 	StartGame();
 
 	//Prevent input to the player tank

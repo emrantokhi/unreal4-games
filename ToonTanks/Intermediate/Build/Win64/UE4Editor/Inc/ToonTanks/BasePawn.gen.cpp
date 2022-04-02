@@ -172,7 +172,9 @@ void EmptyLinkFunctionForGeneratedCodeBasePawn() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank_MetaData[] = {
 		{ "Category", "Pawn Type" },
+		{ "Comment", "//Set this so that in fire, the Towers are not limited to a firing rate\n" },
 		{ "ModuleRelativePath", "BasePawn.h" },
+		{ "ToolTip", "Set this so that in fire, the Towers are not limited to a firing rate" },
 	};
 #endif
 	void Z_Construct_UClass_ABasePawn_Statics::NewProp_bIsTank_SetBit(void* Obj)
@@ -219,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABasePawn, 2481229442);
+	IMPLEMENT_CLASS(ABasePawn, 503452262);
 	template<> TOONTANKS_API UClass* StaticClass<ABasePawn>()
 	{
 		return ABasePawn::StaticClass();

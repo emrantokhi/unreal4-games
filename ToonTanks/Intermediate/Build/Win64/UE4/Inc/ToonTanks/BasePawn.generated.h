@@ -67,7 +67,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__ProjectileBPClass() { return STRUCT_OFFSET(ABasePawn, ProjectileBPClass); } \
 	FORCEINLINE static uint32 __PPO__DeathParticles() { return STRUCT_OFFSET(ABasePawn, DeathParticles); } \
 	FORCEINLINE static uint32 __PPO__DeathSound() { return STRUCT_OFFSET(ABasePawn, DeathSound); } \
-	FORCEINLINE static uint32 __PPO__DeathCameraShakeClass() { return STRUCT_OFFSET(ABasePawn, DeathCameraShakeClass); }
+	FORCEINLINE static uint32 __PPO__DeathCameraShakeClass() { return STRUCT_OFFSET(ABasePawn, DeathCameraShakeClass); } \
+	FORCEINLINE static uint32 __PPO__bIsTank() { return STRUCT_OFFSET(ABasePawn, bIsTank); }
 
 
 #define ToonTanks_Source_ToonTanks_BasePawn_h_15_PROLOG

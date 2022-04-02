@@ -17,6 +17,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define ToonTanks_Source_ToonTanks_ToonTanksGameMode_h_12_RPC_WRAPPERS
 #define ToonTanks_Source_ToonTanks_ToonTanksGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
 #define ToonTanks_Source_ToonTanks_ToonTanksGameMode_h_12_EVENT_PARMS \
+	struct ToonTanksGameMode_eventDisplayHUD_Parms \
+	{ \
+		float Health; \
+		float MaxHealth; \
+		int32 NumTowers; \
+	}; \
 	struct ToonTanksGameMode_eventGameOver_Parms \
 	{ \
 		bool bWonGame; \
@@ -44,7 +50,7 @@ public: \
 
 #define ToonTanks_Source_ToonTanks_ToonTanksGameMode_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AToonTanksGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AToonTanksGameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AToonTanksGameMode) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AToonTanksGameMode); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AToonTanksGameMode); \
@@ -56,8 +62,6 @@ public:
 
 
 #define ToonTanks_Source_ToonTanks_ToonTanksGameMode_h_12_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AToonTanksGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AToonTanksGameMode(AToonTanksGameMode&&); \
@@ -65,7 +69,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AToonTanksGameMode); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AToonTanksGameMode); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AToonTanksGameMode)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AToonTanksGameMode)
 
 
 #define ToonTanks_Source_ToonTanks_ToonTanksGameMode_h_12_PRIVATE_PROPERTY_OFFSET
