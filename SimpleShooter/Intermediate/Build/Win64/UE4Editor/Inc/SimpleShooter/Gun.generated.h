@@ -60,7 +60,8 @@ public: \
 
 #define SimpleShooter_Source_SimpleShooter_Gun_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Root() { return STRUCT_OFFSET(AGun, Root); } \
-	FORCEINLINE static uint32 __PPO__GunMesh() { return STRUCT_OFFSET(AGun, GunMesh); }
+	FORCEINLINE static uint32 __PPO__GunMesh() { return STRUCT_OFFSET(AGun, GunMesh); } \
+	FORCEINLINE static uint32 __PPO__MuzzleParticles() { return STRUCT_OFFSET(AGun, MuzzleParticles); }
 
 
 #define SimpleShooter_Source_SimpleShooter_Gun_h_9_PROLOG

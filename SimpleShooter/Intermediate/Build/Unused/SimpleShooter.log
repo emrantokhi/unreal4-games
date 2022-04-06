@@ -3,11 +3,10 @@
   Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 32 processes...
     [1/4] ShooterCharacter.cpp
-C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Source\SimpleShooter\ShooterCharacter.cpp(52): error C2664: 'FInputActionBinding &UInputComponent::BindAction<AShooterCharacter>(const FName,const EInputEvent,UserClass *,void (__cdecl AShooterCharacter::* )(void))': cannot convert argument 4 from 'void (__cdecl AGun::* )(void)' to 'void (__cdecl AShooterCharacter::* )(void)'
-            with
-            [
-                UserClass=AShooterCharacter
-            ]
-    C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Source\SimpleShooter\ShooterCharacter.cpp(52): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-    C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/InputComponent.h(867): note: see declaration of 'UInputComponent::BindAction'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.27\Engine\Build\BatchFiles\Build.bat" SimpleShooterEditor Win64 Development -Project="C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\SimpleShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.
+    [2/4] UE4Editor-SimpleShooter-0021.lib
+       Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.exp
+    [3/4] UE4Editor-SimpleShooter-0021.dll
+       Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.suppressed.exp
+    [4/4] SimpleShooterEditor.target
+  Total time in Parallel executor: 1.16 seconds
+  Total execution time: 1.69 seconds

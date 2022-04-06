@@ -31,4 +31,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	USkeletalMeshComponent* GunMesh = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* MuzzleParticles = nullptr;
 };
