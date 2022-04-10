@@ -66,6 +66,14 @@
 			]
 		},
 		{
+			"Name": "WebAuth",
+			"Enabled": true
+		},
+		{
+			"Name": "WebBrowserWidget",
+			"Enabled": true
+		},
+		{
 			"Name": "Bridge",
 			"Enabled": true,
 			"SupportedTargetPlatforms": [
@@ -73,6 +81,10 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "GuidFixer",
+			"Enabled": true
 		}
 	]
 }

@@ -1,6 +1,7 @@
 {
 	"SourceFiles": [
 		"C:\\Users\\emrantokhi\\Documents\\School\\Self Learning\\unreal\\unreal-games\\SimpleShooter\\Source\\SimpleShooter\\SimpleShooter.Build.cs",
+		"C:\\Users\\emrantokhi\\Documents\\School\\Self Learning\\unreal\\unreal-games\\SimpleShooter\\Plugins\\GUIDFixer\\Source\\GuidFixer\\GuidFixer.Build.cs",
 		"C:\\Users\\emrantokhi\\Documents\\School\\Self Learning\\unreal\\unreal-games\\SimpleShooter\\Source\\SimpleShooter.Target.cs",
 		"C:\\Users\\emrantokhi\\Documents\\School\\Self Learning\\unreal\\unreal-games\\SimpleShooter\\Source\\SimpleShooterEditor.Target.cs"
 	],
