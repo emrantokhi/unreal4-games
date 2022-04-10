@@ -4,6 +4,7 @@
 #include "Gun.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/SceneComponent.h"
+#include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -24,6 +25,12 @@ void AGun::PullTrigger()
 	if (GunMesh && MuzzleParticles)
 	{
 		UGameplayStatics::SpawnEmitterAttached(MuzzleParticles, GunMesh, TEXT("MuzzleFlashSocket"));
+		
+		FVector ViewLocation;
+		FRotator ViewRotation;
+		GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
+
+		DrawDebugCamera(GetWorld(), ViewLocation, ViewRotation, 90.f, 3.f, FColor::Red, true);
 	}
 }
 

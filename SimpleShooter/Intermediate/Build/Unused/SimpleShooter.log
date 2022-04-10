@@ -1,12 +1,5 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
-  Building SimpleShooterEditor...
-  Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 32 processes...
-    [1/4] ShooterCharacter.cpp
-    [2/4] UE4Editor-SimpleShooter-0021.lib
-       Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.exp
-    [3/4] UE4Editor-SimpleShooter-0021.dll
-       Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UE4Editor\Development\SimpleShooter\UE4Editor-SimpleShooter-0021.suppressed.exp
-    [4/4] SimpleShooterEditor.target
-  Total time in Parallel executor: 1.16 seconds
-  Total execution time: 1.69 seconds
+﻿  Using bundled DotNet SDK
+  Log file: C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+UnrealBuildTool : error : Unable to delete hot-reload file: C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Binaries\Win64\UnrealEditor-SimpleShooter-3106.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\Build.bat" SimpleShooterEditor Win64 Development -Project="C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\SimpleShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.

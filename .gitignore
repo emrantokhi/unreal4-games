@@ -150,3 +150,15 @@ BuildingEscape.code-workspace
 /SimpleShooter/Saved/Logs
 /SimpleShooter/Intermediate/Build/SourceFileCache.bin
 /SimpleShooter/Intermediate/TargetInfo.json
+/SimpleShooter/Intermediate/ProjectFiles/UE5.vcxproj
+/SimpleShooter/Intermediate/ProjectFiles/UE5.vcxproj.filters
+/SimpleShooter/Intermediate/ProjectFiles/UE5.vcxproj.user
+/SimpleShooter/Saved/Config/WindowsEditor
+/SimpleShooter/Saved/Crashes/UECC-Windows-ECD655AC41ED86C47F9DE8932DBCD249_0000
+/SimpleShooter/Intermediate/ShaderAutogen
+/SimpleShooter/Binaries/Win64/UnrealEditor.modules
+/SimpleShooter/Binaries/Win64/UnrealEditor-SimpleShooter.pdb
+/SimpleShooter/Binaries/Win64/UnrealEditor-SimpleShooter-3106.pdb
+/SimpleShooter/Binaries/Win64/UnrealEditor-SimpleShooter-1755.pdb
+/SimpleShooter/Binaries/Win64/UnrealEditor-SimpleShooter-0553.pdb
+/SimpleShooter/Intermediate/Build/Win64/UnrealEditor

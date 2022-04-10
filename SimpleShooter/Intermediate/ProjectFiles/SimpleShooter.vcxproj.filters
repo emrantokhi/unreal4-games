@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\SimpleShooter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F1766BD9-DFB6-4A7E-8847-7564E23D5DEB}</UniqueIdentifier>
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SimpleShooter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{3819C81A-0C0A-44F3-91E9-4FFFE063FAD8}</UniqueIdentifier>
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\SimpleShooter">
-      <UniqueIdentifier>{9F21C0DD-5CE3-44D5-89F5-3E63C1EE73B4}</UniqueIdentifier>
+      <UniqueIdentifier>{398169F3-F75C-35FC-ADE5-1313B273635E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SimpleShooter\Gun.cpp">
       <Filter>Source\SimpleShooter</Filter>
