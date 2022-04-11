@@ -34,4 +34,16 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* MuzzleParticles = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* ImpactCharParticles = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* ImpactNonCharParticles = nullptr;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float MaxBulletRange = 1000.f; //About 10 meters
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float BulletDamage = 10.f; //About 10 meters
 };

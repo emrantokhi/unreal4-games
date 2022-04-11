@@ -1,37 +1,6 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
-  Creating makefile for SimpleShooterEditor (no existing makefile)
-  Parsing headers for SimpleShooterEditor
-    Running UnrealHeaderTool "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\SimpleShooter.uproject" "C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\SimpleShooterEditor\Development\SimpleShooterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for SimpleShooterEditor in 1.4258668 seconds
-  Building SimpleShooterEditor...
-  Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
-    Executing up to 16 processes, one per physical core
-    Requested 1.5 GB free memory per action, 20.09 GB available: limiting max parallel actions to 13
-  Building 18 actions with 13 processes...
-  [1/18] Resource Default.rc2
-  [2/18] Resource Default.rc2
-  [3/18] Compile SharedPCH.UnrealEd.ShadowErrors.cpp
-  [4/18] Compile SharedPCH.Engine.ShadowErrors.cpp
-  [5/18] Compile Module.GuidFixer.cpp
-  [6/18] Link UnrealEditor-GuidFixer.lib
-     Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.exp
-  [7/18] Compile SimpleShooter.init.gen.cpp
-  [8/18] Compile SimpleShooter.cpp
-  [9/18] Compile Gun.gen.cpp
-  [10/18] Compile SimpleShooterGameModeBase.gen.cpp
-  [11/18] Compile SimpleShooterGameModeBase.cpp
-  [12/18] Link UnrealEditor-GuidFixer.dll
-     Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.suppressed.exp
-  [13/18] Compile ShooterCharacter.gen.cpp
-  [14/18] Compile Gun.cpp
-  [15/18] Compile ShooterCharacter.cpp
-  [16/18] Link UnrealEditor-SimpleShooter.lib
-     Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.exp
-  [17/18] Link UnrealEditor-SimpleShooter.dll
-     Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.suppressed.exp
-  [18/18] WriteMetadata SimpleShooterEditor.target
-  Total time in Parallel executor: 30.11 seconds
-  Total execution time: 34.37 seconds
+  Invalidating makefile for SimpleShooterEditor (working set of source files changed)
+UnrealBuildTool : error : Unable to build while Live Coding is active. Exit the editor and game, or press Ctrl+Alt+F11 if iterating on code in the editor or game
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\Build.bat" SimpleShooterEditor Win64 Development -Project="C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\SimpleShooter.uproject" -WaitMutex -FromMsBuild" exited with code 6.

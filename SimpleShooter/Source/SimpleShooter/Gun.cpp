@@ -26,11 +26,49 @@ void AGun::PullTrigger()
 	{
 		UGameplayStatics::SpawnEmitterAttached(MuzzleParticles, GunMesh, TEXT("MuzzleFlashSocket"));
 		
+		//Get Player Camera's location and rotation for line trace
 		FVector ViewLocation;
 		FRotator ViewRotation;
-		GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
 
-		DrawDebugCamera(GetWorld(), ViewLocation, ViewRotation, 90.f, 3.f, FColor::Red, true);
+		APawn* Character = Cast<APawn>(GetOwner());
+		if (!Character)
+		{
+			return;
+		}
+		AController* Control = Character->GetController();
+		if (!Control)
+		{
+			return;
+		}
+
+		Control->GetPlayerViewPoint(ViewLocation, ViewRotation);
+
+		//Line Trace
+		FHitResult HitResult;
+		FVector EndPoint = ViewLocation + ViewRotation.Vector() * MaxBulletRange;
+		bool bBulletHit = GetWorld()->LineTraceSingleByChannel(
+			HitResult,
+			ViewLocation,
+			EndPoint,
+			ECC_GameTraceChannel1
+		);
+		
+		//If the bullet has hit
+		if (bBulletHit) {
+			//Add Check if AI char and make this ImpactCharParticles
+			FVector ShotDirection = -ViewRotation.Vector();
+			if (ImpactNonCharParticles)
+			{
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactNonCharParticles, HitResult.Location, ShotDirection.Rotation(), true);
+			}
+			//TODO::else if(ImpactNonCharParticles) play that emitter
+
+			FPointDamageEvent DamageEvent(BulletDamage, HitResult, ShotDirection, nullptr);
+			if (HitResult.GetActor()) 
+			{
+				HitResult.GetActor()->TakeDamage(BulletDamage, DamageEvent, Control, this);
+			}
+		}
 	}
 }
 
