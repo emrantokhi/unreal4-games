@@ -32,6 +32,60 @@
     <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
       <Filter>Config\HoloLens</Filter>
     </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GUIDFixer">
+      <UniqueIdentifier>{52FFFC2E-DBDE-366F-B0A9-25B56B243CEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GUIDFixer\Source">
+      <UniqueIdentifier>{74710241-A95D-309A-B730-830A44B0D110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GUIDFixer\Source\GuidFixer">
+      <UniqueIdentifier>{4B890CEE-937D-38CD-BA25-06B691EF4B55}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GUIDFixer\Source\GuidFixer\GuidFixer.Build.cs">
+      <Filter>Plugins\GUIDFixer\Source\GuidFixer</Filter>
+    </None>
+    <Filter Include="Plugins\GUIDFixer\Source\GuidFixer\Private">
+      <UniqueIdentifier>{A4EB5453-674B-3395-8F35-6468DB5D2DF3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\GUIDFixer\Source\GuidFixer\Private\GuidFixer.cpp">
+      <Filter>Plugins\GUIDFixer\Source\GuidFixer\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GUIDFixer\Source\GuidFixer\Private\GuidFixerCommands.cpp">
+      <Filter>Plugins\GUIDFixer\Source\GuidFixer\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GUIDFixer\Source\GuidFixer\Private\GuidFixerStyle.cpp">
+      <Filter>Plugins\GUIDFixer\Source\GuidFixer\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\GUIDFixer\Source\GuidFixer\Public">
+      <UniqueIdentifier>{315A0F74-02DE-3072-8943-5D675D5360CA}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\GUIDFixer\Source\GuidFixer\Public\GuidFixer.h">
+      <Filter>Plugins\GUIDFixer\Source\GuidFixer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\GUIDFixer\Source\GuidFixer\Public\GuidFixerCommands.h">
+      <Filter>Plugins\GUIDFixer\Source\GuidFixer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\GUIDFixer\Source\GuidFixer\Public\GuidFixerStyle.h">
+      <Filter>Plugins\GUIDFixer\Source\GuidFixer\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\GUIDFixer\GuidFixer.uplugin">
+      <Filter>Plugins\GUIDFixer</Filter>
+    </None>
+    <Filter Include="Plugins\GUIDFixer\Resources">
+      <UniqueIdentifier>{5EB149C9-DD72-308A-B444-D4B121C7101C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GUIDFixer\Resources\Icon128.png">
+      <Filter>Plugins\GUIDFixer\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\GUIDFixer\Resources\MaterialButtonIcon_64x.png">
+      <Filter>Plugins\GUIDFixer\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\GUIDFixer\Resources\TextureButtonIcon_40x.png">
+      <Filter>Plugins\GUIDFixer\Resources</Filter>
+    </None>
     <Filter Include="Source\SimpleShooter">
       <UniqueIdentifier>{398169F3-F75C-35FC-ADE5-1313B273635E}</UniqueIdentifier>
     </Filter>
@@ -39,6 +93,12 @@
       <Filter>Source\SimpleShooter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\SimpleShooter\Gun.h">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SimpleShooter\ShooterAIController.cpp">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SimpleShooter\ShooterAIController.h">
       <Filter>Source\SimpleShooter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\SimpleShooter\ShooterCharacter.cpp">

@@ -31,6 +31,10 @@ public:
 	//Cause Damage
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
+	//Tells if actor is alive or not
+	UFUNCTION(BlueprintPure)
+	bool IsDead() const;
+
 private:
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
