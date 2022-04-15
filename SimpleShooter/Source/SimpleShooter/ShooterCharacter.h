@@ -36,6 +36,7 @@ public:
 	bool IsDead() const;
 
 private:
+	void ChangeCamera();
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
 	void LookUpRate(float AxisValue);
@@ -56,4 +57,10 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Health", meta = (AllowPrivateAccess = "true"))
 	float CurrentHealth = 100.f;
+
+	UPROPERTY(VisibleAnywhere)
+	class USpringArmComponent* SpringArmComp = nullptr;
+
+	UPROPERTY(VisibleAnywhere)
+	class UCameraComponent* CameraComp = nullptr;
 };

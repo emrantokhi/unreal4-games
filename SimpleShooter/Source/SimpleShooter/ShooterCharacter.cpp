@@ -2,6 +2,8 @@
 
 #include "ShooterCharacter.h"
 #include "Gun.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
 
 // Sets default values
 AShooterCharacter::AShooterCharacter()
@@ -9,6 +11,11 @@ AShooterCharacter::AShooterCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring arm"));
+	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	
+	SpringArmComp->SetupAttachment(RootComponent);
+	CameraComp->SetupAttachment(SpringArmComp);
 }
 
 // Called when the game starts or when spawned
@@ -52,6 +59,7 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, this, &AShooterCharacter::Shoot);
+	PlayerInputComponent->BindAction(TEXT("ChangeCamera"), EInputEvent::IE_Pressed, this, &AShooterCharacter::ChangeCamera);
 
 }
 
@@ -72,6 +80,17 @@ bool AShooterCharacter::IsDead() const
 		return false;
 	}
 	return true;
+}
+
+void AShooterCharacter::ChangeCamera()
+{
+	if (SpringArmComp)
+	{
+		SpringArmComp->SocketOffset = SpringArmComp->SocketOffset * -1.f;
+		FVector NewLocation = SpringArmComp->GetRelativeLocation();
+		NewLocation.Y = NewLocation.Y * -1.f;
+		SpringArmComp->SetRelativeLocation(NewLocation);
+	}
 }
 
 void AShooterCharacter::MoveForward(float AxisValue)
