@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="..\..\SimpleShooter.uproject" />
     <Filter Include="Source">
@@ -89,6 +89,12 @@
     <Filter Include="Source\SimpleShooter">
       <UniqueIdentifier>{398169F3-F75C-35FC-ADE5-1313B273635E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SimpleShooter\BTTask_ClearBlackboardValue.cpp">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SimpleShooter\BTTask_ClearBlackboardValue.h">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SimpleShooter\Gun.cpp">
       <Filter>Source\SimpleShooter</Filter>
     </ClCompile>
