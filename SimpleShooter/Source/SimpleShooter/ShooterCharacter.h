@@ -35,13 +35,14 @@ public:
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
 
+	void Shoot();
+
 private:
 	void ChangeCamera();
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
 	void LookUpRate(float AxisValue);
 	void LookRightRate(float AxisValue);
-	void Shoot();
 
 	UPROPERTY(EditAnywhere, Category = "Gamepad")
 	float RotationRate = 10.f;
