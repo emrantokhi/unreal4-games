@@ -1,36 +1,25 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
+  Invalidating makefile for SimpleShooterEditor (working set of source files changed)
   Building SimpleShooterEditor...
   Using Visual Studio 2022 14.31.31106 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from SimpleShooter unity file: Gun.cpp, ShooterCharacter.cpp
   Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
     Executing up to 16 processes, one per physical core
-    Requested 1.5 GB free memory per action, 16.26 GB available: limiting max parallel actions to 10
-  Building 20 actions with 10 processes...
-  [1/20] Resource Default.rc2
-  [2/20] Resource Default.rc2
-  [3/20] Compile SharedPCH.UnrealEd.ShadowErrors.cpp
-  [4/20] Compile Module.GuidFixer.cpp
-  [5/20] Link UnrealEditor-GuidFixer.lib
-     Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.exp
-  [6/20] Link UnrealEditor-GuidFixer.dll
-     Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Plugins\GUIDFixer\Intermediate\Build\Win64\UnrealEditor\Development\GuidFixer\UnrealEditor-GuidFixer.suppressed.exp
-  [7/20] Compile SharedPCH.Engine.ShadowErrors.cpp
-  [8/20] Compile SimpleShooter.init.gen.cpp
-  [9/20] Compile SimpleShooter.cpp
-  [10/20] Compile Gun.gen.cpp
-  [11/20] Compile SimpleShooterGameModeBase.gen.cpp
-  [12/20] Compile SimpleShooterGameModeBase.cpp
-  [13/20] Compile ShooterCharacter.gen.cpp
-  [14/20] Compile Gun.cpp
-  [15/20] Compile ShooterCharacter.cpp
-  [16/20] Compile ShooterAIController.gen.cpp
-  [17/20] Compile ShooterAIController.cpp
-  [18/20] Link UnrealEditor-SimpleShooter.lib
+    Requested 1.5 GB free memory per action, 17.54 GB available: limiting max parallel actions to 11
+  Building 11 actions with 11 processes...
+  [1/11] Compile SimpleShooter.init.gen.cpp
+  [2/11] Compile ShooterCharacter.gen.cpp
+  [3/11] Compile ShooterCharacter.cpp
+  [4/11] Compile BTTask_ClearBlackboardValue.gen.cpp
+  [5/11] Compile BTTask_Shoot.gen.cpp
+  [6/11] Compile BTTask_ClearBlackboardValue.cpp
+  [7/11] Compile ShooterAIController.cpp
+  [8/11] Compile BTTask_Shoot.cpp
+  [9/11] Link UnrealEditor-SimpleShooter.lib
      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.exp
-  [19/20] Link UnrealEditor-SimpleShooter.dll
+  [10/11] Link UnrealEditor-SimpleShooter.dll
      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.suppressed.exp
-  [20/20] WriteMetadata SimpleShooterEditor.target
-  Total time in Parallel executor: 34.49 seconds
-  Total execution time: 35.02 seconds
+  [11/11] WriteMetadata SimpleShooterEditor.target
+  Total time in Parallel executor: 3.56 seconds
+  Total execution time: 4.87 seconds

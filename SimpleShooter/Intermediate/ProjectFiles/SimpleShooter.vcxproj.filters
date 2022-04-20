@@ -89,6 +89,18 @@
     <Filter Include="Source\SimpleShooter">
       <UniqueIdentifier>{398169F3-F75C-35FC-ADE5-1313B273635E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SimpleShooter\BTService_PlayerLocation.cpp">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SimpleShooter\BTService_PlayerLocation.h">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SimpleShooter\BTService_PlayerLocationIfSeen.cpp">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SimpleShooter\BTService_PlayerLocationIfSeen.h">
+      <Filter>Source\SimpleShooter</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SimpleShooter\BTTask_ClearBlackboardValue.cpp">
       <Filter>Source\SimpleShooter</Filter>
     </ClCompile>

@@ -46,22 +46,32 @@ void AGun::PullTrigger()
 		//Line Trace
 		FHitResult HitResult;
 		FVector EndPoint = ViewLocation + ViewRotation.Vector() * MaxBulletRange;
+
+		FCollisionQueryParams Params;
+		Params.AddIgnoredActor(this);
+		Params.AddIgnoredActor(GetOwner());
+
 		bool bBulletHit = GetWorld()->LineTraceSingleByChannel(
 			HitResult,
 			ViewLocation,
 			EndPoint,
-			ECC_GameTraceChannel1
+			ECC_GameTraceChannel1,
+			Params
 		);
 		
 		//If the bullet has hit
 		if (bBulletHit) {
-			//Add Check if AI char and make this ImpactCharParticles
 			FVector ShotDirection = -ViewRotation.Vector();
-			if (ImpactNonCharParticles)
+			//If the actor hit was a Pawn, use these particles
+			if (ImpactCharParticles && Cast<APawn>(HitResult.GetActor()))
+			{
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactCharParticles, HitResult.Location, ShotDirection.Rotation(), true);
+			}
+			//Anything else use these
+			else if (ImpactNonCharParticles)
 			{
 				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactNonCharParticles, HitResult.Location, ShotDirection.Rotation(), true);
 			}
-			//TODO::else if(ImpactNonCharParticles) play that emitter
 
 			FPointDamageEvent DamageEvent(BulletDamage, HitResult, ShotDirection, nullptr);
 			if (HitResult.GetActor()) 
