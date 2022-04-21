@@ -1,25 +1,26 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\emrantokhi\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games).
-  Invalidating makefile for SimpleShooterEditor (working set of source files changed)
   Building SimpleShooterEditor...
   Using Visual Studio 2022 14.31.31106 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive Build] Excluded from SimpleShooter unity file: KillEmAllGameModeBase.cpp, ShooterAIController.cpp, ShooterCharacter.cpp, ShooterCharacterController.cpp, SimpleShooterGameModeBase.cpp
   Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
     Executing up to 16 processes, one per physical core
-    Requested 1.5 GB free memory per action, 17.54 GB available: limiting max parallel actions to 11
-  Building 11 actions with 11 processes...
-  [1/11] Compile SimpleShooter.init.gen.cpp
-  [2/11] Compile ShooterCharacter.gen.cpp
-  [3/11] Compile ShooterCharacter.cpp
-  [4/11] Compile BTTask_ClearBlackboardValue.gen.cpp
-  [5/11] Compile BTTask_Shoot.gen.cpp
-  [6/11] Compile BTTask_ClearBlackboardValue.cpp
-  [7/11] Compile ShooterAIController.cpp
-  [8/11] Compile BTTask_Shoot.cpp
-  [9/11] Link UnrealEditor-SimpleShooter.lib
+    Requested 1.5 GB free memory per action, 20.09 GB available: limiting max parallel actions to 13
+  Building 12 actions with 12 processes...
+  [1/12] Compile SimpleShooter.init.gen.cpp
+  [2/12] Compile ShooterCharacterController.gen.cpp
+  [3/12] Compile ShooterCharacterController.cpp
+  [4/12] Compile SimpleShooterGameModeBase.gen.cpp
+  [5/12] Compile SimpleShooterGameModeBase.cpp
+  [6/12] Compile KillEmAllGameModeBase.cpp
+  [7/12] Compile KillEmAllGameModeBase.gen.cpp
+  [8/12] Compile ShooterCharacter.cpp
+  [9/12] Compile ShooterAIController.cpp
+  [10/12] Link UnrealEditor-SimpleShooter.lib
      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.exp
-  [10/11] Link UnrealEditor-SimpleShooter.dll
+  [11/12] Link UnrealEditor-SimpleShooter.dll
      Creating library C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.suppressed.lib and object C:\Users\emrantokhi\Documents\School\Self Learning\unreal\unreal-games\SimpleShooter\Intermediate\Build\Win64\UnrealEditor\Development\SimpleShooter\UnrealEditor-SimpleShooter.suppressed.exp
-  [11/11] WriteMetadata SimpleShooterEditor.target
-  Total time in Parallel executor: 3.56 seconds
-  Total execution time: 4.87 seconds
+  [12/12] WriteMetadata SimpleShooterEditor.target
+  Total time in Parallel executor: 2.63 seconds
+  Total execution time: 3.11 seconds
