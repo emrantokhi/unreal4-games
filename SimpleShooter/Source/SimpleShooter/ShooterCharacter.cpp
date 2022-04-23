@@ -126,6 +126,11 @@ void AShooterCharacter::LookRightRate(float AxisValue)
 	AddControllerYawInput(AxisValue * GetWorld()->GetDeltaSeconds() * RotationRate);
 }
 
+float AShooterCharacter::GetHealthPercent() const
+{
+	return CurrentHealth / MaxHealth;
+}
+
 void AShooterCharacter::Shoot()
 {
 	if (Gun)

@@ -22,46 +22,16 @@ AGun::AGun()
 
 void AGun::PullTrigger()
 {
-	if (GunMesh && MuzzleParticles)
+	if (GunMesh && MuzzleParticles && MuzzleSound && ImpactSound)
 	{
 		UGameplayStatics::SpawnEmitterAttached(MuzzleParticles, GunMesh, TEXT("MuzzleFlashSocket"));
-		
-		//Get Player Camera's location and rotation for line trace
-		FVector ViewLocation;
-		FRotator ViewRotation;
+		UGameplayStatics::SpawnSoundAttached(MuzzleSound, GunMesh, TEXT("MuzzleFlashSocket"));
 
-		APawn* Character = Cast<APawn>(GetOwner());
-		if (!Character)
-		{
-			return;
-		}
-		AController* Control = Character->GetController();
-		if (!Control)
-		{
-			return;
-		}
-
-		Control->GetPlayerViewPoint(ViewLocation, ViewRotation);
-
-		//Line Trace
 		FHitResult HitResult;
-		FVector EndPoint = ViewLocation + ViewRotation.Vector() * MaxBulletRange;
+		FVector ShotDirection;
 
-		FCollisionQueryParams Params;
-		Params.AddIgnoredActor(this);
-		Params.AddIgnoredActor(GetOwner());
-
-		bool bBulletHit = GetWorld()->LineTraceSingleByChannel(
-			HitResult,
-			ViewLocation,
-			EndPoint,
-			ECC_GameTraceChannel1,
-			Params
-		);
-		
 		//If the bullet has hit
-		if (bBulletHit) {
-			FVector ShotDirection = -ViewRotation.Vector();
+		if (GunTrace(HitResult, ShotDirection)) {
 			//If the actor hit was a Pawn, use these particles
 			if (ImpactCharParticles && Cast<APawn>(HitResult.GetActor()))
 			{
@@ -73,9 +43,13 @@ void AGun::PullTrigger()
 				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactNonCharParticles, HitResult.Location, ShotDirection.Rotation(), true);
 			}
 
-			FPointDamageEvent DamageEvent(BulletDamage, HitResult, ShotDirection, nullptr);
-			if (HitResult.GetActor()) 
+			UGameplayStatics::SpawnSoundAtLocation(this, ImpactSound, HitResult.Location);
+
+
+			AController* Control = GetOwnerController();
+			if (Control && HitResult.GetActor()) 
 			{
+				FPointDamageEvent DamageEvent(BulletDamage, HitResult, ShotDirection, nullptr);
 				HitResult.GetActor()->TakeDamage(BulletDamage, DamageEvent, Control, this);
 			}
 		}
@@ -95,5 +69,51 @@ void AGun::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+bool AGun::GunTrace(FHitResult& OutHit, FVector& OutShotDirection)
+{
+	//Get Player Camera's location and rotation for line trace
+	FVector ViewLocation;
+	FRotator ViewRotation;
+
+	AController* Control = GetOwnerController();
+	
+	if (!Control)
+	{
+		return false;
+	}
+
+	Control->GetPlayerViewPoint(ViewLocation, ViewRotation);
+
+	//Line Trace
+	FVector EndPoint = ViewLocation + ViewRotation.Vector() * MaxBulletRange;
+
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+	Params.AddIgnoredActor(GetOwner());
+
+	bool bBulletHit = GetWorld()->LineTraceSingleByChannel(
+		OutHit,
+		ViewLocation,
+		EndPoint,
+		ECC_GameTraceChannel1,
+		Params
+	);
+
+	OutShotDirection = -ViewRotation.Vector();
+
+	return bBulletHit;
+}
+
+AController* AGun::GetOwnerController() const
+{
+	APawn* Character = Cast<APawn>(GetOwner());
+	if (!Character)
+	{
+		return nullptr;
+	}
+
+	return Character->GetController();
 }
 

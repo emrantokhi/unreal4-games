@@ -19,8 +19,12 @@ protected:
 public:
 	virtual void Tick(float DeltaTime) override;
 
+	bool IsDead() const;
+
 private:
 	APawn* PlayerPawn = nullptr;
+
+	bool bIsDead = false;
 
 	UPROPERTY(EditAnywhere)
 	class UBehaviorTree* AIBehavior = nullptr;

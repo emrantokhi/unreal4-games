@@ -26,6 +26,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+
+	bool GunTrace(FHitResult& OutHit, FVector& OutShotDirection);
+	AController* GetOwnerController() const;
+
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* Root = nullptr;
 
@@ -40,6 +44,12 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* ImpactNonCharParticles = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* ImpactSound = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* MuzzleSound = nullptr;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float MaxBulletRange = 1000.f; //About 10 meters

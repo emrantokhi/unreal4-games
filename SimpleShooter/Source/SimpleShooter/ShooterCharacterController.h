@@ -19,13 +19,24 @@ public:
 	
 	void RestartingLevel();
 
+protected:
+	virtual void BeginPlay() override;
+
 private:
+
+	UPROPERTY(EditAnywhere, Category = "UI")
+	TSubclassOf<class UUserWidget> LoseScreenClass;
+
+	UPROPERTY(EditAnywhere, Category = "UI")
+	TSubclassOf<class UUserWidget> WinScreenClass;
+
+	UPROPERTY(EditAnywhere, Category = "UI")
+	TSubclassOf<class UUserWidget> HUDClass;
+
+	class UUserWidget* HUDWidget = nullptr;
+
 	UPROPERTY(EditAnywhere, Category = "Restart Level")
 	float RestartDelay = 5.f;
 
 	FTimerHandle RestartHandle;
 };
-
-/** Restarts the current level */
-//UFUNCTION(exec)
-//virtual void RestartLevel();
