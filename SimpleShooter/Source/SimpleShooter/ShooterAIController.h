@@ -19,6 +19,8 @@ protected:
 public:
 	virtual void Tick(float DeltaTime) override;
 
+	virtual void GameHasEnded(class AActor* EndGameFocus = nullptr, bool bIsWinner = false);
+
 	bool IsDead() const;
 
 private:

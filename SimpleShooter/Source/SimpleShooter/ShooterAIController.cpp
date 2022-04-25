@@ -24,6 +24,13 @@ void AShooterAIController::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+void AShooterAIController::GameHasEnded(AActor* EndGameFocus, bool bIsWinner)
+{
+	Super::GameHasEnded(EndGameFocus, bIsWinner);
+	//DetachFromPawn();
+	Destroy();
+}
+
 bool AShooterAIController::IsDead() const
 {
 	AShooterCharacter* AIPawn = Cast<AShooterCharacter>(GetPawn());

@@ -17,12 +17,31 @@ class SIMPLESHOOTER_API AShooterCharacterController : public APlayerController
 public:
 	virtual void GameHasEnded(class AActor* EndGameFocus = nullptr, bool bIsWinner = false) override;
 	
+	UFUNCTION(BlueprintCallable)
 	void RestartingLevel();
+
+	//Switches the pause variable to the opposite
+	UFUNCTION(BlueprintCallable)
+	void ChangePause();
+
+	UFUNCTION(BlueprintPure)
+	bool GetPaused() const;
+
+	UFUNCTION(BlueprintPure)
+	int32 GetNumEnemies() const;
+
+	UFUNCTION(BlueprintCallable)
+	void AddHUD();
+
+	UFUNCTION(BlueprintCallable)
+	void RemoveHUD();
 
 protected:
 	virtual void BeginPlay() override;
 
 private:
+
+	bool bIsPaused = false;
 
 	UPROPERTY(EditAnywhere, Category = "UI")
 	TSubclassOf<class UUserWidget> LoseScreenClass;
@@ -33,10 +52,10 @@ private:
 	UPROPERTY(EditAnywhere, Category = "UI")
 	TSubclassOf<class UUserWidget> HUDClass;
 
+	UPROPERTY(EditAnywhere, Category = "UI")
+	TSubclassOf<class UUserWidget> PauseClass;
+
 	class UUserWidget* HUDWidget = nullptr;
 
-	UPROPERTY(EditAnywhere, Category = "Restart Level")
-	float RestartDelay = 5.f;
-
-	FTimerHandle RestartHandle;
+	class UUserWidget* PauseWidget = nullptr;
 };

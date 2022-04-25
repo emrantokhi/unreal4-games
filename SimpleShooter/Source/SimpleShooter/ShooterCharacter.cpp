@@ -6,6 +6,8 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "SimpleShooterGameModeBase.h"
+#include "ShooterCharacterController.h"
+#include "ShooterAIController.h"
 
 // Sets default values
 AShooterCharacter::AShooterCharacter()
@@ -35,6 +37,9 @@ void AShooterCharacter::BeginPlay()
 		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
 		Gun->SetOwner(this);
 	}
+
+	//Get the player controller
+	PlayerControl = Cast<AShooterCharacterController>(GetController());
 }
 
 // Called every frame
@@ -62,6 +67,7 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, this, &AShooterCharacter::Shoot);
 	PlayerInputComponent->BindAction(TEXT("ChangeCamera"), EInputEvent::IE_Pressed, this, &AShooterCharacter::ChangeCamera);
+	PlayerInputComponent->BindAction(TEXT("Pause"), EInputEvent::IE_Pressed, this, &AShooterCharacter::Pause);
 
 }
 
@@ -70,7 +76,6 @@ float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dama
 	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	DamageToApply = FMath::Min(CurrentHealth, DamageToApply);
 	CurrentHealth -= DamageToApply;
-	UE_LOG(LogTemp, Warning, TEXT("%f"), CurrentHealth);
 
 	if (IsDead())
 	{
@@ -79,7 +84,14 @@ float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dama
 		{
 			GameMode->PawnKilled(this);
 		}
-		DetachFromControllerPendingDestroy();
+		if (Cast<AShooterAIController>(GetController()))
+		{
+			GetController()->Destroy();
+		}
+		else
+		{
+			DetachFromControllerPendingDestroy();
+		}
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
 
@@ -124,6 +136,14 @@ void AShooterCharacter::LookUpRate(float AxisValue)
 void AShooterCharacter::LookRightRate(float AxisValue)
 {
 	AddControllerYawInput(AxisValue * GetWorld()->GetDeltaSeconds() * RotationRate);
+}
+
+void AShooterCharacter::Pause()
+{
+	if (PlayerControl)
+	{
+		PlayerControl->ChangePause();
+	}
 }
 
 float AShooterCharacter::GetHealthPercent() const

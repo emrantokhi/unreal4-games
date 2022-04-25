@@ -16,7 +16,16 @@ class SIMPLESHOOTER_API AKillEmAllGameModeBase : public ASimpleShooterGameModeBa
 
 public:
 	virtual void PawnKilled(APawn* PawnKilled) override;
+
+	int32 GetNumberOfEnemies() const;
+
+protected:
+	virtual void BeginPlay() override;
 	
 private:
 	void EndGame(bool bIsPlayerWinner);
+
+	void HandleGameStart();
+
+	int32 NumOfEnemies = 0;
 };

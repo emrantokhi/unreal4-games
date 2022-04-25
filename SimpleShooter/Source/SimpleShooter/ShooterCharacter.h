@@ -46,6 +46,9 @@ private:
 	void MoveRight(float AxisValue);
 	void LookUpRate(float AxisValue);
 	void LookRightRate(float AxisValue);
+	void Pause();
+
+	class AShooterCharacterController* PlayerControl = nullptr;
 
 	UPROPERTY(EditAnywhere, Category = "Gamepad")
 	float RotationRate = 10.f;
