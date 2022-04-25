@@ -70,4 +70,6 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	class UCameraComponent* CameraComp = nullptr;
+
+	bool MarkedDead = false;
 };

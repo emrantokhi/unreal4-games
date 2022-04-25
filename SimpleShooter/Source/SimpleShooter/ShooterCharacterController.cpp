@@ -34,6 +34,7 @@ void AShooterCharacterController::GameHasEnded(AActor* EndGameFocus, bool bIsWin
 
 		if (LoseScreenWidget)
 		{
+			RemoveHUD();
 			LoseScreenWidget->AddToViewport();
 		}
 	}
@@ -81,13 +82,12 @@ void AShooterCharacterController::AddHUD()
 	if (HUDWidget)
 	{
 		HUDWidget->AddToViewport();
-		UE_LOG(LogTemp, Warning, TEXT("Adding to view"));
 	}
 }
 
 void AShooterCharacterController::RemoveHUD()
 {
-	if (HUDWidget)
+	if (HUDWidget && HUDWidget->IsInViewport())
 	{
 		HUDWidget->RemoveFromViewport();
 	}

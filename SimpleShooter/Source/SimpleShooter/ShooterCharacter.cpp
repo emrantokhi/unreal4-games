@@ -7,6 +7,7 @@
 #include "Components/CapsuleComponent.h"
 #include "SimpleShooterGameModeBase.h"
 #include "ShooterCharacterController.h"
+#include "KillEmAllGameModeBase.h"
 #include "ShooterAIController.h"
 
 // Sets default values
@@ -80,21 +81,14 @@ float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dama
 	if (IsDead())
 	{
 		ASimpleShooterGameModeBase* GameMode = GetWorld()->GetAuthGameMode<ASimpleShooterGameModeBase>();
-		if (GameMode)
+		if (GameMode && !MarkedDead)
 		{
 			GameMode->PawnKilled(this);
-		}
-		if (Cast<AShooterAIController>(GetController()))
-		{
-			GetController()->Destroy();
-		}
-		else
-		{
+			MarkedDead = true;
 			DetachFromControllerPendingDestroy();
+			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		}
-		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
-
 	return DamageToApply;
 }
 
