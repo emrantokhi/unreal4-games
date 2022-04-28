@@ -81,15 +81,22 @@
 			]
 		},
 		{
-			"ShaderMapHash": "95C5A1D79A8066482E8394F27FFEF834E6AD25AF",
-			"Assets": [
-				"/Game/AssetPacks/ShooterGame/Effects/Materials/Ramp/M_radial_ramp_soft"
-			]
-		},
-		{
 			"ShaderMapHash": "C085F2211AD61C0FDC0F73B8CBAB41A8E95C80AC",
 			"Assets": [
 				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_SolidC"
+			]
+		},
+		{
+			"ShaderMapHash": "7FEB493768E80E6232C5213C61727BFF86F400CA",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_Glass",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Glass"
+			]
+		},
+		{
+			"ShaderMapHash": "95C5A1D79A8066482E8394F27FFEF834E6AD25AF",
+			"Assets": [
+				"/Game/AssetPacks/ShooterGame/Effects/Materials/Ramp/M_radial_ramp_soft"
 			]
 		},
 		{
@@ -99,10 +106,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "7FEB493768E80E6232C5213C61727BFF86F400CA",
+			"ShaderMapHash": "919E44ADF3F16B284108321FB28CA9CF675C4039",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_Glass",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Glass"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/MaterialFunctions/M_Tri_Test"
 			]
 		},
 		{
@@ -121,12 +127,6 @@
 			"ShaderMapHash": "43F53D84AF813AD800237D084C2CA906C59C3E09",
 			"Assets": [
 				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_FrostedGlass_Base"
-			]
-		},
-		{
-			"ShaderMapHash": "919E44ADF3F16B284108321FB28CA9CF675C4039",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/MaterialFunctions/M_Tri_Test"
 			]
 		},
 		{
@@ -185,9 +185,15 @@
 			]
 		},
 		{
-			"ShaderMapHash": "CEB6981B8784CDFA2490593B8D2E0D49BD6FF41E",
+			"ShaderMapHash": "4A7CDB345C19F02A7542EC608720241FFFDF19A4",
 			"Assets": [
-				"/Paper2D/DefaultSpriteMaterial"
+				"/WebBrowserWidget/WebTexture_TM"
+			]
+		},
+		{
+			"ShaderMapHash": "F3D0CA659F7C7C1CDA1D3DAB048584B3E4D02365",
+			"Assets": [
+				"/WebBrowserWidget/WebTexture_M"
 			]
 		},
 		{
@@ -200,6 +206,37 @@
 			"ShaderMapHash": "3B599E1E84C6BED8F66AF5A2D1125FB845FE4CAB",
 			"Assets": [
 				"/ControlRig/M_Manip"
+			]
+		},
+		{
+			"ShaderMapHash": "CEB6981B8784CDFA2490593B8D2E0D49BD6FF41E",
+			"Assets": [
+				"/Paper2D/DefaultSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "EB3D7F1CD6700B8CEB6658FD35E66ED8E713841F",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_SnowFlake_VelocityLerp_AA",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_SnowFlake_VelocityLerp"
+			]
+		},
+		{
+			"ShaderMapHash": "83D35C2EF9FF25DF821A1D19312D9100EAF2848D",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_Snow_Blowing_unLit"
+			]
+		},
+		{
+			"ShaderMapHash": "9BA0AA90FE4377092CFD5571BFB88258505CB424",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_Snow_Blowing_Lit"
+			]
+		},
+		{
+			"ShaderMapHash": "1DBB61C1C7234AA81210CA77A63B1021DD5654AD",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/NatureMaterials_Ice/Materials/M_IceBase"
 			]
 		},
 		{
@@ -257,222 +294,17 @@
 			]
 		},
 		{
-			"ShaderMapHash": "B43D983CD3BDA59466984205703D5D9E6F5FE1F6",
-			"Assets": [
-				"/Engine/EngineMaterials/Widget3DPassThrough",
-				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent_OneSided"
-			]
-		},
-		{
-			"ShaderMapHash": "4A7CDB345C19F02A7542EC608720241FFFDF19A4",
-			"Assets": [
-				"/WebBrowserWidget/WebTexture_TM"
-			]
-		},
-		{
-			"ShaderMapHash": "F3D0CA659F7C7C1CDA1D3DAB048584B3E4D02365",
-			"Assets": [
-				"/WebBrowserWidget/WebTexture_M"
-			]
-		},
-		{
-			"ShaderMapHash": "CD9B6DED9D0C58D114FA76EF086A6F4750D4F7A0",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_Lensflare_TB_SoftGlow"
-			]
-		},
-		{
-			"ShaderMapHash": "9709BA94EA7F5839B80231BD172CE4A9E29F9AB3",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_Lensflare_TB_Soft"
-			]
-		},
-		{
-			"ShaderMapHash": "CBE10157827F4E055584332D5726592F019F6C1D",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Maps/BackGroundAssets/M_HDRSky"
-			]
-		},
-		{
-			"ShaderMapHash": "81FCE478ACAF1C47903CCEE90DA8B2502F837953",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Particles/Materials/M_smoke_subUV"
-			]
-		},
-		{
-			"ShaderMapHash": "7D30811094FB9072F5B2486495B571EC72BC5F3F",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Particles/Materials/M_Dust_Particle"
-			]
-		},
-		{
-			"ShaderMapHash": "B150AA951472CA41983BB3A161BDDC7C261898CA",
-			"Assets": [
-				"/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale"
-			]
-		},
-		{
-			"ShaderMapHash": "CC55EA1DC806B30DD6AE1628892C72F7943F02A8",
-			"Assets": [
-				"/Engine/EngineMaterials/PPM_DefaultCalibrationColor"
-			]
-		},
-		{
-			"ShaderMapHash": "CA5E52CACC8C177679D06C910BA38FFD19582423",
-			"Assets": [
-				"/Engine/EditorMaterials/PreviewShadowIndicatorMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "45BCDDDE4D8BBA51E3DF33215875EB26D3865BD5",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Wraith_Halo"
-			]
-		},
-		{
-			"ShaderMapHash": "E9E6C9BB8C80820E8A0EDD8DCFEE711FDDF17CF1",
-			"Assets": [
-				"/Engine/EngineSky/M_Sky_Panning_Clouds2"
-			]
-		},
-		{
-			"ShaderMapHash": "2AAA7135E6087AC778A0B63EEB5E690F49F86CD8",
-			"Assets": [
-				"/Engine/EngineMaterials/DefaultParticle"
-			]
-		},
-		{
-			"ShaderMapHash": "8D2C81560F319CAC95F0D225816085902981E317",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Wraith_Projectile_Ribbon"
-			]
-		},
-		{
-			"ShaderMapHash": "A583E5F9F9E78C40859F062E7ECBF9E25AE03C5C",
-			"Assets": [
-				"/Engine/EditorMeshes/ColorCalibrator/M_ColorGrid"
-			]
-		},
-		{
-			"ShaderMapHash": "C1C4D238DD1B7965447AC1AA883EBE094E18F9C2",
-			"Assets": [
-				"/Engine/MapTemplates/Sky/M_Procedural_Sky_MASTER02"
-			]
-		},
-		{
-			"ShaderMapHash": "CE5D72DE311D46F68FCE2027B9A3DAF2DB389E47",
-			"Assets": [
-				"/Paper2D/OpaqueUnlitSpriteMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "E171CFA61F0313D35C414F4721E393617AAFB691",
-			"Assets": [
-				"/SpeedTreeImporter/SpeedTree9/SpeedTreeBillboardMaster"
-			]
-		},
-		{
-			"ShaderMapHash": "14CC31EF34BEE66179FCF777D126490DD5DFA5DD",
-			"Assets": [
-				"/SpeedTreeImporter/SpeedTree9/SpeedTreeMaster"
-			]
-		},
-		{
-			"ShaderMapHash": "648B34FBF1A6265873DAA2FDE756E9E90165B27A",
-			"Assets": [
-				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
-			]
-		},
-		{
-			"ShaderMapHash": "08AB2FB6F0B0D7F55EC432ED817F96CBDE053FE7",
-			"Assets": [
-				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque"
-			]
-		},
-		{
-			"ShaderMapHash": "23B1EF696CB55868211558A2D14ECFFBB29B851A",
-			"Assets": [
-				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent"
-			]
-		},
-		{
-			"ShaderMapHash": "B12B02AAA969516CCBEEB8E76FA922C5CB2ED0A5",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/M_LingerSmoke_MasterAdditiveWarp_EmissiveParticleColor"
-			]
-		},
-		{
-			"ShaderMapHash": "3B2B19FA5414E6DAD9643AF0062E6F480FA16D8E",
-			"Assets": [
-				"/Engine/EngineMaterials/Widget3DPassThrough_Masked_OneSided"
-			]
-		},
-		{
-			"ShaderMapHash": "3A21A22B26B50FF022F4DB6451E17D307A26F2AF",
-			"Assets": [
-				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided"
-			]
-		},
-		{
-			"ShaderMapHash": "5986553DBFA476F89B78A9D80C701CAA0809B53D",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_B_Scr"
-			]
-		},
-		{
-			"ShaderMapHash": "EB3D7F1CD6700B8CEB6658FD35E66ED8E713841F",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_SnowFlake_VelocityLerp",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_SnowFlake_VelocityLerp_AA"
-			]
-		},
-		{
-			"ShaderMapHash": "83D35C2EF9FF25DF821A1D19312D9100EAF2848D",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_Snow_Blowing_unLit"
-			]
-		},
-		{
-			"ShaderMapHash": "03B9330ADDC65C78B6E90A430BA571A39BA952AC",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/CollectionMaps/Map1"
-			]
-		},
-		{
-			"ShaderMapHash": "847C0A8194A91EDE4AC47D2D90914C55592E5FF4",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Trims_C_FloorBlack_Det2"
-			]
-		},
-		{
-			"ShaderMapHash": "C42F8570C0AF98F9D5BAC67FB456C599078CDDAA",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_LensFlare_Particle"
-			]
-		},
-		{
-			"ShaderMapHash": "9BA0AA90FE4377092CFD5571BFB88258505CB424",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Effects/Materials/Snow/M_Snow_Blowing_Lit"
-			]
-		},
-		{
-			"ShaderMapHash": "E21B2189C4649A0311A0F05DA8D5DCB74CDA7D83",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_White_Brushed"
-			]
-		},
-		{
-			"ShaderMapHash": "1DBB61C1C7234AA81210CA77A63B1021DD5654AD",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/NatureMaterials_Ice/Materials/M_IceBase"
-			]
-		},
-		{
 			"ShaderMapHash": "7EEDF4110A6BA528107DD3C6CAEFEBA9F6F382B8",
 			"Assets": [
 				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_Light_Base",
 				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Lights_Base"
+			]
+		},
+		{
+			"ShaderMapHash": "B43D983CD3BDA59466984205703D5D9E6F5FE1F6",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough",
+				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent_OneSided"
 			]
 		},
 		{
@@ -506,18 +338,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "9CBB2F71FB51C02A63B91A925F1EDEDDCE715A95",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Backpack"
-			]
-		},
-		{
-			"ShaderMapHash": "1CA5E5E2501BCF58E3123DBB5317CF0E96419CD5",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Backpack"
-			]
-		},
-		{
 			"ShaderMapHash": "72B63F3A6B8DF221613B43A45764E007091C6984",
 			"Assets": [
 				"/Game/AssetPacks/ShooterGame/Effects/Materials/Smoke/M_ImpactSmoke"
@@ -536,67 +356,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "56374B7D6F8087F800AB3867CB38D23937EEBA32",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Gun_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "ECB4EF3FA82E61C2DCBE7A567F3BC63D6F7E1F12",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Gun_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "C4731D13364E74B7D24F2B9605DDB6A501F15DD5",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Backpack_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "F0BAB624E4770AE3F35AA0432881CE695E424ADB",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Backpack_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "3EA39BCCFB7EC563591EB3A5A49491A23989715D",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Gun"
-			]
-		},
-		{
-			"ShaderMapHash": "E13E90BD1989DCDCEA946EE369D1AF1844EB98ED",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Gun"
-			]
-		},
-		{
-			"ShaderMapHash": "E88C9458668CB8958EF9473CACE7F416885F21F1",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Lowerbody"
-			]
-		},
-		{
-			"ShaderMapHash": "9FCDF98F1F7D27883872C0029F210EEAC6EAB8A6",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Lowerbody"
-			]
-		},
-		{
-			"ShaderMapHash": "65E83891AC5CED5E854EF964A48478CB43208DF2",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Upperbody"
-			]
-		},
-		{
-			"ShaderMapHash": "3BE29A0721A385BABC052DB6C23E629A28471958",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Upperbody",
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/M_Wraith_Upperbody"
-			]
-		},
-		{
 			"ShaderMapHash": "3BCD46C91F770F0FFA49CD4281C3819CB1034603",
 			"Assets": [
 				"/Game/AssetPacks/ShooterGame/Effects/Materials/LensFlare/M_LensFlare_02"
@@ -609,165 +368,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "EA2F30852742C68781196E66848F123350A5CE9C",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/M_BigSnow"
-			]
-		},
-		{
-			"ShaderMapHash": "B95E0A50C331235F7C554192C3A8EFADB9414B6E",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/M_ShadowPlaneShimmer"
-			]
-		},
-		{
-			"ShaderMapHash": "F9D5F07FD8C7BF35EBC09DC2340C0DE46F7D6882",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/HeatDistort/M_Shockwave_Refract"
-			]
-		},
-		{
 			"ShaderMapHash": "09626BD2A2C6B0839D61881D90D6AC2CA8EBEF40",
 			"Assets": [
 				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_WaterImpact_Strand_Masked"
-			]
-		},
-		{
-			"ShaderMapHash": "54FE17999E04BBFB24530B080F884145CEDBEAF8",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Lowerbody_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "13753469F8C286E8968F461284B5C497F96E84A3",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Lowerbody_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "6BB526EDAA624FF8FD9362FD9BC50BDAFB771035",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Thruster_Cone"
-			]
-		},
-		{
-			"ShaderMapHash": "7304EFB5042D053A1EF808F725D376C4FBC05364",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Jet_Mesh"
-			]
-		},
-		{
-			"ShaderMapHash": "1FFDCD8B83FD61212E80176ECD7EA3E51D0DB2FF",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Teleport_Refraction"
-			]
-		},
-		{
-			"ShaderMapHash": "CEC4299436122AA47594E651CA2B1DDD2E140220",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_LensFlareMaster"
-			]
-		},
-		{
-			"ShaderMapHash": "6EC77823BC16161711D5E79EE88C476F099A7F7E",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Attachment_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "F3EFB404DDBC5A32327BCBA131D346692BB88033",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Attachment_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "F1AA8AF64BF5E0386795C5803439B31A4D8AD7AA",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_WaterBubbles"
-			]
-		},
-		{
-			"ShaderMapHash": "FA229D37FF9B9B05A05D444953CAD70366C693DA",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Energy_Ripple_Spline2"
-			]
-		},
-		{
-			"ShaderMapHash": "15B65DD0871B539A4C8B8E12F65F54F40E91EAE5",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Upperbody_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "DF7880241B718FD5D3AE7523BFF008D858B40E7A",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Upperbody_LunarOps"
-			]
-		},
-		{
-			"ShaderMapHash": "22867D550E3D9829EDB7B8E33D371D97084F3335",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_SmokeEnergy_SubUV"
-			]
-		},
-		{
-			"ShaderMapHash": "D92A195B96DE457B1E48239CCE196A19BD2B34BA",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Large_Bolt"
-			]
-		},
-		{
-			"ShaderMapHash": "347DCDD08A99A8B45A0CA3EE7460E919C4EB9F2E",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_CameraLens_Teleporting"
-			]
-		},
-		{
-			"ShaderMapHash": "A990AC2FB4DE423645026422C3B329968F2E5A65",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_Wraith_Drone_ElectroField"
-			]
-		},
-		{
-			"ShaderMapHash": "7BAA92AEFD35A4F6972F61856F5DC8AB1345C2FC",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_ResidualMuzzleSmoke_Master"
-			]
-		},
-		{
-			"ShaderMapHash": "CE817F9844331127B69369E2AACE911BFE046450",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Attachment_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "57A8499644C8C3274DBA54B42759C61D43D52523",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Attachment_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "34C2305F82F73D44432E78DF508E1E599AA50960",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Attachment_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "75AB07CB71191211B5CAE1D0EAF87F9568701053",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Backpack_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "50024BD3ED2542F2CCF3BE724252B0911D324256",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Backpack_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "D196C15AA2FD836F78C25FEA3471F3EE9AF8E0F3",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Backpack_ODGreen"
 			]
 		},
 		{
@@ -777,28 +380,22 @@
 			]
 		},
 		{
-			"ShaderMapHash": "570A96B6AB53431ACF73A848BC4764A57A5B84C7",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Gun_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "7E333409926F9146656B82FC19FACC70F5E2C61A",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Gun_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "0A824F67BF9831A9A4B265972F6D950B85E9115C",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Gun_ODGreen"
-			]
-		},
-		{
 			"ShaderMapHash": "565EBE0FD74A79CF42F3A68C2F2E1A879EE588F1",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Decals/M_Decal_Base",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/Decals/M_Decal_Base"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/Decals/M_Decal_Base",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Decals/M_Decal_Base"
+			]
+		},
+		{
+			"ShaderMapHash": "7304EFB5042D053A1EF808F725D376C4FBC05364",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Jet_Mesh"
+			]
+		},
+		{
+			"ShaderMapHash": "7BAA92AEFD35A4F6972F61856F5DC8AB1345C2FC",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_ResidualMuzzleSmoke_Master"
 			]
 		},
 		{
@@ -808,177 +405,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "2970271E2F5B0CCA564FBC97E8A711313D510017",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Lowerbody_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "40ABB646DAEF2EF49D96CD17F673E59EDF1260ED",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Lowerbody_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "434A2A24B0EAAA31D49EA46EBC160E18C2A58623",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Lowerbody_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "BF3C92FC0E7E2411ACB5C14E3D1F83ACB29B60F7",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Shockwaves/M_Shockwave_Soft"
-			]
-		},
-		{
-			"ShaderMapHash": "F44DBE2505DDDD5AB430D163E8A3DA64F9DF0489",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/VolumeFog/MI_Fog_SphericalDensity_Particle"
-			]
-		},
-		{
-			"ShaderMapHash": "E6DF0CC4D69107D6F98660BAD571D743C3937387",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Upperbody_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "677C68E2A8CAB50059FCCD9571C49E24C26A5B74",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Upperbody_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "2B49E4E190D3D2BBDD2D8ECD1D44F44EB06FC305",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Upperbody_ODGreen"
-			]
-		},
-		{
-			"ShaderMapHash": "A32837C69C95991219E54CBE8780258B3BAD32F3",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Tech_Holo_Spline_WPO"
-			]
-		},
-		{
 			"ShaderMapHash": "2B41CF62BA9D5515854B4AD967078F3432BF0AFB",
 			"Assets": [
 				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Reg_Glass"
-			]
-		},
-		{
-			"ShaderMapHash": "6C0B7A0A35F0B4AF687B7BA8F10A4A7D217BB209",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Wraith_Tech_Holo_Spline"
-			]
-		},
-		{
-			"ShaderMapHash": "CC70DEBA77AE3E49FB4698D10F88BD0F6AF638A2",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/Spline/M_Smoke_SplineMesh_Trail"
-			]
-		},
-		{
-			"ShaderMapHash": "ED92D29424B127C55AE22C66232EC376035E0439",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/M_IceChunks_01"
-			]
-		},
-		{
-			"ShaderMapHash": "DED02BEA0B92E26BB26206619BCD19CF02786ED0",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Wraith_Tech_Holo_Flicker_Spline"
-			]
-		},
-		{
-			"ShaderMapHash": "AAE5ED524512802B140607018681111B72AEB1F0",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Hotdog_Spline_Laser"
-			]
-		},
-		{
-			"ShaderMapHash": "29FBA8DD26CF474CB010D1A0F62F32A8FCBD541B",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Meshes/Splines/M_Spline_Preview"
-			]
-		},
-		{
-			"ShaderMapHash": "7A7DA667D16BB945C0AE591A54467ACB40F12E9A",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_3C"
-			]
-		},
-		{
-			"ShaderMapHash": "AB6D2086EF8E539337820ACE96A8DEE05334CE88",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_SolidColor_Base",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_SolidColor_Base",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_SolidColor_Base"
-			]
-		},
-		{
-			"ShaderMapHash": "5BDA10999639D5D481C836DE713DDDFBA9E1A949",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_3C",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/M_Base_3C"
-			]
-		},
-		{
-			"ShaderMapHash": "22DF93F017EFB7FFD9B894D90EEEA324B288C9E8",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_E_Scr",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/M_Base_Tile_Scr"
-			]
-		},
-		{
-			"ShaderMapHash": "5FB4131F9436707962DD68798806EA0E60ADC40D",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_4C_Scr",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/M_Base_4C_Scr"
-			]
-		},
-		{
-			"ShaderMapHash": "20F98FC49A06B53504ECD6FBCE29228EC5DE7A5D",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_Base_3C"
-			]
-		},
-		{
-			"ShaderMapHash": "6BD1896E25D94CF6E61F8CA16355A4FA5D3B56F6",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_Pipes"
-			]
-		},
-		{
-			"ShaderMapHash": "40B575C20649354F3888B207115ED24136CD93A9",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_Trim"
-			]
-		},
-		{
-			"ShaderMapHash": "979FE1D6539DC34F4B80DAD259AEAD00262973DA",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_2C",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_Base_2C"
-			]
-		},
-		{
-			"ShaderMapHash": "EAF14D829C331801FBE5931223AD11F7242607F9",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_Base_3C"
-			]
-		},
-		{
-			"ShaderMapHash": "18AE6F6C3C8A74AFB021F0256E38648E5A1C8A05",
-			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_SolidColor_Base"
-			]
-		},
-		{
-			"ShaderMapHash": "209036C75511B1AC921A0440EE663E408A9130AB",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_GlowPoint_CameraFacing"
 			]
 		},
 		{
@@ -988,34 +417,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "1B8998C4986049C0EAEBA915465ABE2F007B8CC9",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_ShadowPlane_Hex"
-			]
-		},
-		{
 			"ShaderMapHash": "9E3DDF7ECA83FB78EC116FF1F721371FD26AA63C",
 			"Assets": [
 				"/Game/AssetPacks/ParagonWraith/FX/Materials/Sparks/M_Hotdog_VLerp_DirectionTint"
-			]
-		},
-		{
-			"ShaderMapHash": "9230FB310A628F83D4108C07421D54BFEE66EAB4",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/Hydro/M_Wraith_Water_Particles",
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/Hydro/M_Hydro_Water_Particles_Body_Inst"
-			]
-		},
-		{
-			"ShaderMapHash": "0C9A3B9BE5272A07A77E347F8C02A690A4CE95EE",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_WaterMist"
-			]
-		},
-		{
-			"ShaderMapHash": "D6D0CB6EE5CEDA43D2869EF49C68A0E79E511DA1",
-			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/VolumeFog/M_Fog_SphericalDensity"
 			]
 		},
 		{
@@ -1025,27 +429,39 @@
 			]
 		},
 		{
-			"ShaderMapHash": "431744A94FD358B19DC250B66E2C0AE7D0D91AC3",
+			"ShaderMapHash": "B12B02AAA969516CCBEEB8E76FA922C5CB2ED0A5",
 			"Assets": [
-				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatA"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/M_LingerSmoke_MasterAdditiveWarp_EmissiveParticleColor"
 			]
 		},
 		{
-			"ShaderMapHash": "1C830B2E96175A7BF2CC4AFA2F584912CD70FC7A",
+			"ShaderMapHash": "8D2C81560F319CAC95F0D225816085902981E317",
 			"Assets": [
-				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatA"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Wraith_Projectile_Ribbon"
 			]
 		},
 		{
-			"ShaderMapHash": "5C00A48176CEA3182224EE54C626882B7C6D0AA7",
+			"ShaderMapHash": "45BCDDDE4D8BBA51E3DF33215875EB26D3865BD5",
 			"Assets": [
-				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatB"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Wraith_Halo"
 			]
 		},
 		{
-			"ShaderMapHash": "B0C5996B0C79B5ACE15E30853B2F5952C61BCD21",
+			"ShaderMapHash": "CD9B6DED9D0C58D114FA76EF086A6F4750D4F7A0",
 			"Assets": [
-				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatB"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_Lensflare_TB_SoftGlow"
+			]
+		},
+		{
+			"ShaderMapHash": "9709BA94EA7F5839B80231BD172CE4A9E29F9AB3",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_Lensflare_TB_Soft"
+			]
+		},
+		{
+			"ShaderMapHash": "CBE10157827F4E055584332D5726592F019F6C1D",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Maps/BackGroundAssets/M_HDRSky"
 			]
 		},
 		{
@@ -1055,9 +471,335 @@
 			]
 		},
 		{
+			"ShaderMapHash": "4FF8871684EEF50F4249E107C5C79C732C30E1D1",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_SolidLight_Parent"
+			]
+		},
+		{
+			"ShaderMapHash": "444B011918A9C45F6D914D6A3E42D4CB137D7987",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_UI_Parent"
+			]
+		},
+		{
+			"ShaderMapHash": "85933FCC6F3CFB396F1ECD72C051D50222194236",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_UIScreen_Parent",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_HandScanner_Screen2",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_HandScanner_Screen"
+			]
+		},
+		{
+			"ShaderMapHash": "8DE434BB504E1077249D32C38DA657BCE980B4D4",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_Glass_Base2"
+			]
+		},
+		{
+			"ShaderMapHash": "EC0A35BF205D83BC0E20D78BEA159691923AB656",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_Wires_B"
+			]
+		},
+		{
+			"ShaderMapHash": "20B797DB2C0F5282B0F655ADB81317B5FF4412D3",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_Wires"
+			]
+		},
+		{
+			"ShaderMapHash": "81FCE478ACAF1C47903CCEE90DA8B2502F837953",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Particles/Materials/M_smoke_subUV"
+			]
+		},
+		{
+			"ShaderMapHash": "FBBC1C25167A2B839E0F65B2DAF403B8288FDB8C",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_GlassLight"
+			]
+		},
+		{
+			"ShaderMapHash": "B0A1B005DBB4A690C102C0BE75FD0CDC10331E54",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_EnergyEmissive"
+			]
+		},
+		{
+			"ShaderMapHash": "7D30811094FB9072F5B2486495B571EC72BC5F3F",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Particles/Materials/M_Dust_Particle"
+			]
+		},
+		{
+			"ShaderMapHash": "5F981CBE2E8621E6E0CE12D85FD2BF9B951DF10D",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_UI_Parent"
+			]
+		},
+		{
+			"ShaderMapHash": "3DF1E2AC2358A47F46AEADAAE9C3ACE820828EB1",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_CustomerMessage"
+			]
+		},
+		{
+			"ShaderMapHash": "3C4CEF480A1C3B35B64657CBADFCE7D38769DDCA",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/WispySmokeSoft/M_WispySmokeSoft"
+			]
+		},
+		{
+			"ShaderMapHash": "B150AA951472CA41983BB3A161BDDC7C261898CA",
+			"Assets": [
+				"/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale"
+			]
+		},
+		{
+			"ShaderMapHash": "CC55EA1DC806B30DD6AE1628892C72F7943F02A8",
+			"Assets": [
+				"/Engine/EngineMaterials/PPM_DefaultCalibrationColor"
+			]
+		},
+		{
+			"ShaderMapHash": "CA5E52CACC8C177679D06C910BA38FFD19582423",
+			"Assets": [
+				"/Engine/EditorMaterials/PreviewShadowIndicatorMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "2885B5F62DEDC7F004E36D2752645492A864D670",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_Directional_Lit_DepthSmoke_Master",
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_Directional_Lit_Depth_Smoke_Spikey_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "15FDC55A4BA6E206C306462488218C0FD2DC5B1C",
+			"Assets": [
+				"/Game/AssetPacks/ShooterGame/Effects/Materials/Weapon/M_MuzzleGlow"
+			]
+		},
+		{
+			"ShaderMapHash": "2C54D39D5ED682E52AA8F3491E9D34B2AE3998FE",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_Water_Drops_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "88AE6F46FD5A91E6C34495F4D47CD8F871B96D5F",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_WaterImpact_Cylinder"
+			]
+		},
+		{
+			"ShaderMapHash": "39AE386F10D2BEF3A39F2B9598390E731C4E6F8A",
+			"Assets": [
+				"/Game/AssetPacks/ShooterGame/Effects/Materials/Ramp/M_SoftGradient_Muzzle"
+			]
+		},
+		{
+			"ShaderMapHash": "629D15CECF1D8448B125231FDD96D9A761A241DB",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Environment/Water/M_WaterRipple_Mesh_Foam"
+			]
+		},
+		{
+			"ShaderMapHash": "59FF67E149CE423228CBA0D32F48CAFA5F8A3247",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Trails/M_Bullet_Trail"
+			]
+		},
+		{
+			"ShaderMapHash": "84B0B73F503B86635B2719D9A48D4E82CC380592",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Spline_Light_Scanner"
+			]
+		},
+		{
+			"ShaderMapHash": "C310FC19111BB1734E81EB820C259C20962940DE",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Holo_Reticle_FlickerIn"
+			]
+		},
+		{
+			"ShaderMapHash": "123C9C272C4EF3A5FCC7ADD204E332B50F4C6EF2",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Holo_Display_FlickerIn"
+			]
+		},
+		{
+			"ShaderMapHash": "BBF5A175FD62110C2A790CC24FDBCB1F9617AF08",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Holo_Display_02_FlickerIn"
+			]
+		},
+		{
+			"ShaderMapHash": "E04ED1629DCFD0CED8FAD37C383A8A6887E9C211",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Sparks/M_Spark_VelocityLerp_WorldColor"
+			]
+		},
+		{
+			"ShaderMapHash": "45E896578CA2F7DBC4ECD7B466EA79EDF87C3593",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Sparks/M_Hotdog_Spark_VLerp_MASTER"
+			]
+		},
+		{
+			"ShaderMapHash": "F515D6CD75EF1C49CDF44DB041A8BCDED15FFC85",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/Hyperbreach/M_Smoke_Offset_Particles_SubUV_LIT"
+			]
+		},
+		{
+			"ShaderMapHash": "CC4CF0DC3AF35DF8E337E0C8251A19210F88DB1D",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_Screen_Triangles"
+			]
+		},
+		{
+			"ShaderMapHash": "CB70BA5CCB35E910EB1A4C943AEA93C000623A11",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Wraith_Muzzle_Flash"
+			]
+		},
+		{
+			"ShaderMapHash": "55279BA0DC7B6441AB8539021895841A29C11031",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Spark_VelocityLerp_TeamColor"
+			]
+		},
+		{
+			"ShaderMapHash": "6A9A058374569F6BFD158D934114164E9C524B06",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/AirGlows/M_Recall_GlowingDots"
+			]
+		},
+		{
+			"ShaderMapHash": "83C4FA09403C466FA231B17FD07F68002DC5E51A",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Glitch_Refraction"
+			]
+		},
+		{
+			"ShaderMapHash": "582554AC706E86489E67D1F3543688EC0145CDCE",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Ult_Bullet_Pyramid"
+			]
+		},
+		{
+			"ShaderMapHash": "57FD9781CD1CF6E4A5B7BADC7A0C3022D837096B",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_Glass_Base"
+			]
+		},
+		{
+			"ShaderMapHash": "E9E6C9BB8C80820E8A0EDD8DCFEE711FDDF17CF1",
+			"Assets": [
+				"/Engine/EngineSky/M_Sky_Panning_Clouds2"
+			]
+		},
+		{
+			"ShaderMapHash": "2AAA7135E6087AC778A0B63EEB5E690F49F86CD8",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultParticle"
+			]
+		},
+		{
+			"ShaderMapHash": "A583E5F9F9E78C40859F062E7ECBF9E25AE03C5C",
+			"Assets": [
+				"/Engine/EditorMeshes/ColorCalibrator/M_ColorGrid"
+			]
+		},
+		{
+			"ShaderMapHash": "C1C4D238DD1B7965447AC1AA883EBE094E18F9C2",
+			"Assets": [
+				"/Engine/MapTemplates/Sky/M_Procedural_Sky_MASTER02"
+			]
+		},
+		{
+			"ShaderMapHash": "81847B5A2D9DE4E1F7E2CEF4A4CC23DB35E0294E",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/M_Cave_Landscape_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "CE5D72DE311D46F68FCE2027B9A3DAF2DB389E47",
+			"Assets": [
+				"/Paper2D/OpaqueUnlitSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "19897E2D4E4E0F1F6C4EB40806D9DF73D43B73C5",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_A/Materials/M_Cave_Landscape_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "E171CFA61F0313D35C414F4721E393617AAFB691",
+			"Assets": [
+				"/SpeedTreeImporter/SpeedTree9/SpeedTreeBillboardMaster"
+			]
+		},
+		{
+			"ShaderMapHash": "14CC31EF34BEE66179FCF777D126490DD5DFA5DD",
+			"Assets": [
+				"/SpeedTreeImporter/SpeedTree9/SpeedTreeMaster"
+			]
+		},
+		{
+			"ShaderMapHash": "B8BE58DBDF372C753F1F4D7065B708FA4D5F6299",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_GlowPoint_MASTER"
+			]
+		},
+		{
+			"ShaderMapHash": "C22142FE2A2DFB73F7DBCD9170283B02EE8BB7E2",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_DarkFlare_DistShrink"
+			]
+		},
+		{
+			"ShaderMapHash": "1327BA03F661AC4B6A29930524ACF9D6861C9BA4",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Debris/M_Explosion_RockChunks"
+			]
+		},
+		{
+			"ShaderMapHash": "648B34FBF1A6265873DAA2FDE756E9E90165B27A",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
+			]
+		},
+		{
+			"ShaderMapHash": "08AB2FB6F0B0D7F55EC432ED817F96CBDE053FE7",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque"
+			]
+		},
+		{
+			"ShaderMapHash": "23B1EF696CB55868211558A2D14ECFFBB29B851A",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent"
+			]
+		},
+		{
 			"ShaderMapHash": "17ED67CE6E631A9780F46078CD23E7A59B89C707",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_TempControl_Screen2"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_TempControl_Screen2",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_TempControl_Screen",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_Laptop_Mail_Alt",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_Laptop_Mail",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_Laptop_Desktop_Alt",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_Laptop_Desktop"
+			]
+		},
+		{
+			"ShaderMapHash": "8053AB6313BE46301F02F0BA222EE52FF234FC59",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_Directional_Lit_Depth_SmokeElement_Inst"
 			]
 		},
 		{
@@ -1091,233 +833,516 @@
 			]
 		},
 		{
-			"ShaderMapHash": "4FF8871684EEF50F4249E107C5C79C732C30E1D1",
+			"ShaderMapHash": "5C00A48176CEA3182224EE54C626882B7C6D0AA7",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_SolidLight_Parent"
+				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatB"
 			]
 		},
 		{
-			"ShaderMapHash": "444B011918A9C45F6D914D6A3E42D4CB137D7987",
+			"ShaderMapHash": "B0C5996B0C79B5ACE15E30853B2F5952C61BCD21",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_UI_Parent"
+				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatB"
 			]
 		},
 		{
-			"ShaderMapHash": "85933FCC6F3CFB396F1ECD72C051D50222194236",
+			"ShaderMapHash": "431744A94FD358B19DC250B66E2C0AE7D0D91AC3",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_UIScreen_Parent",
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/MI_HandScanner_Screen2"
+				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatA"
 			]
 		},
 		{
-			"ShaderMapHash": "1327BA03F661AC4B6A29930524ACF9D6861C9BA4",
+			"ShaderMapHash": "1C830B2E96175A7BF2CC4AFA2F584912CD70FC7A",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Debris/M_Explosion_RockChunks"
+				"/Game/AssetPacks/ShooterGame/Weapons/Materials/Launcher_MatA"
 			]
 		},
 		{
-			"ShaderMapHash": "8053AB6313BE46301F02F0BA222EE52FF234FC59",
+			"ShaderMapHash": "9230FB310A628F83D4108C07421D54BFEE66EAB4",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_Directional_Lit_Depth_SmokeElement_Inst"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/Hydro/M_Wraith_Water_Particles",
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/Hydro/M_Hydro_Water_Particles_Body_Inst"
 			]
 		},
 		{
-			"ShaderMapHash": "C22142FE2A2DFB73F7DBCD9170283B02EE8BB7E2",
+			"ShaderMapHash": "0C9A3B9BE5272A07A77E347F8C02A690A4CE95EE",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_DarkFlare_DistShrink"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_WaterMist"
 			]
 		},
 		{
-			"ShaderMapHash": "55279BA0DC7B6441AB8539021895841A29C11031",
+			"ShaderMapHash": "D6D0CB6EE5CEDA43D2869EF49C68A0E79E511DA1",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Spark_VelocityLerp_TeamColor"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/VolumeFog/M_Fog_SphericalDensity"
 			]
 		},
 		{
-			"ShaderMapHash": "B8BE58DBDF372C753F1F4D7065B708FA4D5F6299",
+			"ShaderMapHash": "1B8998C4986049C0EAEBA915465ABE2F007B8CC9",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_GlowPoint_MASTER"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_ShadowPlane_Hex"
 			]
 		},
 		{
-			"ShaderMapHash": "19897E2D4E4E0F1F6C4EB40806D9DF73D43B73C5",
+			"ShaderMapHash": "209036C75511B1AC921A0440EE663E408A9130AB",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_A/Materials/M_Cave_Landscape_Master"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_GlowPoint_CameraFacing"
 			]
 		},
 		{
-			"ShaderMapHash": "CB70BA5CCB35E910EB1A4C943AEA93C000623A11",
+			"ShaderMapHash": "AB6D2086EF8E539337820ACE96A8DEE05334CE88",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Wraith_Muzzle_Flash"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_SolidColor_Base",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_SolidColor_Base",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_SolidColor_Base"
 			]
 		},
 		{
-			"ShaderMapHash": "83C4FA09403C466FA231B17FD07F68002DC5E51A",
+			"ShaderMapHash": "EAF14D829C331801FBE5931223AD11F7242607F9",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Glitch_Refraction"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_Base_3C"
 			]
 		},
 		{
-			"ShaderMapHash": "582554AC706E86489E67D1F3543688EC0145CDCE",
+			"ShaderMapHash": "979FE1D6539DC34F4B80DAD259AEAD00262973DA",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Ult_Bullet_Pyramid"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Int/Materials/M_Base_2C",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_2C"
 			]
 		},
 		{
-			"ShaderMapHash": "45E896578CA2F7DBC4ECD7B466EA79EDF87C3593",
+			"ShaderMapHash": "18AE6F6C3C8A74AFB021F0256E38648E5A1C8A05",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Sparks/M_Hotdog_Spark_VLerp_MASTER"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_SolidColor_Base"
 			]
 		},
 		{
-			"ShaderMapHash": "CC4CF0DC3AF35DF8E337E0C8251A19210F88DB1D",
+			"ShaderMapHash": "40B575C20649354F3888B207115ED24136CD93A9",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_Screen_Triangles"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_Trim"
 			]
 		},
 		{
-			"ShaderMapHash": "81847B5A2D9DE4E1F7E2CEF4A4CC23DB35E0294E",
+			"ShaderMapHash": "6BD1896E25D94CF6E61F8CA16355A4FA5D3B56F6",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/M_Cave_Landscape_Master"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_Pipes"
 			]
 		},
 		{
-			"ShaderMapHash": "6A9A058374569F6BFD158D934114164E9C524B06",
+			"ShaderMapHash": "5FB4131F9436707962DD68798806EA0E60ADC40D",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/AirGlows/M_Recall_GlowingDots"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_4C_Scr",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/M_Base_4C_Scr"
 			]
 		},
 		{
-			"ShaderMapHash": "57FD9781CD1CF6E4A5B7BADC7A0C3022D837096B",
+			"ShaderMapHash": "5BDA10999639D5D481C836DE713DDDFBA9E1A949",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_Glass_Base"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/M_Base_3C",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/M_Base_3C"
 			]
 		},
 		{
-			"ShaderMapHash": "8DE434BB504E1077249D32C38DA657BCE980B4D4",
+			"ShaderMapHash": "20F98FC49A06B53504ECD6FBCE29228EC5DE7A5D",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_Glass_Base2"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiProps/Materials/M_Base_3C"
 			]
 		},
 		{
-			"ShaderMapHash": "123C9C272C4EF3A5FCC7ADD204E332B50F4C6EF2",
+			"ShaderMapHash": "22DF93F017EFB7FFD9B894D90EEEA324B288C9E8",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Holo_Display_FlickerIn"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/M_Base_Tile_Scr",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_E_Scr",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_D_Scr",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_C_Scr",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_A_Scr2",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_A_Scr"
 			]
 		},
 		{
-			"ShaderMapHash": "20B797DB2C0F5282B0F655ADB81317B5FF4412D3",
+			"ShaderMapHash": "7A7DA667D16BB945C0AE591A54467ACB40F12E9A",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_Wires"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_3C"
 			]
 		},
 		{
-			"ShaderMapHash": "BBF5A175FD62110C2A790CC24FDBCB1F9617AF08",
+			"ShaderMapHash": "29FBA8DD26CF474CB010D1A0F62F32A8FCBD541B",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Holo_Display_02_FlickerIn"
+				"/Game/AssetPacks/ParagonWraith/FX/Meshes/Splines/M_Spline_Preview"
 			]
 		},
 		{
-			"ShaderMapHash": "E04ED1629DCFD0CED8FAD37C383A8A6887E9C211",
+			"ShaderMapHash": "6C0B7A0A35F0B4AF687B7BA8F10A4A7D217BB209",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Sparks/M_Spark_VelocityLerp_WorldColor"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Wraith_Tech_Holo_Spline"
 			]
 		},
 		{
-			"ShaderMapHash": "F515D6CD75EF1C49CDF44DB041A8BCDED15FFC85",
+			"ShaderMapHash": "DED02BEA0B92E26BB26206619BCD19CF02786ED0",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/Hyperbreach/M_Smoke_Offset_Particles_SubUV_LIT"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Wraith_Tech_Holo_Flicker_Spline"
 			]
 		},
 		{
-			"ShaderMapHash": "EC0A35BF205D83BC0E20D78BEA159691923AB656",
+			"ShaderMapHash": "AAE5ED524512802B140607018681111B72AEB1F0",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_Base_Wires_B"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Hotdog_Spline_Laser"
 			]
 		},
 		{
-			"ShaderMapHash": "C310FC19111BB1734E81EB820C259C20962940DE",
+			"ShaderMapHash": "CC70DEBA77AE3E49FB4698D10F88BD0F6AF638A2",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Holo_Reticle_FlickerIn"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/Spline/M_Smoke_SplineMesh_Trail"
 			]
 		},
 		{
-			"ShaderMapHash": "59FF67E149CE423228CBA0D32F48CAFA5F8A3247",
+			"ShaderMapHash": "3B2B19FA5414E6DAD9643AF0062E6F480FA16D8E",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Trails/M_Bullet_Trail"
+				"/Engine/EngineMaterials/Widget3DPassThrough_Masked_OneSided"
 			]
 		},
 		{
-			"ShaderMapHash": "84B0B73F503B86635B2719D9A48D4E82CC380592",
+			"ShaderMapHash": "3A21A22B26B50FF022F4DB6451E17D307A26F2AF",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Spline_Light_Scanner"
+				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided"
 			]
 		},
 		{
-			"ShaderMapHash": "B0A1B005DBB4A690C102C0BE75FD0CDC10331E54",
+			"ShaderMapHash": "ED92D29424B127C55AE22C66232EC376035E0439",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_EnergyEmissive"
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/M_IceChunks_01"
 			]
 		},
 		{
-			"ShaderMapHash": "5F981CBE2E8621E6E0CE12D85FD2BF9B951DF10D",
+			"ShaderMapHash": "A32837C69C95991219E54CBE8780258B3BAD32F3",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_UI_Parent"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Tech/M_Tech_Holo_Spline_WPO"
 			]
 		},
 		{
-			"ShaderMapHash": "39AE386F10D2BEF3A39F2B9598390E731C4E6F8A",
+			"ShaderMapHash": "BF3C92FC0E7E2411ACB5C14E3D1F83ACB29B60F7",
 			"Assets": [
-				"/Game/AssetPacks/ShooterGame/Effects/Materials/Ramp/M_SoftGradient_Muzzle"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Shockwaves/M_Shockwave_Soft"
 			]
 		},
 		{
-			"ShaderMapHash": "629D15CECF1D8448B125231FDD96D9A761A241DB",
+			"ShaderMapHash": "A990AC2FB4DE423645026422C3B329968F2E5A65",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Environment/Water/M_WaterRipple_Mesh_Foam"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_Wraith_Drone_ElectroField"
 			]
 		},
 		{
-			"ShaderMapHash": "88AE6F46FD5A91E6C34495F4D47CD8F871B96D5F",
+			"ShaderMapHash": "347DCDD08A99A8B45A0CA3EE7460E919C4EB9F2E",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_WaterImpact_Cylinder"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/FX/M_CameraLens_Teleporting"
 			]
 		},
 		{
-			"ShaderMapHash": "3C4CEF480A1C3B35B64657CBADFCE7D38769DDCA",
+			"ShaderMapHash": "6BB526EDAA624FF8FD9362FD9BC50BDAFB771035",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/WispySmokeSoft/M_WispySmokeSoft"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Thruster_Cone"
 			]
 		},
 		{
-			"ShaderMapHash": "2885B5F62DEDC7F004E36D2752645492A864D670",
+			"ShaderMapHash": "1FFDCD8B83FD61212E80176ECD7EA3E51D0DB2FF",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_Directional_Lit_DepthSmoke_Master",
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_Directional_Lit_Depth_Smoke_Spikey_Inst"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Teleport_Refraction"
 			]
 		},
 		{
-			"ShaderMapHash": "3DF1E2AC2358A47F46AEADAAE9C3ACE820828EB1",
+			"ShaderMapHash": "22867D550E3D9829EDB7B8E33D371D97084F3335",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_CustomerMessage"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_SmokeEnergy_SubUV"
 			]
 		},
 		{
-			"ShaderMapHash": "FBBC1C25167A2B839E0F65B2DAF403B8288FDB8C",
+			"ShaderMapHash": "D92A195B96DE457B1E48239CCE196A19BD2B34BA",
 			"Assets": [
-				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularScifiHallways/Materials/M_GlassLight"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Large_Bolt"
 			]
 		},
 		{
-			"ShaderMapHash": "15FDC55A4BA6E206C306462488218C0FD2DC5B1C",
+			"ShaderMapHash": "FA229D37FF9B9B05A05D444953CAD70366C693DA",
 			"Assets": [
-				"/Game/AssetPacks/ShooterGame/Effects/Materials/Weapon/M_MuzzleGlow"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/M_Energy_Ripple_Spline2"
 			]
 		},
 		{
-			"ShaderMapHash": "2C54D39D5ED682E52AA8F3491E9D34B2AE3998FE",
+			"ShaderMapHash": "F9D5F07FD8C7BF35EBC09DC2340C0DE46F7D6882",
 			"Assets": [
-				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_Water_Drops_Master"
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/HeatDistort/M_Shockwave_Refract"
+			]
+		},
+		{
+			"ShaderMapHash": "B95E0A50C331235F7C554192C3A8EFADB9414B6E",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/M_ShadowPlaneShimmer"
+			]
+		},
+		{
+			"ShaderMapHash": "F1AA8AF64BF5E0386795C5803439B31A4D8AD7AA",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Water/M_WaterBubbles"
+			]
+		},
+		{
+			"ShaderMapHash": "F44DBE2505DDDD5AB430D163E8A3DA64F9DF0489",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/VolumeFog/MI_Fog_SphericalDensity_Particle"
+			]
+		},
+		{
+			"ShaderMapHash": "E21B2189C4649A0311A0F05DA8D5DCB74CDA7D83",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_White_Brushed",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_White_3",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_White_2",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_White",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_Gray",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_DarkGray",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_Black2",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Solid_Black",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Red_Dirt",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Floor_Black2",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Floor_Black",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Ceiling_OuterRing_BC_Gray"
+			]
+		},
+		{
+			"ShaderMapHash": "847C0A8194A91EDE4AC47D2D90914C55592E5FF4",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Trims_C_FloorBlack_Det2",
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSci_Comm/Materials/MI_Trims_C_FloorBlack_Det"
+			]
+		},
+		{
+			"ShaderMapHash": "5986553DBFA476F89B78A9D80C701CAA0809B53D",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/ModularSciFiMats/Materials/Instances/MI_Floor_B_Scr"
+			]
+		},
+		{
+			"ShaderMapHash": "EA2F30852742C68781196E66848F123350A5CE9C",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/M_BigSnow"
+			]
+		},
+		{
+			"ShaderMapHash": "E6DF0CC4D69107D6F98660BAD571D743C3937387",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Upperbody_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "677C68E2A8CAB50059FCCD9571C49E24C26A5B74",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Upperbody_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "2B49E4E190D3D2BBDD2D8ECD1D44F44EB06FC305",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Upperbody_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "2970271E2F5B0CCA564FBC97E8A711313D510017",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Lowerbody_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "40ABB646DAEF2EF49D96CD17F673E59EDF1260ED",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Lowerbody_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "434A2A24B0EAAA31D49EA46EBC160E18C2A58623",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Lowerbody_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "570A96B6AB53431ACF73A848BC4764A57A5B84C7",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Gun_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "7E333409926F9146656B82FC19FACC70F5E2C61A",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Gun_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "0A824F67BF9831A9A4B265972F6D950B85E9115C",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Gun_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "75AB07CB71191211B5CAE1D0EAF87F9568701053",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Backpack_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "50024BD3ED2542F2CCF3BE724252B0911D324256",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Backpack_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "D196C15AA2FD836F78C25FEA3471F3EE9AF8E0F3",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Backpack_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "CE817F9844331127B69369E2AACE911BFE046450",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Attachment_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "57A8499644C8C3274DBA54B42759C61D43D52523",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Attachment_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "34C2305F82F73D44432E78DF508E1E599AA50960",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/ODGreen/Materials/M_Wraith_Attachment_ODGreen"
+			]
+		},
+		{
+			"ShaderMapHash": "65E83891AC5CED5E854EF964A48478CB43208DF2",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Upperbody",
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/M_Wraith_Upperbody"
+			]
+		},
+		{
+			"ShaderMapHash": "3BE29A0721A385BABC052DB6C23E629A28471958",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Upperbody",
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Heroes/Wraith/M_Wraith_Upperbody"
+			]
+		},
+		{
+			"ShaderMapHash": "E88C9458668CB8958EF9473CACE7F416885F21F1",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Lowerbody"
+			]
+		},
+		{
+			"ShaderMapHash": "9FCDF98F1F7D27883872C0029F210EEAC6EAB8A6",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Lowerbody"
+			]
+		},
+		{
+			"ShaderMapHash": "3EA39BCCFB7EC563591EB3A5A49491A23989715D",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Gun"
+			]
+		},
+		{
+			"ShaderMapHash": "E13E90BD1989DCDCEA946EE369D1AF1844EB98ED",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Gun"
+			]
+		},
+		{
+			"ShaderMapHash": "9CBB2F71FB51C02A63B91A925F1EDEDDCE715A95",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Backpack"
+			]
+		},
+		{
+			"ShaderMapHash": "1CA5E5E2501BCF58E3123DBB5317CF0E96419CD5",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Materials/M_Wraith_Backpack"
+			]
+		},
+		{
+			"ShaderMapHash": "15B65DD0871B539A4C8B8E12F65F54F40E91EAE5",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Upperbody_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "DF7880241B718FD5D3AE7523BFF008D858B40E7A",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Upperbody_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "54FE17999E04BBFB24530B080F884145CEDBEAF8",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Lowerbody_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "13753469F8C286E8968F461284B5C497F96E84A3",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Lowerbody_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "56374B7D6F8087F800AB3867CB38D23937EEBA32",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Gun_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "ECB4EF3FA82E61C2DCBE7A567F3BC63D6F7E1F12",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Gun_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "C4731D13364E74B7D24F2B9605DDB6A501F15DD5",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Backpack_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "F0BAB624E4770AE3F35AA0432881CE695E424ADB",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Backpack_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "6EC77823BC16161711D5E79EE88C476F099A7F7E",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Attachment_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "F3EFB404DDBC5A32327BCBA131D346692BB88033",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/Characters/Heroes/Wraith/Skins/LunarOps/Materials/M_Wraith_Attachment_LunarOps"
+			]
+		},
+		{
+			"ShaderMapHash": "CEC4299436122AA47594E651CA2B1DDD2E140220",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_LensFlareMaster"
+			]
+		},
+		{
+			"ShaderMapHash": "C42F8570C0AF98F9D5BAC67FB456C599078CDDAA",
+			"Assets": [
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_LensFlare_Particle",
+				"/Game/AssetPacks/ParagonWraith/FX/Materials/Flares/M_LensFlare_Particle_01"
+			]
+		},
+		{
+			"ShaderMapHash": "03B9330ADDC65C78B6E90A430BA571A39BA952AC",
+			"Assets": [
+				"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/CollectionMaps/Map1",
+				"/Game/Maps/SandboxLevel"
 			]
 		}
 	]

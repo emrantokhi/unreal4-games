@@ -33,9 +33,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void AddHUD();
 
-	UFUNCTION(BlueprintCallable)
-	void RemoveHUD();
-
 protected:
 	virtual void BeginPlay() override;
 
