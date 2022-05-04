@@ -56,7 +56,7 @@ void ACryptRaiderCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	// Bind fire event
-	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &ACryptRaiderCharacter::OnPrimaryAction);
+	PlayerInputComponent->BindAction("Pickup", IE_Pressed, this, &ACryptRaiderCharacter::OnPrimaryAction);
 
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
