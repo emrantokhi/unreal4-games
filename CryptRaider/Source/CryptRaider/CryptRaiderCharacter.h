@@ -41,9 +41,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float TurnRateGamepad;
 
+	UFUNCTION(BlueprintCallable)
+	void EndGame();
+
 	/** Delegate to whom anyone can subscribe to receive this event */
 	UPROPERTY(BlueprintAssignable, Category = "Interaction")
 	FOnUseItem OnUseItem;
+
 protected:
 	
 	/** Fires a projectile. */

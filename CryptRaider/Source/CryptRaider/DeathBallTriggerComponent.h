@@ -3,47 +3,46 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/SceneComponent.h"
-#include "GrabberComponent.generated.h"
+#include "Components/BoxComponent.h"
+#include "DeathBallTriggerComponent.generated.h"
 
+class URotatorComponent;
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class CRYPTRAIDER_API UGrabberComponent : public USceneComponent
+class CRYPTRAIDER_API UDeathBallTriggerComponent : public UBoxComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UGrabberComponent();
+	UDeathBallTriggerComponent();
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	void GetAcceptableActors(TArray<AActor*>& OutAcceptable);
 
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable)
-	void Released();
-	
+	void SetRotator(URotatorComponent* NewRotator);
+
 	UFUNCTION(BlueprintCallable)
-	void Grab();
+	void SetBall(AActor* NewBall);
 
 private:
 
-	FHitResult Hit;
-
 	UPROPERTY(EditAnywhere)
-	float LineTraceLength = 10.f;
+	FName TagName;
 
-	UPROPERTY(EditAnywhere)
-	float GrabRadius = 100.f;
+	URotatorComponent* Rotator = nullptr;
 
-	UPROPERTY(EditAnywhere)
-	float HoldDistance = 200.f;
+	AActor* Ball;
 
-	class UPhysicsHandleComponent* PhysicsHandle = nullptr;
-
-	bool GetGrabbableInReach(FHitResult& OutHit) const;
+	TArray<AActor*> Acceptable;
+	
+	bool bIsSimulatingPhysics = false;
 };

@@ -44,6 +44,12 @@ void ACryptRaiderCharacter::BeginPlay()
 
 }
 
+void ACryptRaiderCharacter::EndGame()
+{
+	DetachFromControllerPendingDestroy();
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+}
+
 //////////////////////////////////////////////////////////////////////////// Input
 
 void ACryptRaiderCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)

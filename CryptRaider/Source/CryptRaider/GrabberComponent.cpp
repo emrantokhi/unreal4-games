@@ -33,6 +33,7 @@ void UGrabberComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 	{
 		FVector NewLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
 		PhysicsHandle->SetTargetLocationAndRotation(NewLocation, GetComponentRotation());
+		Hit.GetComponent()->WakeAllRigidBodies();
 	}
 }
 
@@ -46,11 +47,10 @@ void UGrabberComponent::Released()
 
 void UGrabberComponent::Grab()
 {
-	FHitResult Hit;
-
 	if (GetGrabbableInReach(Hit))
 	{
-		Hit.GetComponent()->WakeAllRigidBodies();
+		/*Hit.GetComponent()->WakeAllRigidBodies();*/
+		//Hit.GetActor()->Tags.Add("Grabbed");
 		PhysicsHandle->GrabComponentAtLocationWithRotation(
 			Hit.GetComponent(),
 			NAME_None,

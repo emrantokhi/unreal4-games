@@ -3,18 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/SceneComponent.h"
-#include "GrabberComponent.generated.h"
+#include "Components/ActorComponent.h"
+#include "RotatorComponent.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class CRYPTRAIDER_API UGrabberComponent : public USceneComponent
+class CRYPTRAIDER_API URotatorComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UGrabberComponent();
+	URotatorComponent();
 
 protected:
 	// Called when the game starts
@@ -25,25 +25,17 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable)
-	void Released();
-	
-	UFUNCTION(BlueprintCallable)
-	void Grab();
+	void SetShouldRotate(bool Rotate);
 
 private:
 
-	FHitResult Hit;
+	FRotator InitialRotation;
 
 	UPROPERTY(EditAnywhere)
-	float LineTraceLength = 10.f;
+	FRotator RotationOffset;
 
 	UPROPERTY(EditAnywhere)
-	float GrabRadius = 100.f;
-
-	UPROPERTY(EditAnywhere)
-	float HoldDistance = 200.f;
-
-	class UPhysicsHandleComponent* PhysicsHandle = nullptr;
-
-	bool GetGrabbableInReach(FHitResult& OutHit) const;
+	float InterpSpeed = 4.f;
+	
+	bool bShouldRotate = false;
 };
